@@ -1360,13 +1360,14 @@ label{
     /* INICIO HORARIOS */
     
     .horarios {
-        margin-top: -10em;
+        margin-top: 6em;
     }
 
     /* FIN HORARIOS */
     /* INICIO PROFESORES */
 
     .mainprofes {
+        margin-top: 3em;
         display: grid;
         grid-template-columns: 33em;
         grid-template-areas: 
@@ -1429,12 +1430,20 @@ label{
     /* FIN SHOP */
     /* INICIO CONTACTO */
     
+    .contacto {
+        margin-top: 6em;
+    }
+
     .boxcontacto {
         font-size: 1em;
     }
 
     /* FIN CONTACTO */
     /* INICIO REGISTRO */
+
+    .registro {
+        margin-top: 6em;
+    }
 
     .boxregistro {
         font-size: 1em;
@@ -1496,7 +1505,7 @@ label{
 }
 
 .horarios {
-    margin-top: -3em;
+    margin-top: 6em;
 }
 
 /* FIN HORARIOS */
@@ -1532,7 +1541,7 @@ label{
 /* INICIO CONTACTO */
 
 .contacto {
-    margin-top: -3em;
+    margin-top: 5em;
 }
 
 .boxcontacto {
@@ -1547,7 +1556,7 @@ label{
 /* INICIO REGISTRO */
 
 .registro {
-    margin-top: -3em;
+    margin-top: 5em;
 }
 
 .boxregistro {
@@ -1557,9 +1566,6 @@ label{
 /* INICIO REGISTRO */
 /* INICIO LOGIN */
 
-.logueate {
-    margin-top: -9em;
-}
 .boxlogin {
     font-size: .9em;
 }
@@ -1612,7 +1618,7 @@ label{
 }
 
 .horarios {
-    margin-top: 3em;
+    margin-top: 6em;
 }
 
 /* FIN HORARIOS */
@@ -1646,12 +1652,27 @@ label{
 /* FIN SHOP */
 /* INICIO CONTACTO */
 
+.contacto {
+    margin-top: 6em;
+}
+
 .boxcontacto {
     font-size: .7em;
 }
 
 /* FIN CONTACTO */
+/* INICIO REGISTRO */
+
+.registro {
+    margin-top: 5em;
+}
+
+/* FIN REGISTRO */
 /* INICIO LOGIN */
+
+.logueate {
+    margin-top: -3em;
+}
 
 .boxlogin {
     font-size: .7em;
