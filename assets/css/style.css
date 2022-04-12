@@ -1082,6 +1082,10 @@ label{
             width: 88vw; height: 50vw;
             margin-top: .5em;
         }
+
+        .imgbtnmenu {
+            width: 2.7em;
+        }
     
         /* FIN ESTILIZADO IMG / VIDEO */
         /* INICIO HOME*/
