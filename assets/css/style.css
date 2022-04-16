@@ -44,6 +44,7 @@ body {
     padding: 1em;
     background-color: whitesmoke;
     display: flex;
+    color: black;
 }
 
 .footer {
@@ -1030,7 +1031,7 @@ label{
     
         /* INICIO ESTILIZADO NAV */
         
-        header label {
+        eader label {
             display: block;
             cursor: pointer;
             grid-column-start: 3;
@@ -1038,7 +1039,7 @@ label{
             margin-top: .2em;
         }
 
-        nav {
+        av {
             background-color: whitesmoke;
             border-bottom-right-radius: .5em;
             border-bottom-left-radius: .5em;
@@ -1051,7 +1052,7 @@ label{
             border-top: none;
         }
 
-        nav ul li a:hover{
+        av ul li a:hover{
             background-color: rgb(0, 0, 0);
             padding: .5em;
             margin: .5em;
@@ -1060,14 +1061,14 @@ label{
             transition: all .1s;
         }
 
-        nav ul {
+        av ul {
             flex-direction: column;
             font-size: 1.2em;
             line-height: 2em;
             align-items: center;
         }
 
-        #btnmenu:checked ~ nav{
+        btnmenu:checked ~ nav{
             margin-left: 81%;
             margin-top: 6%;
         }
