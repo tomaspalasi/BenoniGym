@@ -371,34 +371,64 @@ table {
 }
 
 .boxprofes {
+    display: grid;
+    grid-template-areas: 'titulo'
+    'texto'
+    'imagen';
     padding: 1.5em;
-    line-height: 1em;
     background-color: whitesmoke;
     border-style: solid;
     border-color: rgb(112, 112, 112);
     margin: 1em;
     filter: drop-shadow(5px 5px 5px #222);
-}
+    }
 
 .boxprofes h2 {
     font-size: 2em;
+    grid-area: titulo;
 }
 
 .boxprofes p {
     padding-top: 1em;
     line-height: 1.3em;
+    grid-area: texto;
+}
+
+#imagenes1 {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: imagen;
+}
+
+#imagenes2 {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: imagen;
+}
+
+#imagenes3 {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: imagen;
+}
+
+.svgprofes {
+    width: 10em; height: 10em;
 }
 
 #elasticidad {
     width: 10em; height: 10em;
+    display: none;
 }
 
 #resistencia {
     width: 12em; height: 12em;
+    display: none
 }
 
 #fuerza {
     width: 7em; height: 12em;
+    display: none
 }
 
 /* FIN PROFESORES */
@@ -1176,6 +1206,30 @@ label{
             line-height: 1.5em;
             text-align: center;
         }
+
+        #imagenes1 {
+            display:none;
+        }
+    
+        #imagenes2 {
+            display:none;
+        }
+    
+        #imagenes3 {
+            display:none;
+        }
+
+        #elasticidad {
+            display: flex;
+        }
+
+        #resistencia {
+            display: flex;
+        }
+
+        #fuerza {
+            display: flex;
+        }
     
         /* FIN PROFESORES */
         /* INICIO SHOP */
@@ -1422,6 +1476,8 @@ label{
         line-height: 1.5em;
         text-align: center;
     }
+
+    
 
     /* FIN PROFESORES */
     /* INICIO SHOP */
