@@ -1031,7 +1031,7 @@ label{
     
         /* INICIO ESTILIZADO NAV */
         
-        header label {
+      header label {
             display: block;
             cursor: pointer;
             grid-column-start: 3;
