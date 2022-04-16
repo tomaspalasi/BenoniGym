@@ -614,6 +614,10 @@ table {
 
 /* INICIO REGISTRO - LOGIN */
 
+.logueate {
+    margin: 1%;
+}
+
 .registro {
     margin: 1%;
 }
