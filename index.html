@@ -6,19 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/favicon_io/favicon.ico">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <link href="./assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> !-->
     <title>BENONI</title>
 </head>
 
 <body class="grid-container">
     <header class="header">
-    <div>
+        <div>
             <a href="./../index.html"><img id="logobenoni" src="assets/img/benoni.png" alt="logobenoni" /></a>
         </div>
-        <input type="checkbox" id="btnmenu">
-        <label for="btnmenu"><img class="imgbtnmenu" src="assets/img/menu.svg" alt=""></label>
         <nav>
             <ul>
                 <li><a href="pages/nosotros.html">Nosotros</a></li>
@@ -35,6 +34,23 @@
                         <img src="assets/img/instagrambl.png" alt="instagrambl" /></a></li>
             </ul>
         </nav>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="imgbtnmenu" src="assets/img/menu.svg" alt="">
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="pages/nosotros.html">Nosotros</a></li>
+                <li><a class="dropdown-item" href="pages/horarios.html">Horarios</a></li>
+                <li><a class="dropdown-item" href="pages/profesores.html">Profesores</a></li>
+                <li><a class="dropdown-item" href="pages/shop.html">Shop</a></li>
+                <li><a class="dropdown-item" href="pages/contacto.html">Contacto</a></li>
+                <li><a class="dropdown-item" href="pages/registro.html">Registrate</a></li>
+                <li><a class="dropdown-item" href="pages/login.html">Login</a></li>
+                <li><a class="dropdown-item" href="https://www.instagram.com/teambenoni/" target="_blank">Instagram</a>
+                </li>
+            </ul>
+        </div>
     </header>
     <main class="main">
         <section class="cuerpo">
@@ -47,8 +63,10 @@
                     decidir que orientación le vas a dar a tu planificación.</p>
             </div>
             <div id="videos">
-                <video class="video" src="assets/img/videos/paralelas.mp4" title="paralelas" autoplay muted loop></video>
-                <video class="video" src="assets/img/videos/dominadas.mp4" title="dominadas" autoplay muted loop></video>
+                <video class="video" src="assets/img/videos/paralelas.mp4" title="paralelas" autoplay muted
+                    loop></video>
+                <video class="video" src="assets/img/videos/dominadas.mp4" title="dominadas" autoplay muted
+                    loop></video>
             </div>
             <div class="sponsors">
                 <a href="https://www.full-fitness.com.ar" target="_blank"><img class="imgrect"
@@ -72,6 +90,9 @@
         <a href="pages/login.html">LOGIN</a> -
         <a href="https://www.instagram.com/teambenoni/" target="_blank">BENONI TEAM INSTAGRAM</a>
     </footer>
-    <!-- <script src="./assets/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> !-->
+    <script src="./assets/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

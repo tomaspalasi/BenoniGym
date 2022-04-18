@@ -6,19 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/favicon_io/favicon.ico">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <title>ENTRÁ EN TU CUENTA</title>
 </head>
-
 <body class="grid-container">
     <header class="header">
         <div>
             <a href="./../index.html"><img id="logobenoni" src="../assets/img/benoni.png" alt="logo benoni" /></a>
         </div>
-        <input type="checkbox" id="btnmenu">
-        <label for="btnmenu"><img class="imgbtnmenu" src="../assets/img/menu.svg" alt=""></label>
-        <nav> 
+        <nav>
             <ul>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="horarios.html">Horarios</a></li>
@@ -27,46 +26,67 @@
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="registro.html">Registrate</a></li>
                 <li><a href="login.html" class="login">
-                    <img src="../assets/img/login.png" alt="Login">
-                    <img src="../assets/img/loginbl.png" alt="LoginBl"></a></li>
+                        <img src="../assets/img/login.png" alt="Login">
+                        <img src="../assets/img/loginbl.png" alt="LoginBl"></a></li>
                 <li><a href="https://www.instagram.com/teambenoni/" target="_blank" class="logoinstagram">
-                    <img src="../assets/img/instagram.png" alt="instagram" />
-                    <img src="../assets/img/instagrambl.png" alt="instagrambl" /></a></li></ul>
+                        <img src="../assets/img/instagram.png" alt="instagram" />
+                        <img src="../assets/img/instagrambl.png" alt="instagrambl" /></a></li>
+            </ul>
         </nav>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="imgbtnmenu" src="/assets/img/menu.svg" alt="">
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
+                <li><a class="dropdown-item" href="horarios.html">Horarios</a></li>
+                <li><a class="dropdown-item" href="profesores.html">Profesores</a></li>
+                <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+                <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                <li><a class="dropdown-item" href="registro.html">Registrate</a></li>
+                <li><a class="dropdown-item" href="login.html">LOGIN</a></li>
+                <li><a class="dropdown-item" href="https://www.instagram.com/teambenoni/" target="_blank">Instagram</a>
+                </li>
+            </ul>
+        </div>
     </header>
     <main>
         <section class="logueate">
             <h1>ENTRÁ EN TU CUENTA</h1>
             <form class="boxlogin">
-                    <h4>Logueate en BENONI:</h4>
-                    <div>
-                        <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email" placeholder=""/>
-                    </div>
-                    <div>
-                        <label for="password1">Contraseña:</label>
-                        <input type="password" id="password1"/>
-                    </div>
+                <h4>Logueate en BENONI:</h4>
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" placeholder="" />
+                </div>
+                <div>
+                    <label for="password1">Contraseña:</label>
+                    <input type="password" id="password1" />
+                </div>
                 <div class="btncontact">
                     <input type="button" onclick="alert('Te enviamos un email para restablecer tu contraseña.')"
-                    value="Olvidé mi contraseña" class="btnreset"/>
-                    <input type="submit" value="Entrar a BENONI" class="btnsend"/>
+                        value="Olvidé mi contraseña" class="btnreset" />
+                    <input type="submit" value="Entrar a BENONI" class="btnsend" />
                 </div>
             </form>
         </section>
     </main>
     <footer class="footer">
-            <a href="https://www.instagram.com/tomaspalasi" target="_blank">TOMÁS PALASI</a> -  
-            <a href="./../index.html">HOME</a> - 
-            <a href="nosotros.html">NOSOTROS</a> - 
-            <a href="horarios.html">HORARIOS</a> - 
-            <a href="profesores.html">PROFESORES</a> - 
-            <a href="shop.html">SHOP</a> - 
-            <a href="contacto.html">CONTACTO</a> - 
-            <a href="registro.html">REGISTRATE</a> - 
-            <a href="login.html">LOGIN</a> - 
-            <a href="https://www.instagram.com/teambenoni/" target="_blank">BENONI TEAM INSTAGRAM</a>
+        <a href="https://www.instagram.com/tomaspalasi" target="_blank">TOMÁS PALASI</a> -
+        <a href="./../index.html">HOME</a> -
+        <a href="nosotros.html">NOSOTROS</a> -
+        <a href="horarios.html">HORARIOS</a> -
+        <a href="profesores.html">PROFESORES</a> -
+        <a href="shop.html">SHOP</a> -
+        <a href="contacto.html">CONTACTO</a> -
+        <a href="registro.html">REGISTRATE</a> -
+        <a href="login.html">LOGIN</a> -
+        <a href="https://www.instagram.com/teambenoni/" target="_blank">BENONI TEAM INSTAGRAM</a>
     </footer>
+    <script src="/assets/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -67,11 +67,7 @@ body {
 
 /* INICIO HEADER */
 
-#btnmenu {
-    display: none;
-}
-
-header label {
+.dropdown {
     display: none;
 }
 
@@ -1017,7 +1013,7 @@ label{
 
         .header {
             width: 100%;
-            height: 4em;
+            height: 3.8em;
             display: grid;
             grid-template-columns: 15em auto 6em;
             border-bottom: solid rgb(116, 116, 116);
@@ -1031,46 +1027,34 @@ label{
     
         /* INICIO ESTILIZADO NAV */
         
-      header label {
+        .dropdown {
             display: block;
             cursor: pointer;
             grid-column-start: 3;
             grid-column-end: 4;
-            margin-top: .2em;
+            margin-top: -.3em;
+        }
+
+        #dropdownMenuButton1 {
+            color: transparent;
+            background-color: transparent;
+            border: none;
+            font-size: 1em;
+        }
+
+        .dropdown-menu {
+            font-size: 2.5em;
+            text-align: center;
+            background-color: whitesmoke;
+            border: solid rgb(116, 116, 116);
+            border-top: none;
+            border-radius: 0em;
+            border-bottom-left-radius: .5em;
+            border-bottom-right-radius: .5em;
         }
 
         nav {
-            background-color: whitesmoke;
-            border-bottom-right-radius: .5em;
-            border-bottom-left-radius: .5em;
-            width: 8em;
-            height: auto;
-            position: absolute;
-            margin-top: -280%;
-            z-index: 1;
-            border: solid rgb(116, 116, 116);
-            border-top: none;
-        }
-
-        nav ul li a:hover{
-            background-color: rgb(0, 0, 0);
-            padding: .5em;
-            margin: .5em;
-            border-radius: .5em;
-            color: white;
-            transition: all .1s;
-        }
-
-        nav ul {
-            flex-direction: column;
-            font-size: 1.2em;
-            line-height: 2em;
-            align-items: center;
-        }
-
-        #btnmenu:checked ~ nav{
-            margin-left: 81%;
-            margin-top: 6%;
+            display: none;
         }
 
         /* FIN ESTILIZADO NAV */
@@ -1291,6 +1275,10 @@ label{
         /* FIN SHOP */
         /* INICIO CONTACTO */
         
+        .contacto {
+            margin-top: 4em;
+        }
+
         .subtituloconsulta {
             line-height: 1.8em;
         }
@@ -1306,12 +1294,20 @@ label{
         /* FIN CONTACTO */
         /* INICIO REGISTRO */
 
+        .registro {
+            margin-top: 4em;
+        }
+
         .boxregistro {
             font-size: 1.3em;
         }
 
         /* INICIO REGISTRO */
         /* INICIO LOGIN */
+
+        .logueate {
+            margin-top: auto;
+        }
 
         .boxlogin {
             font-size: 1.3em;
@@ -1336,9 +1332,8 @@ label{
 
     /* INICIO ESTILIZADO NAV */
        
-    #btnmenu:checked ~ nav{
-        margin-left: 72%;
-        margin-top: 9%;
+    .dropdown-menu {
+        font-size: 2.3em;
     }
 
     /* FIN ESTILIZADO NAV */
@@ -1533,9 +1528,8 @@ label{
 
 /* INICIO ESTILIZADO NAV */
    
-#btnmenu:checked ~ nav{
-    margin-left: 65%;
-    margin-top: 11.2%;
+.dropdown-menu {
+    font-size: 2.2em;
 }
 
 /* FIN ESTILIZADO NAV */
@@ -1638,15 +1632,6 @@ label{
     height: 5em;
 }
 /* FIN PARAMETROS GENERALES */
-
-/* INICIO ESTILIZADO NAV */
-
-#btnmenu:checked ~ nav{
-    margin-left: 60%;
-    margin-top: 12.9%;
-}
-
-/* FIN ESTILIZADO NAV */
 /* INICIO ESTILIZADO IMG / VIDEO */
 
 .imgrect {
