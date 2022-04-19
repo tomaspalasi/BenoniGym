@@ -1630,6 +1630,7 @@ label{
 
 .footer {
     height: 5em;
+    font-size: .8em;
 }
 /* FIN PARAMETROS GENERALES */
 /* INICIO ESTILIZADO IMG / VIDEO */
@@ -1703,14 +1704,14 @@ label{
 /* INICIO REGISTRO */
 
 .registro {
-    margin-top: 5em;
+    margin-top: 6em;
 }
 
 /* FIN REGISTRO */
 /* INICIO LOGIN */
 
 .logueate {
-    margin-top: -3em;
+    margin-top: auto;
 }
 
 .boxlogin {
