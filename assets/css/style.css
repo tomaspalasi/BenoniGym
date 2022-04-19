@@ -842,7 +842,7 @@ label{
 
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
     /* ESCRITORIO CHICO */
 
         /* PARAMETROS GENERALES */
@@ -1002,7 +1002,7 @@ label{
     
 }
 
-@media screen and (max-width: 810px) {
+@media (max-width: 810px) {
     /* TABLET GRANDE*/
 
         /* PARAMETROS GENERALES */
@@ -1316,7 +1316,7 @@ label{
         /* FIN LOGIN */
 }
 
-@media screen and (max-width: 540px) {
+@media (max-width: 540px) {
     /* TABLET CHICA */
 
     /* PARAMETROS GENERALES */
@@ -1516,7 +1516,7 @@ label{
     /* FIN LOGIN */
 }
 
-@media screen and (max-width: 428px) {
+@media (max-width: 428px) {
     /* CELULAR GRANDE */
 
 /* PARAMETROS GENERALES */
@@ -1625,7 +1625,7 @@ label{
 /* FIN LOGIN */
 }
 
-@media screen and (max-width: 375px) {
+@media (max-width: 390px) {
     /* PARAMETROS GENERALES */
 
 .footer {
