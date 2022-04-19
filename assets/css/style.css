@@ -198,6 +198,17 @@ a {
     filter: drop-shadow(5px 5px 5px #222);    
    }
 
+.logohome figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.logohome figure:hover img {
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+}
+
 .imgcuad {
     width: 20em; height:20em;
     filter: drop-shadow(5px 5px 5px #222);    
@@ -266,7 +277,19 @@ a {
 .sponsors {
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 1em;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+.sponsors figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.sponsors figure:hover img {
+	-webkit-transform: scale(1.4);
+	transform: scale(1.4);
 }
 
 /* FIN HOME */
@@ -392,22 +415,55 @@ table {
     grid-area: texto;
 }
 
-#imagenes1 {
+.imagenes1 {
     display: flex;
     justify-content: space-evenly;
     grid-area: imagen;
 }
 
-#imagenes2 {
+.imagenes2 {
     display: flex;
     justify-content: space-evenly;
     grid-area: imagen;
 }
 
-#imagenes3 {
+.imagenes3 {
     display: flex;
     justify-content: space-evenly;
     grid-area: imagen;
+}
+
+.imagenes1 figure img {
+	-webkit-transform: rotate(15deg) scale(1.1);
+	transform: rotate(15deg) scale(1.1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.imagenes1 figure:hover img {
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+}
+
+.imagenes2 figure img {
+	-webkit-transform: rotate(15deg) scale(1.1);
+	transform: rotate(15deg) scale(1.1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.imagenes2 figure:hover img {
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+}
+
+.imagenes3 figure img {
+	-webkit-transform: rotate(15deg) scale(1.1);
+	transform: rotate(15deg) scale(1.1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.imagenes3 figure:hover img {
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
 }
 
 .svgprofes {
@@ -442,6 +498,7 @@ table {
 }
 
 .boxremeras {
+    
     padding: 2em;
     line-height: 2em;
     width: fit-content;
@@ -467,6 +524,17 @@ table {
     width: 20em; height: 22em;
 }
 
+.boxremeras figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.boxremeras figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
 .botoncompra {
     background-color: rgba(224, 56, 63, 1);
     color: white;
@@ -490,6 +558,7 @@ table {
     font-family: 'ReadexPro-Regular';
     font-size: 1.5em;
     color: black;
+    padding-top: 1em;
     padding-bottom: 1em;
 }
 
@@ -519,6 +588,10 @@ table {
     text-decoration: none;
     font-family: 'ReadexPro-Bold';
     filter: drop-shadow(5px 5px 5px #222);
+}
+
+.box {
+    display: flex;
 }
 
 .productos1 {
@@ -1197,15 +1270,15 @@ label{
             text-align: center;
         }
 
-        #imagenes1 {
+        .imagenes1 {
             display:none;
         }
     
-        #imagenes2 {
+        .imagenes2 {
             display:none;
         }
     
-        #imagenes3 {
+        .imagenes3 {
             display:none;
         }
 
