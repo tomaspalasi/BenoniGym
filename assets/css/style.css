@@ -24,6 +24,9 @@
 	src: url('../font/ReadexPro-Regular.ttf');
 }
 
+@media (prefers-color-scheme: light) {
+  }
+  
 /*--------------------------*/
 
 /* INICIO ESTILIZADO PRINCIPAL */
