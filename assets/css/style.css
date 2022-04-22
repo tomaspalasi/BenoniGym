@@ -24,9 +24,6 @@
 	src: url('../font/ReadexPro-Regular.ttf');
 }
 
-@media (prefers-color-scheme: light) {
-  }
-  
 /*--------------------------*/
 
 /* INICIO ESTILIZADO PRINCIPAL */
@@ -291,8 +288,8 @@ a {
 	transition: .3s ease-in-out;
 }
 .sponsors figure:hover img {
-	-webkit-transform: scale(1.4);
-	transform: scale(1.4);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 /* FIN HOME */
@@ -1206,7 +1203,7 @@ label{
         /* INICIO HORARIOS */
         
         .horarios {
-            margin-top: -10em;
+            margin-top: 4em;
         }
 
         table {
