@@ -1,0 +1,28 @@
+{
+  "name": "benoni",
+  "version": "1.0.0",
+  "description": "Pagina Benoni Team",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss assets/scss/style.scss assets/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomaspalasi/BenoniGym.git"
+  },
+  "author": "Tomas Palasi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomaspalasi/BenoniGym/issues"
+  },
+  "homepage": "https://github.com/tomaspalasi/BenoniGym#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

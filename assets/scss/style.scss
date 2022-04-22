@@ -1,0 +1,1795 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+	font-family: 'ReadexPro-Bold';
+	src: url('../font/ReadexPro-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'ReadexPro-Light';
+	src: url('../font/ReadexPro-Light.ttf');
+}
+
+@font-face {
+	font-family: 'ReadexPro-Medium';
+	src: url('../font/ReadexPro-Medium.ttf');
+}
+
+@font-face {
+	font-family: 'ReadexPro-Regular';
+	src: url('../font/ReadexPro-Regular.ttf');
+}
+
+/*--------------------------*/
+
+/* INICIO ESTILIZADO PRINCIPAL */
+
+
+body {
+    background-color:rgb(202, 198, 191);
+    min-height: 100vh;
+    background-image: url(../img/humo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    width: 100%;
+    height: 4.5em;
+    padding: 1em;
+    background-color: whitesmoke;
+    display: flex;
+    color: black;
+}
+
+.footer {
+    background-color: whitesmoke;
+    font-family: 'ReadexPro-Light';
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2.5em;
+    font-size: 1.5em;
+}
+
+/* FIN ESTILIZADO PRINCIPAL */
+
+
+/*--------------------------*/
+
+
+/* INICIO HEADER */
+
+.dropdown {
+    display: none;
+}
+
+nav {
+   width: 100%; 
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: flex;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+nav ul li a:hover{
+    background-color: rgb(8, 8, 8);
+    padding: 1em;
+    margin: -1em;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+    color: white;
+    transition: all .15s;
+}
+
+.login img:last-child{
+    display: none;
+}
+
+.login:hover img:last-child {
+    display: block;
+}
+
+.login:hover img:first-child {
+    display: none;
+}
+
+.logoinstagram img:last-child{
+    display: none;
+}
+
+.logoinstagram:hover img:last-child {
+    display: block;
+}
+
+.logoinstagram:hover img:first-child {
+    display: none;
+}
+
+/* FIN HEADER */
+
+
+/*--------------------------*/
+
+
+/* INICIO ESTILIZADO FUENTES */
+
+h1 {
+    font-family: 'ReadexPro-Bold';
+    font-size: 4em;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: 'ReadexPro-Medium';
+    font-size: 2.1em;
+    color: black;
+}
+
+h3 {
+    font-family: 'ReadexPro-Regular';
+    font-size: 2em;
+    color: black;
+}
+
+h4 {
+    font-family: 'ReadexPro-Regular';
+    font-size: 1.5em;
+    color: black;
+}
+
+p {
+    font-family: 'ReadexPro-Regular';
+    font-size: 1.3em;
+    color: black;
+}
+
+a {
+        font-family: 'ReadexPro-Regular';
+        font-size: .7em;
+        color: black;
+}
+
+/* FIN ESTILIZADO FUENTES */
+
+
+/*--------------------------*/
+
+
+/* INICIO ESTILIZADO IMG / VIDEO */
+
+.logos {
+    padding: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    filter: drop-shadow(5px 5px 5px #222);    
+}
+
+.login img{
+    width: 2em; height: 2em;
+}
+
+.logoinstagram img {
+    width: 2em; height: 2em;
+}
+
+#logobenoni {
+    width: 15em; height: 15em;
+    filter: drop-shadow(5px 5px 5px #222);    
+   }
+
+.logohome figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.logohome figure:hover img {
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+}
+
+.imgcuad {
+    width: 20em; height:20em;
+    filter: drop-shadow(5px 5px 5px #222);    
+}
+
+.imgcuad2 {
+    width: 29em; height:29em;
+    filter: drop-shadow(5px 5px 5px #222);    
+}
+
+.imgcuad3 {
+    width: 20em; height:20em;
+    filter: drop-shadow(5px 5px 5px #222);    
+}
+
+.imgcuadgr {
+    width: 65em; height: 45em;
+    filter: drop-shadow(5px 5px 5px #222);    
+}
+
+.imgrect {
+    width: 70em; height: 20em;
+    filter: drop-shadow(5px 5px 5px #222);    
+}
+
+.video {
+    width: 50vw; height: 30vw;
+    filter: drop-shadow(5px 5px 5px #222);    
+}
+
+.videoyt1 {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;  
+}
+
+.videoyt {
+    width: 50vw; height: 30vw;
+    filter: drop-shadow(5px 5px 5px #222);    
+}
+
+#videos {
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+/* FIN ESTILIZADO IMG / VIDEO */
+
+
+/*--------------------------*/
+
+
+/* INICIO HOME */
+
+.titulo {
+    line-height: 1em;
+    text-align: center;
+}
+
+.bienvenida {
+    padding: 1em;
+    text-align: center;
+}
+
+.sponsors {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+.sponsors figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.sponsors figure:hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/* FIN HOME */
+
+
+/*--------------------------*/
+
+
+/* INICIO NOSOTROS */
+
+.nosotros {
+    margin: 1%;
+}
+
+.boxnosotros {
+    padding: 1em;
+    line-height: 1.5em;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-color: rgb(112, 112, 112);
+    margin: .5em;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+/* FIN NOSOTROS */
+
+/*--------------------------*/
+
+
+/* INICIO HORARIOS */
+
+.filtro {
+    display: none;
+}
+
+.horarios {
+    margin: 1%;
+}
+
+td {
+    border: solid .05em black;
+    padding: .5em;
+}
+
+.docente {
+    background-color: rgb(220, 220, 220);
+}
+
+.martes {
+    background-color: rgb(220, 220, 220);
+}
+
+.jueves {
+    background-color: rgb(220, 220, 220);
+}
+
+.sabado {
+    background-color: rgb(220, 220, 220);
+}
+
+.textohorarios {
+    padding-bottom: 1em;
+}
+
+table {
+    font-family: 'ReadexPro-Regular';
+    font-size: 1.5em;
+    color: black;
+    column-width: auto;
+    border-style: solid;
+    border-spacing: .5em;
+}
+
+.titulotabla {
+    font-size: 2em;
+    font-family: 'ReadexPro-Bold';
+}
+
+.tabla  {
+    padding: 1em;
+    background-color: whitesmoke;
+    text-align: center;
+    display: grid;
+    border-style: solid;
+    border-color: rgb(112, 112, 112);
+    border-width: .5em;
+    filter: drop-shadow(5px 5px 5px #222);  
+}
+  
+/* FIN HORARIOS */
+
+
+/*--------------------------*/
+
+
+/* INICIO PROFESORES */
+
+.tituloprofes {
+    margin: 1%;
+}
+
+.boxprofes {
+    display: grid;
+    grid-template-areas: 'titulo'
+    'texto'
+    'imagen';
+    padding: 1.5em;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-color: rgb(112, 112, 112);
+    margin: 1em;
+    filter: drop-shadow(5px 5px 5px #222);
+    }
+
+.boxprofes h2 {
+    font-size: 2em;
+    grid-area: titulo;
+}
+
+.boxprofes p {
+    padding-top: 1em;
+    line-height: 1.3em;
+    grid-area: texto;
+}
+
+.imagenes1 {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: imagen;
+}
+
+.imagenes2 {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: imagen;
+}
+
+.imagenes3 {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: imagen;
+}
+
+.imagenes1 figure img {
+	-webkit-transform: rotate(15deg) scale(1.1);
+	transform: rotate(15deg) scale(1.1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.imagenes1 figure:hover img {
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+}
+
+.imagenes2 figure img {
+	-webkit-transform: rotate(15deg) scale(1.1);
+	transform: rotate(15deg) scale(1.1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.imagenes2 figure:hover img {
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+}
+
+.imagenes3 figure img {
+	-webkit-transform: rotate(15deg) scale(1.1);
+	transform: rotate(15deg) scale(1.1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.imagenes3 figure:hover img {
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+}
+
+.svgprofes {
+    width: 10em; height: 10em;
+}
+
+#elasticidad {
+    width: 10em; height: 10em;
+    display: none;
+}
+
+#resistencia {
+    width: 12em; height: 12em;
+    display: none
+}
+
+#fuerza {
+    width: 7em; height: 12em;
+    display: none
+}
+
+/* FIN PROFESORES */
+
+
+/*--------------------------*/
+
+
+/* INICIO SHOP */
+
+.shop {
+    margin: 1%;
+}
+
+.boxremeras {
+    
+    padding: 2em;
+    line-height: 2em;
+    width: fit-content;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-color: rgb(112, 112, 112);
+    margin-top: 2em;
+    filter: drop-shadow(5px 5px 5px rgb(80, 79, 79));
+}
+
+.tituloremera {
+    font-family: 'ReadexPro-Bold';
+    text-align: center;
+    font-size: 2.5em;
+    padding-bottom: 1em;
+}
+
+.subtitulomerch {
+    text-align: center;
+}
+
+.remeras {
+    width: 20em; height: 22em;
+}
+
+.boxremeras figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.boxremeras figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.botoncompra {
+    background-color: rgba(224, 56, 63, 1);
+    color: white;
+    padding: 1em;
+    border-radius: .5em;
+    cursor: pointer;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(5px 5px 5px #222);
+    margin: .5em;
+}
+
+.guiadetalles {
+    font-family: 'ReadexPro-Regular';
+    font-size: 1.5em;
+    color: black;
+}
+
+.precio {
+    font-family: 'ReadexPro-Regular';
+    font-size: 1.5em;
+    color: black;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.selecciontalle {
+    font-family: 'ReadexPro-Regular';
+    font-size: 1.5em;
+    color: black;
+    padding-bottom: .5em;
+}
+
+.cantidad {
+    font-family: 'ReadexPro-Regular';
+    font-size: 1.5em;
+    color: black;
+}
+
+.finalizarcompra {
+    background-color: rgba(224, 56, 63, 1);
+    color: white;
+    padding: 1em;
+    border-radius: .5em;
+    cursor: pointer;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+    text-decoration: none;
+    font-family: 'ReadexPro-Bold';
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.box {
+    display: flex;
+}
+
+.productos1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.productos2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.productos3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* FIN SHOP */
+
+
+/*--------------------------*/
+
+
+/* INICIO CONTACTO */
+
+.contacto {
+    margin: 1%;
+}
+
+.subtituloconsulta {
+    padding-bottom: 1em;
+    line-height: 2.5em;
+}
+
+.cuadroconsulta {
+    font-family: 'ReadexPro-Regular';
+    font-size: 1em;
+    color: black;
+    margin: 1em;
+}
+
+.boxcontacto {
+    padding: 2em;
+    line-height: 2em;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-color: rgb(112, 112, 112);
+}
+
+.btncontact {
+    display: flex;
+    margin: 1em;
+}
+
+.btnreset {
+    background-color: rgba(224, 56, 63, 1);
+    color: white;
+    padding: 1em;
+    border-radius: .5em;
+    cursor: pointer;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    margin-right: 4em;
+}
+
+.btnsend {
+    background-color: rgba(224, 56, 63, 1);
+    color: white;
+    padding: 1em;
+    border-radius: .5em;
+    cursor: pointer;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.terminos {
+    display: inline;
+}
+
+/* FIN CONTACTO */
+
+
+/*--------------------------*/
+
+
+/* INICIO REGISTRO - LOGIN */
+
+.logueate {
+    margin: 1%;
+}
+
+.registro {
+    margin: 1%;
+}
+
+.login {
+    margin: 1%;
+}
+
+.boxregistro {
+    padding: 1em;
+    line-height: 2.5em;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-color: rgb(112, 112, 112);
+}
+
+.boxlogin {
+    padding: 1em;
+    line-height: 2.5em;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-color: rgb(112, 112, 112);
+}
+
+form {
+    font-family: 'ReadexPro-Regular';
+    font-size: 1.4em;
+    color: black;
+}
+
+legend {
+    font-family: 'ReadexPro-Regular';
+    font-size: 1.5em;
+    color: black;
+}
+
+label{
+    font-family: 'ReadexPro-Regular';
+    font-size: 1em;
+    color: black;
+    margin: 1em;
+}
+
+/* FIN REGISTRO - LOGIN */
+
+@media (max-width: 1440px) {
+
+    /* ESCRITORIO GRANDE */
+
+    /* PARAMETROS GENERALES */
+    .header {
+        width: 100%;
+        height: 3.5em;
+        padding: .8em;
+    }
+
+    .footer {
+        height: 2em;
+        font-size: 1.3em;
+    }
+    /* FIN PARAMETROS GENERALES */
+    /* INICIO ESTILIZADO FUENTES */
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    li {
+            font-size: .9em;
+    }
+
+    /* FIN ESTILIZADO FUENTES */
+    /* INICIO ESTILIZADO IMG / VIDEO */
+
+    .logoinstagram img {
+        width: 1.8em; height: 1.8em;
+    }
+
+    .login img{
+        width: 1.8em; height: 1.8em;
+    }
+
+    #logobenoni {
+        width: 13.5em; height: 13.5em; 
+    }
+
+    .imgcuad {
+        width: 16em; height: 16em;
+    }
+
+    .imgcuad2 {
+        width: 23em; height:23em;  
+    }
+
+    .imgcuadgr {
+        width: 50em; height: 35em;
+    }
+
+    .imgrect {
+        width: 60em; height: 15em;    
+    }
+
+    .video {
+        width: 50vw; height: 30vw;   
+    }
+
+    .videoyt {
+        width: 50vw; height: 30vw;
+    }
+
+    /* FIN ESTILIZADO IMG / VIDEO */
+    /* INICIO HORARIOS */
+
+    table {
+        font-size: 1.2em;
+        border-spacing: .5em;
+    }
+
+    .titulotabla {
+        font-size: 1.8em;
+    }
+
+    /* FIN HORARIOS */
+    /* INICIO PROFESORES */
+
+    .boxprofes h2 {
+        font-size: 1.7em;
+    }
+
+    .boxprofes p {
+        line-height: 1.2em;
+    }
+
+    /* FIN PROFESORES */
+    /* INICIO SHOP */
+
+    .boxremeras {
+        padding: 1em;
+        line-height: 1.5em;
+        margin-top: 1.4em;
+    }
+
+    .tituloremera {
+        font-size: 2em;
+        padding-bottom: .5em;
+    }
+
+    .remeras {
+        width: 18em; height: 20em;
+    }
+
+    .botoncompra {
+        padding: .8em;
+        border-radius: .5em;
+        font-size: 1.2em;
+    }
+
+    .guiadetalles {
+        font-size: 1.2em;
+    }
+
+    .precio {
+        font-size: 1.2em;
+    }
+
+    .selecciontalle {
+        font-size: 1.2em;
+        padding-bottom: .3em;
+    }
+
+    .cantidad {
+        font-size: 1.2em;
+        margin-top: .5em;
+    }
+
+    .finalizarcompra {
+        padding: 1em;
+        border-radius: .5em;
+        font-size: 1.2em;
+        margin-top: 1em;
+    }
+
+    /* FIN SHOP */
+    /* INICIO CONTACTO */
+
+    .subtituloconsulta {
+        padding-bottom: 1em;
+        line-height: 2.1em;
+    }
+
+    .cuadroconsulta {
+        font-size: 1em;
+    }
+
+    .boxcontacto {
+        padding: 1em;
+        line-height: 2em;
+        font-size: 1em;
+    }
+
+    /* FIN CONTACTO */
+    /* INICIO REGISTRO - LOGIN */
+
+    form {
+        font-size: 1em;
+    }
+
+    /* FIN REGISTRO - LOGIN */
+
+}
+
+@media (max-width: 1024px) {
+    /* ESCRITORIO CHICO */
+
+        /* PARAMETROS GENERALES */
+        .header {
+            width: 100%;
+            height: 3em;
+        }
+    
+        .footer {
+            height: 1.8em;
+            font-size: 1em;
+        }
+        /* FIN PARAMETROS GENERALES */
+    
+        /* INICIO ESTILIZADO FUENTES */
+    
+        h1 {
+            font-size: 2.5em;
+        }
+    
+        h2 {
+            font-size: 1.4em;
+        }
+    
+        h3 {
+            font-size: 1em;
+        }
+    
+        h4 {
+            font-size: 1em;
+        }
+    
+        p {
+            font-size: 1em;
+        }
+    
+        li {
+                font-size: .7em;
+        }
+    
+        /* FIN ESTILIZADO FUENTES */
+        /* INICIO ESTILIZADO IMG / VIDEO */
+    
+        .logoinstagram img {
+            width: 1.5em; height: 1.5em;
+        }
+    
+        .login img{
+            width: 1.5em; height: 1.5em;
+        }
+    
+        #logobenoni {
+            width: 10em; height: 10em; 
+        }
+    
+        .imgcuad {
+            width: 13em; height: 13em;
+        }
+    
+        .imgcuad2 {
+            width: 18em; height: 18em;  
+        }
+    
+        .imgcuadgr {
+            width: 40em; height: 27em;
+        }
+    
+        .imgrect {
+            width: 50em; height: 13em;    
+        }
+    
+        .video {
+            width: 50vw; height: 30vw;   
+        }
+    
+        .videoyt {
+            width: 50vw; height: 30vw;
+        }
+    
+        /* FIN ESTILIZADO IMG / VIDEO */
+        /* INICIO HORARIOS */
+    
+        table {
+            font-size: 1em;
+        }
+    
+        .titulotabla {
+            font-size: 1.5em;
+        }
+    
+        /* FIN HORARIOS */
+        /* INICIO PROFESORES */
+    
+        .boxprofes h2 {
+            font-size: 1.5em;
+        }
+    
+        .boxprofes p {
+            line-height: 1em;
+        }
+    
+        /* FIN PROFESORES */
+        /* INICIO SHOP */
+    
+        .boxremeras {
+            padding: .6em;
+            line-height: 1.3em;
+            margin-top: 1em;
+        }
+    
+        .tituloremera {
+            font-size: 1.8em;
+            padding-bottom: .5em;
+        }
+    
+        .remeras {
+            width: 15em; height: 17em;
+        }
+    
+        .botoncompra {
+            padding: .6em;
+            font-size: 1em;
+        }
+    
+        .guiadetalles {
+            font-size: 1em;
+        }
+    
+        .precio {
+            font-size: 1em;
+        }
+    
+        .selecciontalle {
+            font-size: 1em;
+            padding-bottom: .2em;
+        }
+    
+        .cantidad {
+            font-size: 1em;
+            margin-top: .3em;
+        }
+    
+        .finalizarcompra {
+            padding: .8em;
+            font-size: 1.1em;
+            margin-top: 1em;
+        }
+    
+        /* FIN SHOP */
+        /* INICIO CONTACTO */
+    
+        .subtituloconsulta {
+            line-height: 1.8em;
+        }
+ 
+        /* FIN CONTACTO */
+    
+}
+
+@media (max-width: 810px) {
+    /* TABLET GRANDE*/
+
+        /* PARAMETROS GENERALES */
+
+        body {
+            display: grid;
+        }
+
+        .header {
+            width: 100%;
+            height: 3.8em;
+            display: grid;
+            grid-template-columns: 15em auto 6em;
+            border-bottom: solid rgb(116, 116, 116);
+        }
+    
+        .footer {
+            height: 2.5em;
+            font-size: 1em;
+        }
+        /* FIN PARAMETROS GENERALES */
+    
+        /* INICIO ESTILIZADO NAV */
+        
+        .dropdown {
+            display: block;
+            cursor: pointer;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            margin-top: -.3em;
+        }
+
+        #dropdownMenuButton1 {
+            color: transparent;
+            background-color: transparent;
+            border: none;
+            font-size: 1em;
+        }
+
+        .dropdown-menu {
+            font-size: 2.5em;
+            text-align: center;
+            background-color: whitesmoke;
+            border: solid rgb(116, 116, 116);
+            border-top: none;
+            border-radius: 0em;
+            border-bottom-left-radius: .5em;
+            border-bottom-right-radius: .5em;
+        }
+
+        nav {
+            display: none;
+        }
+
+        /* FIN ESTILIZADO NAV */
+        /* INICIO ESTILIZADO IMG / VIDEO */
+    
+        .logoinstagra img {
+            width: 1.5em; height: 1.5em;
+            margin-bottom: .5em;
+        }
+    
+        .login img{
+            width: 1.5em; height: 1.5em;
+            margin-bottom: .5em;
+        }
+    
+        #logobenoni {
+            width: 15em; height: 15em;
+        }
+    
+        .imgcuad {
+            width: 10em; height: 10em;
+        }
+    
+        .imgcuad2 {
+            width: 15em; height: 15em;  
+        }
+
+        .imgcuad3 {
+            width: 11em; height: 11em;  
+        }
+    
+        .imgcuadgr {
+            width: 70vw; height: 45vw
+        }
+    
+        .imgrect {
+            width: 30em; height: 9em; 
+        }
+    
+        .video {
+            width: 100%; height: 100%;
+        }
+    
+        .videoyt {
+            width: 88vw; height: 50vw;
+            margin-top: .5em;
+        }
+
+        .imgbtnmenu {
+            width: 2.7em;
+        }
+    
+        /* FIN ESTILIZADO IMG / VIDEO */
+        /* INICIO HOME*/
+
+        .titulo {
+            display: grid;
+            margin-top: 2em;
+        }
+
+        #videos {
+            display: block;
+        }
+
+        /* FIN HOME*/
+        /* INICIO NOSOTROS*/
+
+        .nosotros {
+            margin-top: 5em;
+        }
+
+        /* FIN NOSOTROS*/
+        /* INICIO HORARIOS */
+        
+        .horarios {
+            margin-top: 4em;
+        }
+
+        table {
+            font-size: 1em;
+        }
+    
+        .titulotabla {
+            font-size: 1.5em;
+        }
+    
+        /* FIN HORARIOS */
+        /* INICIO PROFESORES */
+    
+        .mainprofes {
+            margin-top: 2em;
+            display: grid;
+            grid-template-columns: repeat(3, 17em);
+            grid-template-rows: .5fr .8fr .5fr;
+        }
+
+        .tituloprofes {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .tarjetasprofes1 {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .tarjetasprofes2 {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .tarjetasprofes3 {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        .logos {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .boxprofes h2 {
+            font-size: 1.5em;
+            line-height: 1em;
+            text-align: center;
+        }
+
+        .boxprofes p {
+            line-height: 1.5em;
+            text-align: center;
+        }
+
+        .imagenes1 {
+            display:none;
+        }
+    
+        .imagenes2 {
+            display:none;
+        }
+    
+        .imagenes3 {
+            display:none;
+        }
+
+        #elasticidad {
+            display: flex;
+        }
+
+        #resistencia {
+            display: flex;
+        }
+
+        #fuerza {
+            display: flex;
+        }
+    
+        /* FIN PROFESORES */
+        /* INICIO SHOP */
+    
+        .shop {
+            margin-top: 4em;
+        }
+
+        .boxremeras {
+            padding: .6em;
+            line-height: 1.3em;
+            margin-top: 1em;
+        }
+    
+        .tituloremera {
+            font-size: 1.8em;
+            padding-bottom: .5em;
+        }
+    
+        .remeras {
+            width: 15em; height: 17em;
+        }
+    
+        .botoncompra {
+            padding: .6em;
+            font-size: 1em;
+        }
+    
+        .guiadetalles {
+            font-size: 1em;
+        }
+    
+        .precio {
+            font-size: 1em;
+        }
+    
+        .selecciontalle {
+            font-size: 1em;
+            padding-bottom: .2em;
+        }
+    
+        .cantidad {
+            font-size: 1em;
+            margin-top: .3em;
+        }
+    
+        .finalizarcompra {
+            padding: .8em;
+            font-size: 1.1em;
+            margin-top: 1em;
+        }
+    
+        /* FIN SHOP */
+        /* INICIO CONTACTO */
+        
+        .contacto {
+            margin-top: 4em;
+        }
+
+        .subtituloconsulta {
+            line-height: 1.8em;
+        }
+
+        .boxcontacto {
+            font-size: 1.3em;
+        }
+
+        .btncontact {
+            justify-content: center;
+        }
+ 
+        /* FIN CONTACTO */
+        /* INICIO REGISTRO */
+
+        .registro {
+            margin-top: 4em;
+        }
+
+        .boxregistro {
+            font-size: 1.3em;
+        }
+
+        /* INICIO REGISTRO */
+        /* INICIO LOGIN */
+
+        .logueate {
+            margin-top: 4em;
+        }
+
+        .boxlogin {
+            font-size: 1.3em;
+        }
+
+        /* FIN LOGIN */
+}
+
+@media (max-width: 540px) {
+    /* TABLET CHICA */
+
+    /* PARAMETROS GENERALES */
+
+    .footer {
+        display: inline-block;
+        text-align: center;
+        padding: 1em;
+        height: 4em;
+        font-size: 1em;
+    }
+    /* FIN PARAMETROS GENERALES */
+
+    /* INICIO ESTILIZADO NAV */
+       
+    .dropdown-menu {
+        font-size: 2.3em;
+    }
+
+    /* FIN ESTILIZADO NAV */
+    /* INICIO ESTILIZADO IMG / VIDEO */
+
+    #logobenoni{
+        width: 12em; height: 12em;
+    }
+
+    .imgcuad {
+        width: 15em; height: 15em;
+        margin-top: 1em;
+    }
+
+    .imgcuad2 {
+        width: 15em; height: 15em;  
+    }
+
+    .imgcuad3 {
+        width: 11em; height: 11em;  
+    }
+
+    .imgrect {
+        width: 45em; height: 12em; 
+    }
+
+    .video {
+        width: 100%; height: auto;
+    }
+
+    .videoyt {
+        width: 88vw; height: 50vw;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    /* FIN ESTILIZADO IMG / VIDEO */
+    /* INICIO HOME*/
+
+    .cuerpo {
+        display: grid;
+        grid-template-rows: repeat(5, auto);
+    }
+
+    .titulo {
+        margin-top: 4em;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .bienvenida {
+        text-align: center;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #videos {
+        display: block;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .sponsors {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    /* FIN HOME*/
+    /* INICIO NOSOTROS*/
+
+    .nosotros{
+        margin-top: 4em;
+    }
+
+    /* FIN NOSOTROS*/
+    /* INICIO HORARIOS */
+    
+    .horarios {
+        margin-top: 6em;
+    }
+
+    /* FIN HORARIOS */
+    /* INICIO PROFESORES */
+
+    .mainprofes {
+        margin-top: 3em;
+        display: grid;
+        grid-template-columns: 33em;
+        grid-template-areas: 
+        "titulo"
+        "tarjeta1"
+        "tarjeta2"
+        "tarjeta3"
+        "logo";
+    }
+
+    .tituloprofes {
+        grid-area: titulo;
+        text-align: center;
+    }
+
+    .tarjetasprofes1 {
+        grid-area: tarjeta1;
+    }
+
+    .tarjetasprofes2 {
+        grid-area: tarjeta2;
+    }
+
+    .tarjetasprofes3 {
+        grid-area: tarjeta3;
+    }
+
+    .logos {
+        grid-area: logo;
+    }
+
+    .imgcuadgr{
+        width: 70vw; height: 50vw;
+    }
+
+    .boxprofes img {
+        display: block;
+        margin: auto;
+    }
+
+    .boxprofes h2 {
+        font-size: 1.5em;
+        line-height: 1em;
+        text-align: center;
+    }
+
+    .boxprofes p {
+        line-height: 1.5em;
+        text-align: center;
+    }
+
+    
+
+    /* FIN PROFESORES */
+    /* INICIO SHOP */
+
+    .finalizarcompra {
+        padding: .8em;
+        font-size: 1.1em;
+    }
+
+    /* FIN SHOP */
+    /* INICIO CONTACTO */
+    
+    .contacto {
+        margin-top: 6em;
+    }
+
+    .boxcontacto {
+        font-size: 1em;
+    }
+
+    /* FIN CONTACTO */
+    /* INICIO REGISTRO */
+
+    .registro {
+        margin-top: 6em;
+    }
+
+    .boxregistro {
+        font-size: 1em;
+    }
+
+    /* INICIO REGISTRO */
+    /* INICIO LOGIN */
+
+    .boxlogin {
+        font-size: 1em;
+    }
+
+    /* FIN LOGIN */
+}
+
+@media (max-width: 428px) {
+    /* CELULAR GRANDE */
+
+/* PARAMETROS GENERALES */
+
+.footer {
+    height: 5em;
+}
+/* FIN PARAMETROS GENERALES */
+
+/* INICIO ESTILIZADO NAV */
+   
+.dropdown-menu {
+    font-size: 2.2em;
+}
+
+/* FIN ESTILIZADO NAV */
+/* INICIO ESTILIZADO IMG / VIDEO */
+
+.imgrect {
+    width: 35em; height: 9em; 
+}
+
+/* FIN ESTILIZADO IMG / VIDEO */
+/* INICIO HOME*/
+
+.titulo {
+    margin-top: 5em;
+}
+
+/* FIN HOME*/
+/* INICIO NOSOTROS*/
+
+.nosotros{
+    margin-top: 5em;
+}
+
+/* FIN NOSOTROS*/
+/* INICIO HORARIOS */
+
+.textohorarios {
+    text-align: center;
+}
+
+.horarios {
+    margin-top: 6em;
+}
+
+/* FIN HORARIOS */
+/* INICIO PROFESORES */
+
+.mainprofes {
+    margin-top: 4em;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+/* FIN PROFESORES */
+/* INICIO SHOP */
+
+.remeras {
+    width: 12em; height: 12em;
+}
+
+.boxremeras {
+    margin-top: 2em;
+}
+
+.finalizarcompra {
+    padding: .8em;
+    font-size: 1em;
+}
+
+/* FIN SHOP */
+/* INICIO CONTACTO */
+
+.contacto {
+    margin-top: 5em;
+}
+
+.boxcontacto {
+    font-size: .8em;
+}
+
+#terminos {
+    text-align: center;
+}
+
+/* FIN CONTACTO */
+/* INICIO REGISTRO */
+
+.registro {
+    margin-top: 5em;
+}
+
+.boxregistro {
+    font-size: .8em;
+}
+
+/* INICIO REGISTRO */
+/* INICIO LOGIN */
+
+.boxlogin {
+    font-size: .9em;
+}
+
+/* FIN LOGIN */
+}
+
+@media (max-width: 390px) {
+    /* PARAMETROS GENERALES */
+
+.footer {
+    height: 5em;
+    font-size: .8em;
+}
+/* FIN PARAMETROS GENERALES */
+/* INICIO ESTILIZADO IMG / VIDEO */
+
+.imgrect {
+    width: 30em; height: 7em; 
+}
+
+/* FIN ESTILIZADO IMG / VIDEO */
+/* INICIO NOSOTROS*/
+
+.nosotros{
+    margin-top: 6em;
+}
+
+.imgcuad2 {
+    width: 10em; height: 10em;
+}
+
+.imgcuad3 {
+    width: 7em; height: 7em;
+}
+
+/* FIN NOSOTROS*/
+/* INICIO HORARIOS */
+
+.textohorarios {
+   font-size: .9em;
+}
+
+.horarios {
+    margin-top: 6em;
+}
+
+/* FIN HORARIOS */
+/* INICIO PROFESORES */
+
+.mainprofes {
+    margin-top: 4em;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+/* FIN PROFESORES */
+/* INICIO SHOP */
+
+.shop {
+    margin-top: 6em
+}
+
+.remeras {
+    margin-left: 20%;
+}
+
+.finalizarcompra {
+    margin-right: .3em;
+}
+
+/* FIN SHOP */
+/* INICIO CONTACTO */
+
+.contacto {
+    margin-top: 6em;
+}
+
+.boxcontacto {
+    font-size: .7em;
+}
+
+/* FIN CONTACTO */
+/* INICIO REGISTRO */
+
+.registro {
+    margin-top: 6em;
+}
+
+/* FIN REGISTRO */
+/* INICIO LOGIN */
+
+.logueate {
+    margin-top: auto;
+}
+
+.boxlogin {
+    font-size: .7em;
+}
+
+/* FIN LOGIN */
+}
