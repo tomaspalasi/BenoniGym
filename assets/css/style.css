@@ -4,19 +4,19 @@
   margin: 0; }
 
 @font-face {
-  font-family: 'ReadexPro-Bold';
+  font-family: "ReadexPro-Bold";
   src: url("../font/ReadexPro-Bold.ttf"); }
 
 @font-face {
-  font-family: 'ReadexPro-Light';
+  font-family: "ReadexPro-Light";
   src: url("../font/ReadexPro-Light.ttf"); }
 
 @font-face {
-  font-family: 'ReadexPro-Medium';
+  font-family: "ReadexPro-Medium";
   src: url("../font/ReadexPro-Medium.ttf"); }
 
 @font-face {
-  font-family: 'ReadexPro-Regular';
+  font-family: "ReadexPro-Regular";
   src: url("../font/ReadexPro-Regular.ttf"); }
 
 /*--------------------------*/
@@ -39,7 +39,7 @@ body {
 
 .footer {
   background-color: whitesmoke;
-  font-family: 'ReadexPro-Light';
+  font-family: "ReadexPro-Light";
   color: black;
   display: flex;
   justify-content: center;
@@ -56,28 +56,25 @@ body {
 
 nav {
   width: 100%; }
-
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  width: 100%;
-  list-style: none;
-  flex-wrap: wrap; }
-
-nav ul li a {
-  display: flex;
-  text-decoration: none;
-  font-size: 1.3em; }
-
-nav ul li a:hover {
-  background-color: #080808;
-  padding: 1em;
-  margin: -1em;
-  border-bottom-left-radius: .5em;
-  border-bottom-right-radius: .5em;
-  color: white;
-  transition: all .15s; }
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    list-style: none;
+    flex-wrap: wrap; }
+    nav ul li a {
+      display: flex;
+      text-decoration: none;
+      font-size: 1.3em; }
+    nav ul li a:hover {
+      background-color: #080808;
+      padding: 1em;
+      margin: -1em;
+      border-bottom-left-radius: 0.5em;
+      border-bottom-right-radius: 0.5em;
+      color: white;
+      transition: all 0.15s; }
 
 .login img:last-child {
   display: none; }
@@ -101,35 +98,35 @@ nav ul li a:hover {
 /*--------------------------*/
 /* INICIO ESTILIZADO FUENTES */
 h1 {
-  font-family: 'ReadexPro-Bold';
+  font-family: "ReadexPro-Bold";
   font-size: 4em;
   color: black;
   text-align: center;
   text-decoration: underline; }
 
 h2 {
-  font-family: 'ReadexPro-Medium';
+  font-family: "ReadexPro-Medium";
   font-size: 2.1em;
   color: black; }
 
 h3 {
-  font-family: 'ReadexPro-Regular';
+  font-family: "ReadexPro-Regular";
   font-size: 2em;
   color: black; }
 
 h4 {
-  font-family: 'ReadexPro-Regular';
+  font-family: "ReadexPro-Regular";
   font-size: 1.5em;
   color: black; }
 
 p {
-  font-family: 'ReadexPro-Regular';
+  font-family: "ReadexPro-Regular";
   font-size: 1.3em;
   color: black; }
 
 a {
-  font-family: 'ReadexPro-Regular';
-  font-size: .7em;
+  font-family: "ReadexPro-Regular";
+  font-size: 0.7em;
   color: black; }
 
 /* FIN ESTILIZADO FUENTES */
@@ -157,8 +154,8 @@ a {
 .logohome figure img {
   -webkit-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out; }
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
 
 .logohome figure:hover img {
   -webkit-transform: scale(1.15);
@@ -225,16 +222,14 @@ a {
   grid-template-columns: auto auto auto;
   justify-content: space-evenly;
   padding: 2em; }
-
-.sponsors figure img {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out; }
-
-.sponsors figure:hover img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1); }
+  .sponsors figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+  .sponsors figure:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
 
 /* FIN HOME */
 /*--------------------------*/
@@ -248,7 +243,7 @@ a {
   background-color: whitesmoke;
   border-style: solid;
   border-color: #707070;
-  margin: .5em;
+  margin: 0.5em;
   filter: drop-shadow(5px 5px 5px #222); }
 
 /* FIN NOSOTROS */
@@ -261,8 +256,8 @@ a {
   margin: 1%; }
 
 td {
-  border: solid .05em black;
-  padding: .5em; }
+  border: solid 0.05em black;
+  padding: 0.5em; }
 
 .docente {
   background-color: gainsboro; }
@@ -280,16 +275,16 @@ td {
   padding-bottom: 1em; }
 
 table {
-  font-family: 'ReadexPro-Regular';
+  font-family: "ReadexPro-Regular";
   font-size: 1.5em;
   color: black;
   column-width: auto;
   border-style: solid;
-  border-spacing: .5em; }
+  border-spacing: 0.5em; }
 
 .titulotabla {
   font-size: 2em;
-  font-family: 'ReadexPro-Bold'; }
+  font-family: "ReadexPro-Bold"; }
 
 .tabla {
   padding: 1em;
@@ -298,7 +293,7 @@ table {
   display: grid;
   border-style: solid;
   border-color: #707070;
-  border-width: .5em;
+  border-width: 0.5em;
   filter: drop-shadow(5px 5px 5px #222); }
 
 /* FIN HORARIOS */
@@ -309,67 +304,59 @@ table {
 
 .boxprofes {
   display: grid;
-  grid-template-areas: 'titulo' 'texto' 'imagen';
+  grid-template-areas: "titulo" "texto" "imagen";
   padding: 1.5em;
   background-color: whitesmoke;
   border-style: solid;
   border-color: #707070;
   margin: 1em;
   filter: drop-shadow(5px 5px 5px #222); }
-
-.boxprofes h2 {
-  font-size: 2em;
-  grid-area: titulo; }
-
-.boxprofes p {
-  padding-top: 1em;
-  line-height: 1.3em;
-  grid-area: texto; }
+  .boxprofes h2 {
+    font-size: 2em;
+    grid-area: titulo; }
+  .boxprofes p {
+    padding-top: 1em;
+    line-height: 1.3em;
+    grid-area: texto; }
 
 .imagenes1 {
   display: flex;
   justify-content: space-evenly;
   grid-area: imagen; }
+  .imagenes1 figure img {
+    -webkit-transform: rotate(15deg) scale(1.1);
+    transform: rotate(15deg) scale(1.1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+  .imagenes1 figure:hover img {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1); }
 
 .imagenes2 {
   display: flex;
   justify-content: space-evenly;
   grid-area: imagen; }
+  .imagenes2 figure img {
+    -webkit-transform: rotate(15deg) scale(1.1);
+    transform: rotate(15deg) scale(1.1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+  .imagenes2 figure:hover img {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1); }
 
 .imagenes3 {
   display: flex;
   justify-content: space-evenly;
   grid-area: imagen; }
-
-.imagenes1 figure img {
-  -webkit-transform: rotate(15deg) scale(1.1);
-  transform: rotate(15deg) scale(1.1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out; }
-
-.imagenes1 figure:hover img {
-  -webkit-transform: rotate(0) scale(1);
-  transform: rotate(0) scale(1); }
-
-.imagenes2 figure img {
-  -webkit-transform: rotate(15deg) scale(1.1);
-  transform: rotate(15deg) scale(1.1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out; }
-
-.imagenes2 figure:hover img {
-  -webkit-transform: rotate(0) scale(1);
-  transform: rotate(0) scale(1); }
-
-.imagenes3 figure img {
-  -webkit-transform: rotate(15deg) scale(1.1);
-  transform: rotate(15deg) scale(1.1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out; }
-
-.imagenes3 figure:hover img {
-  -webkit-transform: rotate(0) scale(1);
-  transform: rotate(0) scale(1); }
+  .imagenes3 figure img {
+    -webkit-transform: rotate(15deg) scale(1.1);
+    transform: rotate(15deg) scale(1.1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+  .imagenes3 figure:hover img {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1); }
 
 .svgprofes {
   width: 10em;
@@ -405,9 +392,17 @@ table {
   border-color: #707070;
   margin-top: 2em;
   filter: drop-shadow(5px 5px 5px #504f4f); }
+  .boxremeras figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+  .boxremeras figure:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); }
 
 .tituloremera {
-  font-family: 'ReadexPro-Bold';
+  font-family: "ReadexPro-Bold";
   text-align: center;
   font-size: 2.5em;
   padding-bottom: 1em; }
@@ -419,48 +414,38 @@ table {
   width: 20em;
   height: 22em; }
 
-.boxremeras figure img {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out; }
-
-.boxremeras figure:hover img {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3); }
-
 .botoncompra {
   background-color: #e0383f;
   color: white;
   padding: 1em;
-  border-radius: .5em;
+  border-radius: 0.5em;
   cursor: pointer;
   font-size: 1.5em;
   display: flex;
   justify-content: center;
   filter: drop-shadow(5px 5px 5px #222);
-  margin: .5em; }
+  margin: 0.5em; }
 
 .guiadetalles {
-  font-family: 'ReadexPro-Regular';
+  font-family: "ReadexPro-Regular";
   font-size: 1.5em;
   color: black; }
 
 .precio {
-  font-family: 'ReadexPro-Regular';
+  font-family: "ReadexPro-Regular";
   font-size: 1.5em;
   color: black;
   padding-top: 1em;
   padding-bottom: 1em; }
 
 .selecciontalle {
-  font-family: 'ReadexPro-Regular';
+  font-family: "ReadexPro-Regular";
   font-size: 1.5em;
   color: black;
-  padding-bottom: .5em; }
+  padding-bottom: 0.5em; }
 
 .cantidad {
-  font-family: 'ReadexPro-Regular';
+  font-family: "ReadexPro-Regular";
   font-size: 1.5em;
   color: black; }
 
@@ -468,14 +453,14 @@ table {
   background-color: #e0383f;
   color: white;
   padding: 1em;
-  border-radius: .5em;
+  border-radius: 0.5em;
   cursor: pointer;
   font-size: 1.5em;
   display: flex;
   justify-content: center;
   margin-top: 1.5em;
   text-decoration: none;
-  font-family: 'ReadexPro-Bold';
+  font-family: "ReadexPro-Bold";
   filter: drop-shadow(5px 5px 5px #222); }
 
 .box {
@@ -507,7 +492,7 @@ table {
   line-height: 2.5em; }
 
 .cuadroconsulta {
-  font-family: 'ReadexPro-Regular';
+  font-family: "ReadexPro-Regular";
   font-size: 1em;
   color: black;
   margin: 1em; }
@@ -527,7 +512,7 @@ table {
   background-color: #e0383f;
   color: white;
   padding: 1em;
-  border-radius: .5em;
+  border-radius: 0.5em;
   cursor: pointer;
   font-size: 1em;
   display: flex;
@@ -538,7 +523,7 @@ table {
   background-color: #e0383f;
   color: white;
   padding: 1em;
-  border-radius: .5em;
+  border-radius: 0.5em;
   cursor: pointer;
   font-size: 1em;
   display: flex;
@@ -574,17 +559,17 @@ table {
   border-color: #707070; }
 
 form {
-  font-family: 'ReadexPro-Regular';
+  font-family: "ReadexPro-Regular";
   font-size: 1.4em;
   color: black; }
 
 legend {
-  font-family: 'ReadexPro-Regular';
+  font-family: "ReadexPro-Regular";
   font-size: 1.5em;
   color: black; }
 
 label {
-  font-family: 'ReadexPro-Regular';
+  font-family: "ReadexPro-Regular";
   font-size: 1em;
   color: black;
   margin: 1em; }
@@ -596,7 +581,7 @@ label {
   .header {
     width: 100%;
     height: 3.5em;
-    padding: .8em; }
+    padding: 0.8em; }
   .footer {
     height: 2em;
     font-size: 1.3em; }
@@ -613,7 +598,7 @@ label {
   p {
     font-size: 1.2em; }
   li {
-    font-size: .9em; }
+    font-size: 0.9em; }
   /* FIN ESTILIZADO FUENTES */
   /* INICIO ESTILIZADO IMG / VIDEO */
   .logoinstagram img {
@@ -647,7 +632,7 @@ label {
   /* INICIO HORARIOS */
   table {
     font-size: 1.2em;
-    border-spacing: .5em; }
+    border-spacing: 0.5em; }
   .titulotabla {
     font-size: 1.8em; }
   /* FIN HORARIOS */
@@ -664,13 +649,13 @@ label {
     margin-top: 1.4em; }
   .tituloremera {
     font-size: 2em;
-    padding-bottom: .5em; }
+    padding-bottom: 0.5em; }
   .remeras {
     width: 18em;
     height: 20em; }
   .botoncompra {
-    padding: .8em;
-    border-radius: .5em;
+    padding: 0.8em;
+    border-radius: 0.5em;
     font-size: 1.2em; }
   .guiadetalles {
     font-size: 1.2em; }
@@ -678,13 +663,13 @@ label {
     font-size: 1.2em; }
   .selecciontalle {
     font-size: 1.2em;
-    padding-bottom: .3em; }
+    padding-bottom: 0.3em; }
   .cantidad {
     font-size: 1.2em;
-    margin-top: .5em; }
+    margin-top: 0.5em; }
   .finalizarcompra {
     padding: 1em;
-    border-radius: .5em;
+    border-radius: 0.5em;
     font-size: 1.2em;
     margin-top: 1em; }
   /* FIN SHOP */
@@ -726,7 +711,7 @@ label {
   p {
     font-size: 1em; }
   li {
-    font-size: .7em; }
+    font-size: 0.7em; }
   /* FIN ESTILIZADO FUENTES */
   /* INICIO ESTILIZADO IMG / VIDEO */
   .logoinstagram img {
@@ -771,17 +756,17 @@ label {
   /* FIN PROFESORES */
   /* INICIO SHOP */
   .boxremeras {
-    padding: .6em;
+    padding: 0.6em;
     line-height: 1.3em;
     margin-top: 1em; }
   .tituloremera {
     font-size: 1.8em;
-    padding-bottom: .5em; }
+    padding-bottom: 0.5em; }
   .remeras {
     width: 15em;
     height: 17em; }
   .botoncompra {
-    padding: .6em;
+    padding: 0.6em;
     font-size: 1em; }
   .guiadetalles {
     font-size: 1em; }
@@ -789,12 +774,12 @@ label {
     font-size: 1em; }
   .selecciontalle {
     font-size: 1em;
-    padding-bottom: .2em; }
+    padding-bottom: 0.2em; }
   .cantidad {
     font-size: 1em;
-    margin-top: .3em; }
+    margin-top: 0.3em; }
   .finalizarcompra {
-    padding: .8em;
+    padding: 0.8em;
     font-size: 1.1em;
     margin-top: 1em; }
   /* FIN SHOP */
@@ -824,7 +809,7 @@ label {
     cursor: pointer;
     grid-column-start: 3;
     grid-column-end: 4;
-    margin-top: -.3em; }
+    margin-top: -0.3em; }
   #dropdownMenuButton1 {
     color: transparent;
     background-color: transparent;
@@ -837,20 +822,12 @@ label {
     border: solid #747474;
     border-top: none;
     border-radius: 0em;
-    border-bottom-left-radius: .5em;
-    border-bottom-right-radius: .5em; }
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em; }
   nav {
     display: none; }
   /* FIN ESTILIZADO NAV */
   /* INICIO ESTILIZADO IMG / VIDEO */
-  .logoinstagra img {
-    width: 1.5em;
-    height: 1.5em;
-    margin-bottom: .5em; }
-  .login img {
-    width: 1.5em;
-    height: 1.5em;
-    margin-bottom: .5em; }
   #logobenoni {
     width: 15em;
     height: 15em; }
@@ -875,7 +852,7 @@ label {
   .videoyt {
     width: 88vw;
     height: 50vw;
-    margin-top: .5em; }
+    margin-top: 0.5em; }
   .imgbtnmenu {
     width: 2.7em; }
   /* FIN ESTILIZADO IMG / VIDEO */
@@ -903,7 +880,7 @@ label {
     margin-top: 2em;
     display: grid;
     grid-template-columns: repeat(3, 17em);
-    grid-template-rows: .5fr .8fr .5fr; }
+    grid-template-rows: 0.5fr 0.8fr 0.5fr; }
   .tituloprofes {
     grid-row-start: 1;
     grid-row-end: 2;
@@ -953,17 +930,17 @@ label {
   .shop {
     margin-top: 4em; }
   .boxremeras {
-    padding: .6em;
+    padding: 0.6em;
     line-height: 1.3em;
     margin-top: 1em; }
   .tituloremera {
     font-size: 1.8em;
-    padding-bottom: .5em; }
+    padding-bottom: 0.5em; }
   .remeras {
     width: 15em;
     height: 17em; }
   .botoncompra {
-    padding: .6em;
+    padding: 0.6em;
     font-size: 1em; }
   .guiadetalles {
     font-size: 1em; }
@@ -971,12 +948,12 @@ label {
     font-size: 1em; }
   .selecciontalle {
     font-size: 1em;
-    padding-bottom: .2em; }
+    padding-bottom: 0.2em; }
   .cantidad {
     font-size: 1em;
-    margin-top: .3em; }
+    margin-top: 0.3em; }
   .finalizarcompra {
-    padding: .8em;
+    padding: 0.8em;
     font-size: 1.1em;
     margin-top: 1em; }
   /* FIN SHOP */
@@ -1107,7 +1084,7 @@ label {
   /* FIN PROFESORES */
   /* INICIO SHOP */
   .finalizarcompra {
-    padding: .8em;
+    padding: 0.8em;
     font-size: 1.1em; }
   /* FIN SHOP */
   /* INICIO CONTACTO */
@@ -1169,14 +1146,14 @@ label {
   .boxremeras {
     margin-top: 2em; }
   .finalizarcompra {
-    padding: .8em;
+    padding: 0.8em;
     font-size: 1em; }
   /* FIN SHOP */
   /* INICIO CONTACTO */
   .contacto {
     margin-top: 5em; }
   .boxcontacto {
-    font-size: .8em; }
+    font-size: 0.8em; }
   #terminos {
     text-align: center; }
   /* FIN CONTACTO */
@@ -1184,18 +1161,18 @@ label {
   .registro {
     margin-top: 5em; }
   .boxregistro {
-    font-size: .8em; }
+    font-size: 0.8em; }
   /* INICIO REGISTRO */
   /* INICIO LOGIN */
   .boxlogin {
-    font-size: .9em; }
+    font-size: 0.9em; }
   /* FIN LOGIN */ }
 
 @media (max-width: 390px) {
   /* PARAMETROS GENERALES */
   .footer {
     height: 5em;
-    font-size: .8em; }
+    font-size: 0.8em; }
   /* FIN PARAMETROS GENERALES */
   /* INICIO ESTILIZADO IMG / VIDEO */
   .imgrect {
@@ -1214,7 +1191,7 @@ label {
   /* FIN NOSOTROS*/
   /* INICIO HORARIOS */
   .textohorarios {
-    font-size: .9em; }
+    font-size: 0.9em; }
   .horarios {
     margin-top: 6em; }
   /* FIN HORARIOS */
@@ -1230,13 +1207,13 @@ label {
   .remeras {
     margin-left: 20%; }
   .finalizarcompra {
-    margin-right: .3em; }
+    margin-right: 0.3em; }
   /* FIN SHOP */
   /* INICIO CONTACTO */
   .contacto {
     margin-top: 6em; }
   .boxcontacto {
-    font-size: .7em; }
+    font-size: 0.7em; }
   /* FIN CONTACTO */
   /* INICIO REGISTRO */
   .registro {
@@ -1246,5 +1223,5 @@ label {
   .logueate {
     margin-top: auto; }
   .boxlogin {
-    font-size: .7em; }
+    font-size: 0.7em; }
   /* FIN LOGIN */ }
