@@ -24,12 +24,14 @@
   src: url("../font/ReadexPro-Regular.ttf");
 }
 
+@import 'variables';
+
 /*--------------------------*/
 
 /* INICIO ESTILIZADO PRINCIPAL */
 
 body {
-  background-color: rgb(202, 198, 191);
+  background-color: $color-body-background;
   min-height: 100vh;
   background-image: url(../img/humo.png);
   background-position: center;
@@ -41,15 +43,13 @@ body {
   width: 100%;
   height: 4.5em;
   padding: 1em;
-  background-color: whitesmoke;
+  background-color: $color-rest-background;
   display: flex;
-  color: black;
 }
 
 .footer {
-  background-color: whitesmoke;
+  background-color: $color-rest-background;
   font-family: "ReadexPro-Light";
-  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,9 +59,6 @@ body {
 }
 
 /* FIN ESTILIZADO PRINCIPAL */
-
-/*--------------------------*/
-
 /* INICIO HEADER */
 
 .dropdown {
@@ -84,42 +81,42 @@ nav {
         display: flex;
         text-decoration: none;
         font-size: 1.3em;
+        &:hover {
+            background-color: $color-nav-background;
+            padding: 1em;
+            margin: -1em;
+            border-bottom-left-radius: 0.5em;
+            border-bottom-right-radius: 0.5em;
+            color: $color-contrast-text;
+            transition: all 0.15s;
+          }
         }
-        a:hover {
-        background-color: rgb(8, 8, 8);
-        padding: 1em;
-        margin: -1em;
-        border-bottom-left-radius: 0.5em;
-        border-bottom-right-radius: 0.5em;
-        color: white;
-        transition: all 0.15s;
-      }
     }
   }
 }
 
-.login img:last-child {
-  display: none;
+.login {
+    img:last-child {
+        display: none;
+      }
+    &:hover img:last-child {
+        display: block;
+    }
+    &:hover img:first-child {
+        display: none;
+    }
 }
 
-.login:hover img:last-child {
-  display: block;
-}
-
-.login:hover img:first-child {
-  display: none;
-}
-
-.logoinstagram img:last-child {
-  display: none;
-}
-
-.logoinstagram:hover img:last-child {
-  display: block;
-}
-
-.logoinstagram:hover img:first-child {
-  display: none;
+.logoinstagram {
+    img:last-child {
+        display: none;
+    }
+    &:hover img:last-child {
+        display: block;
+    }
+    &:hover img:first-child {
+        display: none;
+    }
 }
 
 /* FIN HEADER */
@@ -131,7 +128,7 @@ nav {
 h1 {
   font-family: "ReadexPro-Bold";
   font-size: 4em;
-  color: black;
+  color: $color-body-text;
   text-align: center;
   text-decoration: underline;
 }
@@ -139,31 +136,31 @@ h1 {
 h2 {
   font-family: "ReadexPro-Medium";
   font-size: 2.1em;
-  color: black;
+  color: $color-body-text;
 }
 
 h3 {
   font-family: "ReadexPro-Regular";
   font-size: 2em;
-  color: black;
+  color: $color-body-text;
 }
 
 h4 {
   font-family: "ReadexPro-Regular";
   font-size: 1.5em;
-  color: black;
+  color: $color-body-text;
 }
 
 p {
   font-family: "ReadexPro-Regular";
   font-size: 1.3em;
-  color: black;
+  color: $color-body-text;
 }
 
 a {
   font-family: "ReadexPro-Regular";
   font-size: 0.7em;
-  color: black;
+  color: $color-body-text;
 }
 
 /* FIN ESTILIZADO FUENTES */
@@ -176,23 +173,27 @@ a {
   padding: 1em;
   display: flex;
   justify-content: space-evenly;
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: $shadow;
 }
 
-.login img {
-  width: 2em;
-  height: 2em;
+.login {
+    img {
+        width: 2em;
+        height: 2em;
+    }
 }
 
-.logoinstagram img {
-  width: 2em;
-  height: 2em;
+.logoinstagram {
+    img { 
+        width: 2em;
+        height: 2em;
+    }
 }
 
 #logobenoni {
   width: 15em;
   height: 15em;
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: $shadow;
 }
 
 .logohome {
@@ -202,7 +203,7 @@ a {
         -webkit-transition: 0.3s ease-in-out;
         transition: 0.3s ease-in-out;
       }
-    figure:hover img {
+    &:hover img {
         -webkit-transform: scale(1.15);
         transform: scale(1.15);
     }
@@ -211,37 +212,37 @@ a {
 .imgcuad {
   width: 20em;
   height: 20em;
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: $shadow;
 }
 
 .imgcuad2 {
   width: 29em;
   height: 29em;
-  filter: drop-shadow(5px 5px 5px #222);
+  filter:$shadow;
 }
 
 .imgcuad3 {
   width: 20em;
   height: 20em;
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: $shadow;
 }
 
 .imgcuadgr {
   width: 65em;
   height: 45em;
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: $shadow;
 }
 
 .imgrect {
   width: 70em;
   height: 20em;
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: $shadow;
 }
 
 .video {
   width: 50vw;
   height: 30vw;
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: $shadow;
 }
 
 .videoyt1 {
@@ -253,7 +254,7 @@ a {
 .videoyt {
   width: 50vw;
   height: 30vw;
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: $shadow;
 }
 
 #videos {
@@ -309,11 +310,11 @@ a {
 .boxnosotros {
   padding: 1em;
   line-height: 1.5em;
-  background-color: whitesmoke;
+  background-color: $color-rest-background;
   border-style: solid;
-  border-color: rgb(112, 112, 112);
+  border-color: $color-border;
   margin: 0.5em;
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: $shadow;
 }
 
 /* FIN NOSOTROS */
@@ -336,19 +337,19 @@ td {
 }
 
 .docente {
-  background-color: rgb(220, 220, 220);
+  background-color: $color-tabla;
 }
 
 .martes {
-  background-color: rgb(220, 220, 220);
+  background-color: $color-tabla;
 }
 
 .jueves {
-  background-color: rgb(220, 220, 220);
+  background-color: $color-tabla;
 }
 
 .sabado {
-  background-color: rgb(220, 220, 220);
+  background-color: $color-tabla;
 }
 
 .textohorarios {
@@ -358,7 +359,7 @@ td {
 table {
   font-family: "ReadexPro-Regular";
   font-size: 1.5em;
-  color: black;
+  color: $color-body-text;
   column-width: auto;
   border-style: solid;
   border-spacing: 0.5em;
@@ -371,13 +372,13 @@ table {
 
 .tabla {
   padding: 1em;
-  background-color: whitesmoke;
+  background-color: $color-rest-background;
   text-align: center;
   display: grid;
   border-style: solid;
-  border-color: rgb(112, 112, 112);
+  border-color: $color-border;
   border-width: 0.5em;
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: $shadow;
 }
 
 /* FIN HORARIOS */
@@ -397,11 +398,11 @@ table {
     "texto"
     "imagen";
   padding: 1.5em;
-  background-color: whitesmoke;
+  background-color: $color-rest-background;
   border-style: solid;
-  border-color: rgb(112, 112, 112);
+  border-color: $color-border;
   margin: 1em;
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: $shadow;
   
   h2 {
     font-size: 2em;
@@ -502,11 +503,11 @@ table {
   padding: 2em;
   line-height: 2em;
   width: fit-content;
-  background-color: whitesmoke;
+  background-color: $color-rest-background;
   border-style: solid;
-  border-color: rgb(112, 112, 112);
+  border-color: $color-border;
   margin-top: 2em;
-  filter: drop-shadow(5px 5px 5px rgb(80, 79, 79));
+  filter: $shadow;
 
   figure img {
     -webkit-transform: scale(1);
@@ -538,28 +539,28 @@ table {
 }
 
 .botoncompra {
-  background-color: rgba(224, 56, 63, 1);
-  color: white;
+  background-color: $color-btn;
+  color: $color-contrast-text;
   padding: 1em;
   border-radius: 0.5em;
   cursor: pointer;
   font-size: 1.5em;
   display: flex;
   justify-content: center;
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: $shadow;
   margin: 0.5em;
 }
 
 .guiadetalles {
   font-family: "ReadexPro-Regular";
   font-size: 1.5em;
-  color: black;
+  color: $color-body-text;
 }
 
 .precio {
   font-family: "ReadexPro-Regular";
   font-size: 1.5em;
-  color: black;
+  color: $color-body-text;
   padding-top: 1em;
   padding-bottom: 1em;
 }
@@ -567,19 +568,19 @@ table {
 .selecciontalle {
   font-family: "ReadexPro-Regular";
   font-size: 1.5em;
-  color: black;
+  color: $color-body-text;
   padding-bottom: 0.5em;
 }
 
 .cantidad {
   font-family: "ReadexPro-Regular";
   font-size: 1.5em;
-  color: black;
+  color: $color-body-text;
 }
 
 .finalizarcompra {
-  background-color: rgba(224, 56, 63, 1);
-  color: white;
+  background-color: $color-btn;
+  color: $color-contrast-text;
   padding: 1em;
   border-radius: 0.5em;
   cursor: pointer;
@@ -589,7 +590,7 @@ table {
   margin-top: 1.5em;
   text-decoration: none;
   font-family: "ReadexPro-Bold";
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: $shadow;
 }
 
 .box {
@@ -632,16 +633,16 @@ table {
 .cuadroconsulta {
   font-family: "ReadexPro-Regular";
   font-size: 1em;
-  color: black;
+  color: $color-body-text;
   margin: 1em;
 }
 
 .boxcontacto {
   padding: 2em;
   line-height: 2em;
-  background-color: whitesmoke;
+  background-color: $color-rest-background;
   border-style: solid;
-  border-color: rgb(112, 112, 112);
+  border-color: $color-border;
 }
 
 .btncontact {
@@ -650,8 +651,8 @@ table {
 }
 
 .btnreset {
-  background-color: rgba(224, 56, 63, 1);
-  color: white;
+  background-color: $color-btn;
+  color: $color-contrast-text;
   padding: 1em;
   border-radius: 0.5em;
   cursor: pointer;
@@ -662,8 +663,8 @@ table {
 }
 
 .btnsend {
-  background-color: rgba(224, 56, 63, 1);
-  color: white;
+  background-color: $color-btn;
+  color:$color-contrast-text;
   padding: 1em;
   border-radius: 0.5em;
   cursor: pointer;
@@ -697,35 +698,35 @@ table {
 .boxregistro {
   padding: 1em;
   line-height: 2.5em;
-  background-color: whitesmoke;
+  background-color: $color-rest-background;
   border-style: solid;
-  border-color: rgb(112, 112, 112);
+  border-color: $color-border;
 }
 
 .boxlogin {
   padding: 1em;
   line-height: 2.5em;
-  background-color: whitesmoke;
+  background-color: $color-rest-background;
   border-style: solid;
-  border-color: rgb(112, 112, 112);
+  border-color: $color-border;
 }
 
 form {
   font-family: "ReadexPro-Regular";
   font-size: 1.4em;
-  color: black;
+  color: $color-body-text;
 }
 
 legend {
   font-family: "ReadexPro-Regular";
   font-size: 1.5em;
-  color: black;
+  color: $color-body-text;
 }
 
 label {
   font-family: "ReadexPro-Regular";
   font-size: 1em;
-  color: black;
+  color: $color-body-text;
   margin: 1em;
 }
 
