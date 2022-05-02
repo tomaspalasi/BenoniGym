@@ -1,0 +1,30 @@
+
+@mixin h1 ($color-body-text, $h1) {
+    color: $color-body-text;
+    font-size: $h1;
+}
+
+@mixin h2 ($color-body-text, $h2) {
+    color: $color-body-text;
+    font-size: $h2;
+}
+
+@mixin h3 ($color-body-text, $h3) {
+    color: $color-body-text;
+    font-size: $h3;
+}
+
+@mixin h4 ($color-body-text, $h4) {
+    color: $color-body-text;
+    font-size: $h4;
+}
+
+@mixin p ($color-body-text, $p) {
+    color: $color-body-text;
+    font-size: $p;
+}
+
+@mixin a ($color-body-text, $a) {
+    color: $color-body-text;
+    font-size: $a;
+}

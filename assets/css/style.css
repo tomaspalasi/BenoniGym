@@ -19,6 +19,27 @@
   font-family: "ReadexPro-Regular";
   src: url("../font/ReadexPro-Regular.ttf"); }
 
+/* sombras */
+/* colores */
+/* darkmode
+
+$shadow-dm: drop-shadow(5px 5px 5px #222);
+$color-body-background-dm: rgb(0, 0, 0);
+$color-rest-background-dm: rgb(0, 0, 0);
+$color-nav-background-dm: black;
+$color-body-text-dm: rgb(255, 255, 255);
+$color-contrast-text: rgb(0, 0, 0);
+
+fin */
+.botontwitter {
+  color: #00acee; }
+
+.botonfacebook {
+  color: #3b5998; }
+
+.botoninstagram {
+  color: #E1306C; }
+
 /*--------------------------*/
 /* INICIO ESTILIZADO PRINCIPAL */
 body {
@@ -95,36 +116,36 @@ nav {
 /*--------------------------*/
 /* INICIO ESTILIZADO FUENTES */
 h1 {
-  font-family: "ReadexPro-Bold";
-  font-size: 4em;
   color: black;
+  font-size: 4em;
+  font-family: "ReadexPro-Bold";
   text-align: center;
   text-decoration: underline; }
 
 h2 {
-  font-family: "ReadexPro-Medium";
+  color: black;
   font-size: 2.1em;
-  color: black; }
+  font-family: "ReadexPro-Medium"; }
 
 h3 {
-  font-family: "ReadexPro-Regular";
+  color: black;
   font-size: 2em;
-  color: black; }
+  font-family: "ReadexPro-Regular"; }
 
 h4 {
-  font-family: "ReadexPro-Regular";
+  color: black;
   font-size: 1.5em;
-  color: black; }
+  font-family: "ReadexPro-Regular"; }
 
 p {
-  font-family: "ReadexPro-Regular";
+  color: black;
   font-size: 1.3em;
-  color: black; }
+  font-family: "ReadexPro-Regular"; }
 
 a {
-  font-family: "ReadexPro-Regular";
+  color: black;
   font-size: 0.7em;
-  color: black; }
+  font-family: "ReadexPro-Regular"; }
 
 /* FIN ESTILIZADO FUENTES */
 /*--------------------------*/
@@ -572,6 +593,8 @@ label {
   margin: 1em; }
 
 /* FIN REGISTRO - LOGIN */
+/*--------------------------*/
+/* INICIO MEDIA */
 @media (max-width: 1440px) {
   /* ESCRITORIO GRANDE */
   /* PARAMETROS GENERALES */
@@ -1226,3 +1249,28 @@ label {
   .boxlogin {
     font-size: 0.7em; }
   /* FIN LOGIN */ }
+
+/* FIN MEDIA */
+/*--------------------------*/
+/* INICIO DARKMODE 
+
+.darkmode-toggle {
+  background-color: transparent;
+  border: none;
+
+  .swapper {
+    width: 2.5em;
+    height: 2.5em;
+
+    &:hover {
+      background-color: $color-nav-background;
+      border-radius: 0.5em;
+      color: $color-contrast-text;
+      transition: all 0.15s;
+      transform: scale(1.2);
+    }
+    }
+  }
+}
+
+FIN DARKMODE */

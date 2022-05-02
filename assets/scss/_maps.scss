@@ -1,0 +1,17 @@
+$redes: (
+    twitter: #00acee,
+    facebook: #3b5998,
+    instagram: #E1306C,
+);
+
+.botontwitter {
+    color: map-get($map: $redes, $key: twitter)
+}
+
+.botonfacebook {
+    color: map-get($map: $redes, $key: facebook)
+}
+
+.botoninstagram {
+    color: map-get($map: $redes, $key: instagram)
+}

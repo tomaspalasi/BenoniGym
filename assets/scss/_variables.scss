@@ -1,4 +1,8 @@
+/* sombras */
+
 $shadow: drop-shadow(5px 5px 5px #222);
+
+/* colores */
 $color-body-background: rgb(202, 198, 191);
 $color-rest-background: whitesmoke;
 $color-nav-background: black;
@@ -7,3 +11,14 @@ $color-contrast-text: white;
 $color-border: rgb(112, 112, 112);
 $color-tabla: rgb(220, 220, 220);
 $color-btn: rgba(224, 56, 63, 1);
+
+/* darkmode
+
+$shadow-dm: drop-shadow(5px 5px 5px #222);
+$color-body-background-dm: rgb(0, 0, 0);
+$color-rest-background-dm: rgb(0, 0, 0);
+$color-nav-background-dm: black;
+$color-body-text-dm: rgb(255, 255, 255);
+$color-contrast-text: rgb(0, 0, 0);
+
+fin */
