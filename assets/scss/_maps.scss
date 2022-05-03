@@ -1,17 +1,10 @@
-$redes: (
-    twitter: #00acee,
-    facebook: #3b5998,
-    instagram: #E1306C,
+$colores: (
+    color-body-background: rgb(202, 198, 191),
+    color-rest-background: whitesmoke,
+    color-nav-background: black,
+    color-body-text: black,
+    color-contrast-text: white,
+    color-border: rgb(112, 112, 112),
+    color-tabla: rgb(220, 220, 220),
+    color-btn: rgba(224, 56, 63, 1),
 );
-
-.botontwitter {
-    color: map-get($map: $redes, $key: twitter)
-}
-
-.botonfacebook {
-    color: map-get($map: $redes, $key: facebook)
-}
-
-.botoninstagram {
-    color: map-get($map: $redes, $key: instagram)
-}

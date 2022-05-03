@@ -31,15 +31,6 @@ $color-body-text-dm: rgb(255, 255, 255);
 $color-contrast-text: rgb(0, 0, 0);
 
 fin */
-.botontwitter {
-  color: #00acee; }
-
-.botonfacebook {
-  color: #3b5998; }
-
-.botoninstagram {
-  color: #E1306C; }
-
 /*--------------------------*/
 /* INICIO ESTILIZADO PRINCIPAL */
 body {

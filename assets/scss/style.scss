@@ -33,7 +33,8 @@
 /* INICIO ESTILIZADO PRINCIPAL */
 
 body {
-  background-color: $color-body-background;
+  
+  background-color: map-get($map: $colores, $key: color-body-background);
   min-height: 100vh;
   background-image: url(../img/humo.png);
   background-position: center;
@@ -45,12 +46,12 @@ body {
   width: 100%;
   height: 4.5em;
   padding: 1em;
-  background-color: $color-rest-background;
+  background-color: map-get($map: $colores, $key: color-rest-background);
   display: flex;
 }
 
 .footer {
-  background-color: $color-rest-background;
+  background-color: map-get($map: $colores, $key: color-rest-background);
   font-family: "ReadexPro-Light";
   display: flex;
   justify-content: center;
@@ -84,12 +85,12 @@ nav {
         text-decoration: none;
         font-size: 1.3em;
         &:hover {
-            background-color: $color-nav-background;
+            background-color: map-get($map: $colores, $key: color-nav-background);
             padding: 1em;
             margin: -1em;
             border-bottom-left-radius: 0.5em;
             border-bottom-right-radius: 0.5em;
-            color: $color-contrast-text;
+            color: map-get($map: $colores, $key: color-contrast-text);
             transition: all 0.15s;
           }
         }
@@ -306,9 +307,9 @@ a {
 .boxnosotros {
   padding: 1em;
   line-height: 1.5em;
-  background-color: $color-rest-background;
+  background-color: map-get($map: $colores, $key: color-rest-background);
   border-style: solid;
-  border-color: $color-border;
+  border-color: map-get($map: $colores, $key: color-border);
   margin: 0.5em;
   filter: $shadow;
 }
@@ -333,19 +334,19 @@ td {
 }
 
 .docente {
-  background-color: $color-tabla;
+  background-color: map-get($map: $colores, $key: color-tabla);
 }
 
 .martes {
-  background-color: $color-tabla;
+  background-color: map-get($map: $colores, $key: color-tabla);
 }
 
 .jueves {
-  background-color: $color-tabla;
+  background-color: map-get($map: $colores, $key: color-tabla);
 }
 
 .sabado {
-  background-color: $color-tabla;
+  background-color: map-get($map: $colores, $key: color-tabla);
 }
 
 .textohorarios {
@@ -355,7 +356,7 @@ td {
 table {
   font-family: "ReadexPro-Regular";
   font-size: 1.5em;
-  color: $color-body-text;
+  color: map-get($map: $colores, $key: color-body-text);
   column-width: auto;
   border-style: solid;
   border-spacing: 0.5em;
@@ -368,11 +369,11 @@ table {
 
 .tabla {
   padding: 1em;
-  background-color: $color-rest-background;
+  background-color: map-get($map: $colores, $key: color-rest-background);
   text-align: center;
   display: grid;
   border-style: solid;
-  border-color: $color-border;
+  border-color: map-get($map: $colores, $key: color-border);
   border-width: 0.5em;
   filter: $shadow;
 }
@@ -394,9 +395,9 @@ table {
     "texto"
     "imagen";
   padding: 1.5em;
-  background-color: $color-rest-background;
+  background-color: map-get($map: $colores, $key: color-rest-background);
   border-style: solid;
-  border-color: $color-border;
+  border-color: map-get($map: $colores, $key: color-border);
   margin: 1em;
   filter: $shadow;
   
@@ -499,9 +500,9 @@ table {
   padding: 2em;
   line-height: 2em;
   width: fit-content;
-  background-color: $color-rest-background;
+  background-color: map-get($map: $colores, $key: color-rest-background);
   border-style: solid;
-  border-color: $color-border;
+  border-color: map-get($map: $colores, $key: color-border);
   margin-top: 2em;
   filter: $shadow;
 
@@ -535,8 +536,8 @@ table {
 }
 
 .botoncompra {
-  background-color: $color-btn;
-  color: $color-contrast-text;
+  background-color: map-get($map: $colores, $key: color-btn);
+  color: map-get($map: $colores, $key: color-contrast-text);
   padding: 1em;
   border-radius: 0.5em;
   cursor: pointer;
@@ -550,13 +551,13 @@ table {
 .guiadetalles {
   font-family: "ReadexPro-Regular";
   font-size: 1.5em;
-  color: $color-body-text;
+  color: map-get($map: $colores, $key: color-body-text);
 }
 
 .precio {
   font-family: "ReadexPro-Regular";
   font-size: 1.5em;
-  color: $color-body-text;
+  color: map-get($map: $colores, $key: color-body-text);
   padding-top: 1em;
   padding-bottom: 1em;
 }
@@ -564,19 +565,19 @@ table {
 .selecciontalle {
   font-family: "ReadexPro-Regular";
   font-size: 1.5em;
-  color: $color-body-text;
+  color: map-get($map: $colores, $key: color-body-text);
   padding-bottom: 0.5em;
 }
 
 .cantidad {
   font-family: "ReadexPro-Regular";
   font-size: 1.5em;
-  color: $color-body-text;
+  color: map-get($map: $colores, $key: color-body-text);
 }
 
 .finalizarcompra {
-  background-color: $color-btn;
-  color: $color-contrast-text;
+  background-color: map-get($map: $colores, $key: color-btn);
+  color: map-get($map: $colores, $key: color-contrast-text);
   padding: 1em;
   border-radius: 0.5em;
   cursor: pointer;
@@ -629,16 +630,16 @@ table {
 .cuadroconsulta {
   font-family: "ReadexPro-Regular";
   font-size: 1em;
-  color: $color-body-text;
+  color: map-get($map: $colores, $key: color-body-text);
   margin: 1em;
 }
 
 .boxcontacto {
   padding: 2em;
   line-height: 2em;
-  background-color: $color-rest-background;
+  background-color: map-get($map: $colores, $key: color-rest-background);
   border-style: solid;
-  border-color: $color-border;
+  border-color: map-get($map: $colores, $key: color-border);
 }
 
 .btncontact {
@@ -647,8 +648,8 @@ table {
 }
 
 .btnreset {
-  background-color: $color-btn;
-  color: $color-contrast-text;
+  background-color: map-get($map: $colores, $key: color-btn);
+  color: map-get($map: $colores, $key: color-contrast-text);
   padding: 1em;
   border-radius: 0.5em;
   cursor: pointer;
@@ -659,8 +660,8 @@ table {
 }
 
 .btnsend {
-  background-color: $color-btn;
-  color:$color-contrast-text;
+  background-color: map-get($map: $colores, $key: color-btn);
+  color:map-get($map: $colores, $key: color-contrast-text);
   padding: 1em;
   border-radius: 0.5em;
   cursor: pointer;
@@ -694,35 +695,35 @@ table {
 .boxregistro {
   padding: 1em;
   line-height: 2.5em;
-  background-color: $color-rest-background;
+  background-color: map-get($map: $colores, $key: color-rest-background);
   border-style: solid;
-  border-color: $color-border;
+  border-color: map-get($map: $colores, $key: color-border);
 }
 
 .boxlogin {
   padding: 1em;
   line-height: 2.5em;
-  background-color: $color-rest-background;
+  background-color: map-get($map: $colores, $key: color-rest-background);
   border-style: solid;
-  border-color: $color-border;
+  border-color: map-get($map: $colores, $key: color-border);
 }
 
 form {
   font-family: "ReadexPro-Regular";
   font-size: 1.4em;
-  color: $color-body-text;
+  color: map-get($map: $colores, $key: color-body-text);
 }
 
 legend {
   font-family: "ReadexPro-Regular";
   font-size: 1.5em;
-  color: $color-body-text;
+  color: map-get($map: $colores, $key: color-body-text);
 }
 
 label {
   font-family: "ReadexPro-Regular";
   font-size: 1em;
-  color: $color-body-text;
+  color: map-get($map: $colores, $key: color-body-text);
   margin: 1em;
 }
 
