@@ -428,12 +428,17 @@ table {
   color: white;
   padding: 1em;
   border-radius: 0.5em;
+  text-decoration: none;
   cursor: pointer;
   font-size: 1.5em;
   display: flex;
   justify-content: center;
   filter: drop-shadow(5px 5px 5px #222);
   margin: 0.5em; }
+  .botoncompra:hover {
+    transition: all .3s;
+    transform: scale(1.05);
+    color: white; }
 
 .guiadetalles {
   font-family: "ReadexPro-Regular";
@@ -471,6 +476,10 @@ table {
   text-decoration: none;
   font-family: "ReadexPro-Bold";
   filter: drop-shadow(5px 5px 5px #222); }
+  .finalizarcompra:hover {
+    background-color: green;
+    color: white;
+    transition: all .3s; }
 
 .box {
   display: flex; }
@@ -527,6 +536,10 @@ table {
   display: flex;
   justify-content: center;
   margin-right: 4em; }
+  .btnreset:hover {
+    transition: all .3s;
+    transform: scale(1.2);
+    color: white; }
 
 .btnsend {
   background-color: #e0383f;
@@ -537,6 +550,10 @@ table {
   font-size: 1em;
   display: flex;
   justify-content: center; }
+  .btnsend:hover {
+    transition: all .3s;
+    transform: scale(1.2);
+    color: white; }
 
 .terminos {
   display: inline; }

@@ -540,12 +540,19 @@ table {
   color: map-get($map: $colores, $key: color-contrast-text);
   padding: 1em;
   border-radius: 0.5em;
+  text-decoration: none;
   cursor: pointer;
   font-size: 1.5em;
   display: flex;
   justify-content: center;
   filter: $shadow;
   margin: 0.5em;
+  
+  &:hover {
+    transition: all .3s;
+    transform: scale(1.05);
+    color: map-get($map: $colores, $key: color-contrast-text);
+  }
 }
 
 .guiadetalles {
@@ -588,6 +595,12 @@ table {
   text-decoration: none;
   font-family: "ReadexPro-Bold";
   filter: $shadow;
+
+  &:hover {
+    background-color: map-get($map: $colores, $key: color-btn-finish);
+    color: map-get($map: $colores, $key: color-contrast-text);
+    transition: all .3s;
+  }
 }
 
 .box {
@@ -657,6 +670,12 @@ table {
   display: flex;
   justify-content: center;
   margin-right: 4em;
+
+  &:hover {
+    transition: all .3s;
+    transform: scale(1.2);
+    color: map-get($map: $colores, $key: color-contrast-text);
+  }
 }
 
 .btnsend {
@@ -668,6 +687,12 @@ table {
   font-size: 1em;
   display: flex;
   justify-content: center;
+
+  &:hover {
+    transition: all .3s;
+    transform: scale(1.2);
+    color: map-get($map: $colores, $key: color-contrast-text);
+  }
 }
 
 .terminos {
