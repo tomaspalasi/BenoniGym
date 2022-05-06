@@ -761,17 +761,28 @@ label {
 .darkmode-toggle {
   background-color: transparent;
   border: none;
+  
+  img:last-child {
+    display: none;
+  }
+  
+  &:hover img:last-child {
+    display: block;
+  }
+
+  &:hover img:first-child {
+    display: none;
+  }
 
   .swapper {
     width: 2em;
     height: 2em;
-
+    
     &:hover {
       background-color: $color-nav-background;
       border-radius: 0.5em;
-      color: whitesmoke;
       transition: all 0.15s;
-      transform: scale(1.2);
+      transform: scale(1.3);
     }
   }
 }
@@ -781,7 +792,20 @@ body.dark {
   transition: $delay;
 /* INICIO ESTILIZADO PRINCIPAL */
   .darkmode-toggle {
-    color: whitesmoke;
+
+    img:last-child {
+      display: block;
+      margin-top: -1.8em;
+    }
+    
+    &:hover img:last-child {
+      display: none;
+    }
+  
+    &:hover img:first-child {
+      display: block;
+    }
+
     .swapper:hover{
       background-color: $color-nav-background-dm;
       color: rgb(0, 0, 0);
@@ -1169,8 +1193,9 @@ label {
 
   .darkmode-toggle{
     .swapper {
-      width: 1.5em;
-      height: 1.5em;
+      width: 1.4em;
+      height: 1.4em;
+      margin-top: .4em;
     }
   }
 
