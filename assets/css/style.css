@@ -595,671 +595,13 @@ label {
 
 /* FIN REGISTRO - LOGIN */
 /*--------------------------*/
-/* INICIO MEDIA */
-@media (max-width: 1440px) {
-  /* ESCRITORIO GRANDE */
-  /* PARAMETROS GENERALES */
-  .header {
-    width: 100%;
-    height: 3.5em;
-    padding: 0.8em; }
-  .footer {
-    height: 2em;
-    font-size: 1.3em; }
-  /* FIN PARAMETROS GENERALES */
-  /* INICIO ESTILIZADO FUENTES */
-  h1 {
-    font-size: 3em; }
-  h2 {
-    font-size: 1.8em; }
-  h3 {
-    font-size: 1.5em; }
-  h4 {
-    font-size: 1em; }
-  p {
-    font-size: 1.2em; }
-  li {
-    font-size: 0.9em; }
-  /* FIN ESTILIZADO FUENTES */
-  /* INICIO ESTILIZADO IMG / VIDEO */
-  .logoinstagram img {
-    width: 1.8em;
-    height: 1.8em; }
-  .login img {
-    width: 1.8em;
-    height: 1.8em; }
-  #logobenoni {
-    width: 13.5em;
-    height: 13.5em; }
-  .imgcuad {
-    width: 16em;
-    height: 16em; }
-  .imgcuad2 {
-    width: 23em;
-    height: 23em; }
-  .imgcuadgr {
-    width: 50em;
-    height: 35em; }
-  .imgrect {
-    width: 60em;
-    height: 15em; }
-  .video {
-    width: 50vw;
-    height: 30vw; }
-  .videoyt {
-    width: 50vw;
-    height: 30vw; }
-  /* FIN ESTILIZADO IMG / VIDEO */
-  /* INICIO HORARIOS */
-  table {
-    font-size: 1.2em;
-    border-spacing: 0.5em; }
-  .titulotabla {
-    font-size: 1.8em; }
-  /* FIN HORARIOS */
-  /* INICIO PROFESORES */
-  .boxprofes h2 {
-    font-size: 1.7em; }
-  .boxprofes p {
-    line-height: 1.2em; }
-  /* FIN PROFESORES */
-  /* INICIO SHOP */
-  .boxremeras {
-    padding: 1em;
-    line-height: 1.5em;
-    margin-top: 1.4em; }
-  .tituloremera {
-    font-size: 2em;
-    padding-bottom: 0.5em; }
-  .remeras {
-    width: 18em;
-    height: 20em; }
-  .botoncompra {
-    padding: 0.8em;
-    border-radius: 0.5em;
-    font-size: 1.2em; }
-  .guiadetalles {
-    font-size: 1.2em; }
-  .precio {
-    font-size: 1.2em; }
-  .selecciontalle {
-    font-size: 1.2em;
-    padding-bottom: 0.3em; }
-  .cantidad {
-    font-size: 1.2em;
-    margin-top: 0.5em; }
-  .finalizarcompra {
-    padding: 1em;
-    border-radius: 0.5em;
-    font-size: 1.2em;
-    margin-top: 1em; }
-  /* FIN SHOP */
-  /* INICIO CONTACTO */
-  .subtituloconsulta {
-    padding-bottom: 1em;
-    line-height: 2.1em; }
-  .cuadroconsulta {
-    font-size: 1em; }
-  .boxcontacto {
-    padding: 1em;
-    line-height: 2em;
-    font-size: 1em; }
-  /* FIN CONTACTO */
-  /* INICIO REGISTRO - LOGIN */
-  form {
-    font-size: 1em; }
-  /* FIN REGISTRO - LOGIN */ }
-
-@media (max-width: 1024px) {
-  /* ESCRITORIO CHICO */
-  /* PARAMETROS GENERALES */
-  .header {
-    width: 100%;
-    height: 3em; }
-  .footer {
-    height: 1.8em;
-    font-size: 1em; }
-  /* FIN PARAMETROS GENERALES */
-  /* INICIO ESTILIZADO FUENTES */
-  h1 {
-    font-size: 2.5em; }
-  h2 {
-    font-size: 1.4em; }
-  h3 {
-    font-size: 1em; }
-  h4 {
-    font-size: 1em; }
-  p {
-    font-size: 1em; }
-  li {
-    font-size: 0.7em; }
-  /* FIN ESTILIZADO FUENTES */
-  /* INICIO ESTILIZADO IMG / VIDEO */
-  .logoinstagram img {
-    width: 1.5em;
-    height: 1.5em; }
-  .login img {
-    width: 1.5em;
-    height: 1.5em; }
-  #logobenoni {
-    width: 10em;
-    height: 10em; }
-  .imgcuad {
-    width: 13em;
-    height: 13em; }
-  .imgcuad2 {
-    width: 18em;
-    height: 18em; }
-  .imgcuadgr {
-    width: 40em;
-    height: 27em; }
-  .imgrect {
-    width: 50em;
-    height: 13em; }
-  .video {
-    width: 50vw;
-    height: 30vw; }
-  .videoyt {
-    width: 50vw;
-    height: 30vw; }
-  /* FIN ESTILIZADO IMG / VIDEO */
-  /* INICIO HORARIOS */
-  table {
-    font-size: 1em; }
-  .titulotabla {
-    font-size: 1.5em; }
-  /* FIN HORARIOS */
-  /* INICIO PROFESORES */
-  .boxprofes h2 {
-    font-size: 1.5em; }
-  .boxprofes p {
-    line-height: 1em; }
-  /* FIN PROFESORES */
-  /* INICIO SHOP */
-  .boxremeras {
-    padding: 0.6em;
-    line-height: 1.3em;
-    margin-top: 1em; }
-  .tituloremera {
-    font-size: 1.8em;
-    padding-bottom: 0.5em; }
-  .remeras {
-    width: 15em;
-    height: 17em; }
-  .botoncompra {
-    padding: 0.6em;
-    font-size: 1em; }
-  .guiadetalles {
-    font-size: 1em; }
-  .precio {
-    font-size: 1em; }
-  .selecciontalle {
-    font-size: 1em;
-    padding-bottom: 0.2em; }
-  .cantidad {
-    font-size: 1em;
-    margin-top: 0.3em; }
-  .finalizarcompra {
-    padding: 0.8em;
-    font-size: 1.1em;
-    margin-top: 1em; }
-  /* FIN SHOP */
-  /* INICIO CONTACTO */
-  .subtituloconsulta {
-    line-height: 1.8em; }
-  /* FIN CONTACTO */ }
-
-@media (max-width: 810px) {
-  /* TABLET GRANDE*/
-  /* PARAMETROS GENERALES */
-  body {
-    display: grid; }
-  .header {
-    width: 100%;
-    height: 3.8em;
-    display: grid;
-    grid-template-columns: 15em auto 6em;
-    border-bottom: solid #747474; }
-  .footer {
-    height: 2.5em;
-    font-size: 1em; }
-  /* FIN PARAMETROS GENERALES */
-  /* INICIO ESTILIZADO NAV */
-  .dropdown {
-    display: block;
-    cursor: pointer;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    margin-top: -0.3em; }
-  #dropdownMenuButton1 {
-    color: transparent;
-    background-color: transparent;
-    border: none;
-    font-size: 1em; }
-  .dropdown-menu {
-    font-size: 2.5em;
-    text-align: center;
-    background-color: whitesmoke;
-    border: solid #747474;
-    border-top: none;
-    border-radius: 0em;
-    border-bottom-left-radius: 0.5em;
-    border-bottom-right-radius: 0.5em; }
-  nav {
-    display: none; }
-  /* FIN ESTILIZADO NAV */
-  /* INICIO ESTILIZADO IMG / VIDEO */
-  #logobenoni {
-    width: 15em;
-    height: 15em; }
-  .imgcuad {
-    width: 10em;
-    height: 10em; }
-  .imgcuad2 {
-    width: 15em;
-    height: 15em; }
-  .imgcuad3 {
-    width: 11em;
-    height: 11em; }
-  .imgcuadgr {
-    width: 70vw;
-    height: 45vw; }
-  .imgrect {
-    width: 30em;
-    height: 9em; }
-  .video {
-    width: 100%;
-    height: 100%; }
-  .videoyt {
-    width: 88vw;
-    height: 50vw;
-    margin-top: 0.5em; }
-  .imgbtnmenu {
-    width: 2.7em; }
-  /* FIN ESTILIZADO IMG / VIDEO */
-  /* INICIO HOME*/
-  .titulo {
-    display: grid;
-    margin-top: 2em; }
-  #videos {
-    display: block; }
-  /* FIN HOME*/
-  /* INICIO NOSOTROS*/
-  .nosotros {
-    margin-top: 5em; }
-  /* FIN NOSOTROS*/
-  /* INICIO HORARIOS */
-  .horarios {
-    margin-top: 4em; }
-  table {
-    font-size: 1em; }
-  .titulotabla {
-    font-size: 1.5em; }
-  /* FIN HORARIOS */
-  /* INICIO PROFESORES */
-  .mainprofes {
-    margin-top: 2em;
-    display: grid;
-    grid-template-columns: repeat(3, 17em);
-    grid-template-rows: 0.5fr 0.8fr 0.5fr; }
-  .tituloprofes {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 4; }
-  .tarjetasprofes1 {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2; }
-  .tarjetasprofes2 {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3; }
-  .tarjetasprofes3 {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 4; }
-  .logos {
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 4; }
-  .boxprofes h2 {
-    font-size: 1.5em;
-    line-height: 1em;
-    text-align: center; }
-  .boxprofes p {
-    line-height: 1.5em;
-    text-align: center; }
-  .imagenes1 {
-    display: none; }
-  .imagenes2 {
-    display: none; }
-  .imagenes3 {
-    display: none; }
-  #elasticidad {
-    display: flex; }
-  #resistencia {
-    display: flex; }
-  #fuerza {
-    display: flex; }
-  /* FIN PROFESORES */
-  /* INICIO SHOP */
-  .shop {
-    margin-top: 4em; }
-  .boxremeras {
-    padding: 0.6em;
-    line-height: 1.3em;
-    margin-top: 1em; }
-  .tituloremera {
-    font-size: 1.8em;
-    padding-bottom: 0.5em; }
-  .remeras {
-    width: 15em;
-    height: 17em; }
-  .botoncompra {
-    padding: 0.6em;
-    font-size: 1em; }
-  .guiadetalles {
-    font-size: 1em; }
-  .precio {
-    font-size: 1em; }
-  .selecciontalle {
-    font-size: 1em;
-    padding-bottom: 0.2em; }
-  .cantidad {
-    font-size: 1em;
-    margin-top: 0.3em; }
-  .finalizarcompra {
-    padding: 0.8em;
-    font-size: 1.1em;
-    margin-top: 1em; }
-  /* FIN SHOP */
-  /* INICIO CONTACTO */
-  .contacto {
-    margin-top: 4em; }
-  .subtituloconsulta {
-    line-height: 1.8em; }
-  .boxcontacto {
-    font-size: 1.3em; }
-  .btncontact {
-    justify-content: center; }
-  /* FIN CONTACTO */
-  /* INICIO REGISTRO */
-  .registro {
-    margin-top: 4em; }
-  .boxregistro {
-    font-size: 1.3em; }
-  /* INICIO REGISTRO */
-  /* INICIO LOGIN */
-  .logueate {
-    margin-top: 4em; }
-  .boxlogin {
-    font-size: 1.3em; }
-  /* FIN LOGIN */ }
-
-@media (max-width: 540px) {
-  /* TABLET CHICA */
-  /* PARAMETROS GENERALES */
-  .footer {
-    display: inline-block;
-    text-align: center;
-    padding: 1em;
-    height: 4em;
-    font-size: 1em; }
-  /* FIN PARAMETROS GENERALES */
-  /* INICIO ESTILIZADO NAV */
-  .dropdown-menu {
-    font-size: 2.3em; }
-  /* FIN ESTILIZADO NAV */
-  /* INICIO ESTILIZADO IMG / VIDEO */
-  #logobenoni {
-    width: 12em;
-    height: 12em; }
-  .imgcuad {
-    width: 15em;
-    height: 15em;
-    margin-top: 1em; }
-  .imgcuad2 {
-    width: 15em;
-    height: 15em; }
-  .imgcuad3 {
-    width: 11em;
-    height: 11em; }
-  .imgrect {
-    width: 45em;
-    height: 12em; }
-  .video {
-    width: 100%;
-    height: auto; }
-  .videoyt {
-    width: 88vw;
-    height: 50vw;
-    margin-top: 1em;
-    margin-bottom: 1em; }
-  /* FIN ESTILIZADO IMG / VIDEO */
-  /* INICIO HOME*/
-  .cuerpo {
-    display: grid;
-    grid-template-rows: repeat(5, auto); }
-  .titulo {
-    margin-top: 4em;
-    grid-row-start: 1;
-    grid-row-end: 2; }
-  .bienvenida {
-    text-align: center;
-    grid-row-start: 2;
-    grid-row-end: 3; }
-  #videos {
-    display: block;
-    grid-row-start: 3;
-    grid-row-end: 4; }
-  .sponsors {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-row-start: 4;
-    grid-row-end: 5; }
-  /* FIN HOME*/
-  /* INICIO NOSOTROS*/
-  .nosotros {
-    margin-top: 4em; }
-  /* FIN NOSOTROS*/
-  /* INICIO HORARIOS */
-  .horarios {
-    margin-top: 6em; }
-  /* FIN HORARIOS */
-  /* INICIO PROFESORES */
-  .mainprofes {
-    margin-top: 3em;
-    display: grid;
-    grid-template-columns: 33em;
-    grid-template-areas: "titulo" "tarjeta1" "tarjeta2" "tarjeta3" "logo"; }
-  .tituloprofes {
-    grid-area: titulo;
-    text-align: center; }
-  .tarjetasprofes1 {
-    grid-area: tarjeta1; }
-  .tarjetasprofes2 {
-    grid-area: tarjeta2; }
-  .tarjetasprofes3 {
-    grid-area: tarjeta3; }
-  .logos {
-    grid-area: logo; }
-  .imgcuadgr {
-    width: 70vw;
-    height: 50vw; }
-  .boxprofes img {
-    display: block;
-    margin: auto; }
-  .boxprofes h2 {
-    font-size: 1.5em;
-    line-height: 1em;
-    text-align: center; }
-  .boxprofes p {
-    line-height: 1.5em;
-    text-align: center; }
-  /* FIN PROFESORES */
-  /* INICIO SHOP */
-  .finalizarcompra {
-    padding: 0.8em;
-    font-size: 1.1em; }
-  /* FIN SHOP */
-  /* INICIO CONTACTO */
-  .contacto {
-    margin-top: 6em; }
-  .boxcontacto {
-    font-size: 1em; }
-  /* FIN CONTACTO */
-  /* INICIO REGISTRO */
-  .registro {
-    margin-top: 6em; }
-  .boxregistro {
-    font-size: 1em; }
-  /* INICIO REGISTRO */
-  /* INICIO LOGIN */
-  .boxlogin {
-    font-size: 1em; }
-  /* FIN LOGIN */ }
-
-@media (max-width: 428px) {
-  /* CELULAR GRANDE */
-  /* PARAMETROS GENERALES */
-  .footer {
-    height: 5em; }
-  /* FIN PARAMETROS GENERALES */
-  /* INICIO ESTILIZADO NAV */
-  .dropdown-menu {
-    font-size: 2.2em; }
-  /* FIN ESTILIZADO NAV */
-  /* INICIO ESTILIZADO IMG / VIDEO */
-  .imgrect {
-    width: 35em;
-    height: 9em; }
-  /* FIN ESTILIZADO IMG / VIDEO */
-  /* INICIO HOME*/
-  .titulo {
-    margin-top: 5em; }
-  /* FIN HOME*/
-  /* INICIO NOSOTROS*/
-  .nosotros {
-    margin-top: 5em; }
-  /* FIN NOSOTROS*/
-  /* INICIO HORARIOS */
-  .textohorarios {
-    text-align: center; }
-  .horarios {
-    margin-top: 6em; }
-  /* FIN HORARIOS */
-  /* INICIO PROFESORES */
-  .mainprofes {
-    margin-top: 4em;
-    display: grid;
-    grid-template-columns: auto; }
-  /* FIN PROFESORES */
-  /* INICIO SHOP */
-  .remeras {
-    width: 12em;
-    height: 12em; }
-  .boxremeras {
-    margin-top: 2em; }
-  .finalizarcompra {
-    padding: 0.8em;
-    font-size: 1em; }
-  /* FIN SHOP */
-  /* INICIO CONTACTO */
-  .contacto {
-    margin-top: 5em; }
-  .boxcontacto {
-    font-size: 0.8em; }
-  #terminos {
-    text-align: center; }
-  /* FIN CONTACTO */
-  /* INICIO REGISTRO */
-  .registro {
-    margin-top: 5em; }
-  .boxregistro {
-    font-size: 0.8em; }
-  /* INICIO REGISTRO */
-  /* INICIO LOGIN */
-  .boxlogin {
-    font-size: 0.9em; }
-  /* FIN LOGIN */ }
-
-@media (max-width: 390px) {
-  /* PARAMETROS GENERALES */
-  .footer {
-    height: 5em;
-    font-size: 0.8em; }
-  /* FIN PARAMETROS GENERALES */
-  /* INICIO ESTILIZADO IMG / VIDEO */
-  .imgrect {
-    width: 30em;
-    height: 7em; }
-  /* FIN ESTILIZADO IMG / VIDEO */
-  /* INICIO NOSOTROS*/
-  .nosotros {
-    margin-top: 6em; }
-  .imgcuad2 {
-    width: 10em;
-    height: 10em; }
-  .imgcuad3 {
-    width: 7em;
-    height: 7em; }
-  /* FIN NOSOTROS*/
-  /* INICIO HORARIOS */
-  .textohorarios {
-    font-size: 0.9em; }
-  .horarios {
-    margin-top: 6em; }
-  /* FIN HORARIOS */
-  /* INICIO PROFESORES */
-  .mainprofes {
-    margin-top: 4em;
-    display: grid;
-    grid-template-columns: auto; }
-  /* FIN PROFESORES */
-  /* INICIO SHOP */
-  .shop {
-    margin-top: 6em; }
-  .boxremeras {
-    width: auto; }
-  .remeras {
-    width: 10.5em;
-    height: 10.5em;
-    margin-left: auto; }
-  .finalizarcompra {
-    margin-right: 0.3em; }
-  /* FIN SHOP */
-  /* INICIO CONTACTO */
-  .contacto {
-    margin-top: 6em; }
-  .boxcontacto {
-    font-size: 0.7em; }
-  /* FIN CONTACTO */
-  /* INICIO REGISTRO */
-  .registro {
-    margin-top: 6em; }
-  /* FIN REGISTRO */
-  /* INICIO LOGIN */
-  .logueate {
-    margin-top: auto; }
-  .boxlogin {
-    font-size: 0.7em; }
-  /* FIN LOGIN */ }
-
-/* FIN MEDIA */
-/*--------------------------*/
 /* INICIO DARKMODE */
 .darkmode-toggle {
   background-color: transparent;
   border: none; }
   .darkmode-toggle .swapper {
-    width: 2.5em;
-    height: 2.5em; }
+    width: 2em;
+    height: 2em; }
     .darkmode-toggle .swapper:hover {
       background-color: black;
       border-radius: 0.5em;
@@ -1387,3 +729,725 @@ body.dark {
     border-color: black; }
 
 /* FIN DARKMODE */
+/* INICIO MEDIA */
+@media (max-width: 1440px) {
+  /* ESCRITORIO GRANDE */
+  /* PARAMETROS GENERALES */
+  .header {
+    width: 100%;
+    height: 3.5em;
+    padding: 0.8em; }
+  .footer {
+    height: 2em;
+    font-size: 1.3em; }
+  /* FIN PARAMETROS GENERALES */
+  /* INICIO ESTILIZADO FUENTES */
+  h1 {
+    font-size: 3em; }
+  h2 {
+    font-size: 1.8em; }
+  h3 {
+    font-size: 1.5em; }
+  h4 {
+    font-size: 1em; }
+  p {
+    font-size: 1.2em; }
+  li {
+    font-size: 0.9em; }
+  /* FIN ESTILIZADO FUENTES */
+  /* INICIO ESTILIZADO IMG / VIDEO */
+  .logoinstagram img {
+    width: 1.8em;
+    height: 1.8em; }
+  .login img {
+    width: 1.8em;
+    height: 1.8em; }
+  #logobenoni {
+    width: 13.5em;
+    height: 13.5em; }
+  .imgcuad {
+    width: 16em;
+    height: 16em; }
+  .imgcuad2 {
+    width: 23em;
+    height: 23em; }
+  .imgcuad3 {
+    width: 16em;
+    height: 16em; }
+  .imgcuadgr {
+    width: 50em;
+    height: 35em; }
+  .imgrect {
+    width: 60em;
+    height: 15em; }
+  .video {
+    width: 50vw;
+    height: 30vw; }
+  .videoyt {
+    width: 50vw;
+    height: 30vw; }
+  /* FIN ESTILIZADO IMG / VIDEO */
+  /* INICIO HORARIOS */
+  table {
+    font-size: 1.2em;
+    border-spacing: 0.5em; }
+  .titulotabla {
+    font-size: 1.8em; }
+  /* FIN HORARIOS */
+  /* INICIO PROFESORES */
+  .boxprofes h2 {
+    font-size: 1.7em; }
+  .boxprofes p {
+    line-height: 1.2em; }
+  /* FIN PROFESORES */
+  /* INICIO SHOP */
+  .boxremeras {
+    padding: 1em;
+    line-height: 1.5em;
+    margin-top: 1.4em; }
+  .tituloremera {
+    font-size: 2em;
+    padding-bottom: 0.5em; }
+  .remeras {
+    width: 18em;
+    height: 20em; }
+  .botoncompra {
+    padding: 0.8em;
+    border-radius: 0.5em;
+    font-size: 1.2em; }
+  .guiadetalles {
+    font-size: 1.2em; }
+  .precio {
+    font-size: 1.2em; }
+  .selecciontalle {
+    font-size: 1.2em;
+    padding-bottom: 0.3em; }
+  .cantidad {
+    font-size: 1.2em;
+    margin-top: 0.5em; }
+  .finalizarcompra {
+    padding: 1em;
+    border-radius: 0.5em;
+    font-size: 1.2em;
+    margin-top: 1em; }
+  /* FIN SHOP */
+  /* INICIO CONTACTO */
+  .subtituloconsulta {
+    padding-bottom: 1em;
+    line-height: 2.1em; }
+  .cuadroconsulta {
+    font-size: 1em; }
+  .boxcontacto {
+    padding: 1em;
+    line-height: 2em;
+    font-size: 1em; }
+  /* FIN CONTACTO */
+  /* INICIO REGISTRO - LOGIN */
+  form {
+    font-size: 1em; }
+  /* FIN REGISTRO - LOGIN */ }
+
+@media (max-width: 1024px) {
+  /* ESCRITORIO CHICO */
+  .darkmode-toggle .swapper {
+    width: 1.5em;
+    height: 1.5em; }
+  /* PARAMETROS GENERALES */
+  .header {
+    width: 100%;
+    height: 3em; }
+  .footer {
+    height: 1.8em;
+    font-size: 1em; }
+  /* FIN PARAMETROS GENERALES */
+  /* INICIO ESTILIZADO FUENTES */
+  h1 {
+    font-size: 2.5em; }
+  h2 {
+    font-size: 1.4em; }
+  h3 {
+    font-size: 1em; }
+  h4 {
+    font-size: 1em; }
+  p {
+    font-size: 1em; }
+  li {
+    font-size: 0.7em; }
+  /* FIN ESTILIZADO FUENTES */
+  /* INICIO ESTILIZADO IMG / VIDEO */
+  .logoinstagram img {
+    width: 1.5em;
+    height: 1.5em; }
+  .login img {
+    width: 1.5em;
+    height: 1.5em; }
+  #logobenoni {
+    width: 10em;
+    height: 10em; }
+  .imgcuad {
+    width: 13em;
+    height: 13em; }
+  .imgcuad2 {
+    width: 18em;
+    height: 18em; }
+  .imgcuad3 {
+    width: 13em;
+    height: 13em; }
+  .imgcuadgr {
+    width: 40em;
+    height: 27em; }
+  .imgrect {
+    width: 50em;
+    height: 13em; }
+  .video {
+    width: 50vw;
+    height: 30vw; }
+  .videoyt {
+    width: 50vw;
+    height: 30vw; }
+  /* FIN ESTILIZADO IMG / VIDEO */
+  /* INICIO HORARIOS */
+  table {
+    font-size: 1em; }
+  .titulotabla {
+    font-size: 1.5em; }
+  /* FIN HORARIOS */
+  /* INICIO PROFESORES */
+  .boxprofes h2 {
+    font-size: 1.5em; }
+  .boxprofes p {
+    line-height: 1em; }
+  .svgprofes {
+    width: 7em;
+    height: 7em; }
+  /* FIN PROFESORES */
+  /* INICIO SHOP */
+  .boxremeras {
+    padding: 0.6em;
+    line-height: 1.3em;
+    margin-top: 1em; }
+  .tituloremera {
+    font-size: 1.8em;
+    padding-bottom: 0.5em; }
+  .remeras {
+    width: 15em;
+    height: 17em; }
+  .botoncompra {
+    padding: 0.6em;
+    font-size: 1em; }
+  .guiadetalles {
+    font-size: 1em; }
+  .precio {
+    font-size: 1em; }
+  .selecciontalle {
+    font-size: 1em;
+    padding-bottom: 0.2em; }
+  .cantidad {
+    font-size: 1em;
+    margin-top: 0.3em; }
+  .finalizarcompra {
+    padding: 0.8em;
+    font-size: 1.1em;
+    margin-top: 1em; }
+  /* FIN SHOP */
+  /* INICIO CONTACTO */
+  .subtituloconsulta {
+    line-height: 1.8em; }
+  /* FIN CONTACTO */ }
+
+@media (max-width: 810px) {
+  /* TABLET GRANDE*/
+  .darkmode-toggle .swapper {
+    margin-top: -22em;
+    margin-right: -65em; }
+  body.dark .imgbtnmenu {
+    display: none; }
+  body.dark .imgbtnmenubl {
+    display: block;
+    width: 2.7em;
+    height: 3em; }
+  body.dark #dropdownMenuButton1 {
+    width: 2.7em;
+    height: 3em; }
+  body.dark .dropdown-menu {
+    background-color: black;
+    border: solid whitesmoke;
+    border-top: black; }
+  body.dark .header {
+    border-bottom: solid whitesmoke; }
+  /* PARAMETROS GENERALES */
+  body {
+    display: grid; }
+  .header {
+    width: 100%;
+    height: 3.8em;
+    display: grid;
+    grid-template-columns: 15em auto 6em;
+    border-bottom: solid #747474; }
+  .footer {
+    height: 2.5em;
+    font-size: 1em; }
+  /* FIN PARAMETROS GENERALES */
+  /* INICIO ESTILIZADO NAV */
+  .dropdown {
+    display: block;
+    cursor: pointer;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-top: -0.3em; }
+  #dropdownMenuButton1 {
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    padding: 0%;
+    width: 2.7em;
+    height: 3em; }
+  .dropdown-menu {
+    font-size: 2.5em;
+    text-align: center;
+    background-color: whitesmoke;
+    border: solid #747474;
+    border-top: none;
+    border-radius: 0em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em; }
+  nav {
+    display: none; }
+  /* FIN ESTILIZADO NAV */
+  /* INICIO ESTILIZADO IMG / VIDEO */
+  #logobenoni {
+    width: 15em;
+    height: 15em; }
+  .imgcuad {
+    width: 10em;
+    height: 10em; }
+  .imgcuad2 {
+    width: 15em;
+    height: 15em; }
+  .imgcuad3 {
+    width: 11em;
+    height: 11em; }
+  .imgcuadgr {
+    width: 70vw;
+    height: 45vw; }
+  .imgrect {
+    width: 30em;
+    height: 9em; }
+  .video {
+    width: 100%;
+    height: 100%; }
+  .videoyt {
+    width: 88vw;
+    height: 50vw;
+    margin-top: 0.5em; }
+  .imgbtnmenu {
+    width: 2.7em; }
+  .imgbtnmenubl {
+    display: none;
+    width: 2.7em; }
+  /* FIN ESTILIZADO IMG / VIDEO */
+  /* INICIO HOME*/
+  .titulo {
+    display: grid;
+    margin-top: 2em; }
+  #videos {
+    display: block; }
+  /* FIN HOME*/
+  /* INICIO NOSOTROS*/
+  .nosotros {
+    margin-top: 5em; }
+  .boxnosotros {
+    text-align: justify; }
+  /* FIN NOSOTROS*/
+  /* INICIO HORARIOS */
+  .horarios {
+    margin-top: 4em; }
+  table {
+    font-size: 1em; }
+  .titulotabla {
+    font-size: 1.5em; }
+  /* FIN HORARIOS */
+  /* INICIO PROFESORES */
+  .mainprofes {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 17em);
+    grid-template-rows: 0.5fr 0.8fr 0.5fr; }
+  .tituloprofes {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4; }
+  .tarjetasprofes1 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2; }
+  .tarjetasprofes2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3; }
+  .tarjetasprofes3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4; }
+  .logos {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4; }
+  .boxprofes h2 {
+    font-size: 1.5em;
+    line-height: 1em;
+    text-align: center; }
+  .boxprofes p {
+    line-height: 1.5em;
+    text-align: center; }
+  .imagenes1 {
+    display: none; }
+  .imagenes2 {
+    display: none; }
+  .imagenes3 {
+    display: none; }
+  #elasticidad {
+    display: flex; }
+  #resistencia {
+    display: flex; }
+  #fuerza {
+    display: flex; }
+  /* FIN PROFESORES */
+  /* INICIO SHOP */
+  .shop {
+    margin-top: 4em; }
+  .boxremeras {
+    padding: 0.6em;
+    line-height: 1.3em;
+    margin-top: 1em; }
+  .tituloremera {
+    font-size: 1.8em;
+    padding-bottom: 0.5em; }
+  .remeras {
+    width: 15em;
+    height: 17em; }
+  .botoncompra {
+    padding: 0.6em;
+    font-size: 1em; }
+  .guiadetalles {
+    font-size: 1em; }
+  .precio {
+    font-size: 1em; }
+  .selecciontalle {
+    font-size: 1em;
+    padding-bottom: 0.2em; }
+  .cantidad {
+    font-size: 1em;
+    margin-top: 0.3em; }
+  .finalizarcompra {
+    padding: 0.8em;
+    font-size: 1.1em;
+    margin-top: 1em; }
+  /* FIN SHOP */
+  /* INICIO CONTACTO */
+  .contacto {
+    margin-top: 4em; }
+  .subtituloconsulta {
+    line-height: 1.8em; }
+  .boxcontacto {
+    font-size: 1.3em; }
+  .btncontact {
+    justify-content: center; }
+  /* FIN CONTACTO */
+  /* INICIO REGISTRO */
+  .registro {
+    margin-top: 4em; }
+  .boxregistro {
+    font-size: 1.3em; }
+  /* INICIO REGISTRO */
+  /* INICIO LOGIN */
+  .logueate {
+    margin-top: 4em; }
+  .boxlogin {
+    font-size: 1.3em; }
+  /* FIN LOGIN */ }
+
+@media (max-width: 540px) {
+  /* TABLET CHICA */
+  .darkmode-toggle .swapper {
+    margin-top: -18em;
+    margin-right: -30em; }
+  body.dark .imgbtnmenu {
+    display: none; }
+  body.dark .imgbtnmenubl {
+    display: block;
+    width: 2.7em;
+    height: 3em; }
+  body.dark #dropdownMenuButton1 {
+    width: 2.7em;
+    height: 3em; }
+  body.dark .dropdown-menu {
+    background-color: black;
+    border: solid whitesmoke;
+    border-top: black; }
+  body.dark .header {
+    border-bottom: solid whitesmoke; }
+  /* PARAMETROS GENERALES */
+  .footer {
+    display: inline-block;
+    text-align: center;
+    padding: 1em;
+    height: 4em;
+    font-size: 1em; }
+  /* FIN PARAMETROS GENERALES */
+  /* INICIO ESTILIZADO NAV */
+  .dropdown-menu {
+    font-size: 2.3em; }
+  /* FIN ESTILIZADO NAV */
+  /* INICIO ESTILIZADO IMG / VIDEO */
+  #logobenoni {
+    width: 12em;
+    height: 12em; }
+  .imgcuad {
+    width: 15em;
+    height: 15em;
+    margin-top: 1em; }
+  .imgcuad2 {
+    width: 15em;
+    height: 15em; }
+  .imgcuad3 {
+    width: 11em;
+    height: 11em; }
+  .imgrect {
+    width: 45em;
+    height: 12em; }
+  .video {
+    width: 100%;
+    height: auto; }
+  .videoyt {
+    width: 88vw;
+    height: 50vw;
+    margin-top: 1em;
+    margin-bottom: 1em; }
+  /* FIN ESTILIZADO IMG / VIDEO */
+  /* INICIO HOME*/
+  .cuerpo {
+    display: grid;
+    grid-template-rows: repeat(5, auto); }
+  .titulo {
+    margin-top: 4em;
+    grid-row-start: 1;
+    grid-row-end: 2; }
+  .bienvenida {
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 3; }
+  #videos {
+    display: block;
+    grid-row-start: 3;
+    grid-row-end: 4; }
+  .sponsors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row-start: 4;
+    grid-row-end: 5; }
+  /* FIN HOME*/
+  /* INICIO NOSOTROS*/
+  .nosotros {
+    margin-top: 4em; }
+  .boxnosotros {
+    text-align: justify; }
+  /* FIN NOSOTROS*/
+  /* INICIO HORARIOS */
+  .horarios {
+    margin-top: 6em; }
+  /* FIN HORARIOS */
+  /* INICIO PROFESORES */
+  .mainprofes {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 33em;
+    grid-template-areas: "titulo" "tarjeta1" "tarjeta2" "tarjeta3" "logo"; }
+  .tituloprofes {
+    grid-area: titulo;
+    text-align: center; }
+  .tarjetasprofes1 {
+    grid-area: tarjeta1; }
+  .tarjetasprofes2 {
+    grid-area: tarjeta2; }
+  .tarjetasprofes3 {
+    grid-area: tarjeta3; }
+  .logos {
+    grid-area: logo; }
+  .imgcuadgr {
+    width: 70vw;
+    height: 50vw; }
+  .boxprofes img {
+    display: block;
+    margin: auto; }
+  .boxprofes h2 {
+    font-size: 1.5em;
+    line-height: 1em;
+    text-align: center; }
+  .boxprofes p {
+    line-height: 1.5em;
+    text-align: center; }
+  /* FIN PROFESORES */
+  /* INICIO SHOP */
+  .finalizarcompra {
+    padding: 0.8em;
+    font-size: 1.1em; }
+  /* FIN SHOP */
+  /* INICIO CONTACTO */
+  .contacto {
+    margin-top: 6em; }
+  .boxcontacto {
+    font-size: 1em; }
+  /* FIN CONTACTO */
+  /* INICIO REGISTRO */
+  .registro {
+    margin-top: 6em; }
+  .boxregistro {
+    font-size: 1em; }
+  /* INICIO REGISTRO */
+  /* INICIO LOGIN */
+  .boxlogin {
+    font-size: 1em; }
+  /* FIN LOGIN */ }
+
+@media (max-width: 428px) {
+  /* CELULAR GRANDE */
+  .darkmode-toggle .swapper {
+    margin-top: -18em;
+    margin-right: -18em; }
+  /* PARAMETROS GENERALES */
+  .footer {
+    height: 5em; }
+  /* FIN PARAMETROS GENERALES */
+  /* INICIO ESTILIZADO NAV */
+  .dropdown-menu {
+    font-size: 2.2em; }
+  /* FIN ESTILIZADO NAV */
+  /* INICIO ESTILIZADO IMG / VIDEO */
+  .imgrect {
+    width: 35em;
+    height: 9em; }
+  /* FIN ESTILIZADO IMG / VIDEO */
+  /* INICIO HOME*/
+  .titulo {
+    margin-top: 5em; }
+  /* FIN HOME*/
+  /* INICIO NOSOTROS*/
+  .nosotros {
+    margin-top: 5em; }
+  /* FIN NOSOTROS*/
+  /* INICIO HORARIOS */
+  .textohorarios {
+    text-align: center; }
+  .horarios {
+    margin-top: 6em; }
+  /* FIN HORARIOS */
+  /* INICIO PROFESORES */
+  .mainprofes {
+    margin-top: 4em;
+    display: grid;
+    grid-template-columns: auto; }
+  /* FIN PROFESORES */
+  /* INICIO SHOP */
+  .remeras {
+    width: 12em;
+    height: 12em; }
+  .boxremeras {
+    margin-top: 2em; }
+  .finalizarcompra {
+    padding: 0.8em;
+    font-size: 1em; }
+  /* FIN SHOP */
+  /* INICIO CONTACTO */
+  .contacto {
+    margin-top: 5em; }
+  .boxcontacto {
+    font-size: 0.8em; }
+  #terminos {
+    text-align: center; }
+  /* FIN CONTACTO */
+  /* INICIO REGISTRO */
+  .registro {
+    margin-top: 5em; }
+  .boxregistro {
+    font-size: 0.8em; }
+  /* INICIO REGISTRO */
+  /* INICIO LOGIN */
+  .boxlogin {
+    font-size: 0.9em; }
+  /* FIN LOGIN */ }
+
+@media (max-width: 390px) {
+  /* PARAMETROS GENERALES */
+  .darkmode-toggle .swapper {
+    margin-top: -18em;
+    margin-right: -13em; }
+  .footer {
+    height: 5em;
+    font-size: 0.8em; }
+  /* FIN PARAMETROS GENERALES */
+  /* INICIO ESTILIZADO IMG / VIDEO */
+  .imgrect {
+    width: 30em;
+    height: 7em; }
+  /* FIN ESTILIZADO IMG / VIDEO */
+  /* INICIO NOSOTROS*/
+  .nosotros {
+    margin-top: 6em; }
+  .imgcuad2 {
+    width: 10em;
+    height: 10em; }
+  .imgcuad3 {
+    width: 7em;
+    height: 7em; }
+  /* FIN NOSOTROS*/
+  /* INICIO HORARIOS */
+  .textohorarios {
+    font-size: 0.9em; }
+  .horarios {
+    margin-top: 6em; }
+  /* FIN HORARIOS */
+  /* INICIO PROFESORES */
+  .mainprofes {
+    margin-top: 4em;
+    display: grid;
+    grid-template-columns: auto; }
+  /* FIN PROFESORES */
+  /* INICIO SHOP */
+  .shop {
+    margin-top: 6em; }
+  .boxremeras {
+    width: auto; }
+  .remeras {
+    width: 10.5em;
+    height: 10.5em;
+    margin-left: auto; }
+  .finalizarcompra {
+    margin-right: 0.3em; }
+  /* FIN SHOP */
+  /* INICIO CONTACTO */
+  .contacto {
+    margin-top: 6em; }
+  .boxcontacto {
+    font-size: 0.7em; }
+  /* FIN CONTACTO */
+  /* INICIO REGISTRO */
+  .registro {
+    margin-top: 6em; }
+  /* FIN REGISTRO */
+  /* INICIO LOGIN */
+  .logueate {
+    margin-top: auto; }
+  .boxlogin {
+    font-size: 0.7em; }
+  /* FIN LOGIN */ }
+
+/* FIN MEDIA */
+/*--------------------------*/
