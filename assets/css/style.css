@@ -21,19 +21,12 @@
 
 /* sombras */
 /* colores */
-/* darkmode
-
-$shadow-dm: drop-shadow(5px 5px 5px #222);
-$color-body-background-dm: rgb(0, 0, 0);
-$color-rest-background-dm: rgb(0, 0, 0);
-$color-nav-background-dm: black;
-$color-body-text-dm: rgb(255, 255, 255);
-$color-contrast-text: rgb(0, 0, 0);
-
-fin */
+/* darkmode */
+/* otro */
 /*--------------------------*/
 /* INICIO ESTILIZADO PRINCIPAL */
 body {
+  transition: 1.5s;
   background-color: #cac6bf;
   min-height: 100vh;
   background-image: url(../img/humo.png);
@@ -1260,25 +1253,137 @@ label {
 
 /* FIN MEDIA */
 /*--------------------------*/
-/* INICIO DARKMODE 
-
+/* INICIO DARKMODE */
 .darkmode-toggle {
   background-color: transparent;
-  border: none;
-
-  .swapper {
+  border: none; }
+  .darkmode-toggle .swapper {
     width: 2.5em;
-    height: 2.5em;
-
-    &:hover {
-      background-color: $color-nav-background;
+    height: 2.5em; }
+    .darkmode-toggle .swapper:hover {
+      background-color: black;
       border-radius: 0.5em;
-      color: $color-contrast-text;
+      color: whitesmoke;
       transition: all 0.15s;
-      transform: scale(1.2);
-    }
-    }
-  }
-}
+      transform: scale(1.2); }
 
-FIN DARKMODE */
+body.dark {
+  background-color: #202020;
+  transition: 1.5s;
+  /* INICIO ESTILIZADO PRINCIPAL */
+  /* FIN ESTILIZADO PRINCIPAL */
+  /* INICIO HEADER */
+  /* FIN HEADER */
+  /* INICIO ESTILIZADO FUENTES */
+  /* FIN ESTILIZADO FUENTES */
+  /* INICIO ESTILIZADO IMG / VIDEO */
+  /* FIN ESTILIZADO IMG / VIDEO */
+  /* INICIO NOSOTROS */
+  /* FIN NOSOTROS */
+  /* INICIO HORARIOS */
+  /* FIN HORARIOS */
+  /* INICIO PROFESORES */
+  /* FIN PROFESORES */
+  /* INICIO SHOP */
+  /* FIN SHOP */
+  /* INICIO CONTACTO */
+  /* FIN CONTACTO */
+  /* INICIO REGISTRO - LOGIN */
+  /* FIN REGISTRO - LOGIN */ }
+  body.dark .darkmode-toggle {
+    color: whitesmoke; }
+    body.dark .darkmode-toggle .swapper:hover {
+      background-color: whitesmoke;
+      color: black; }
+  body.dark .header {
+    background-color: black; }
+  body.dark .footer {
+    background-color: black; }
+  body.dark nav ul li a:hover {
+    background-color: whitesmoke;
+    color: black; }
+  body.dark .login img:last-child {
+    display: block; }
+  body.dark .login:hover img:first-child {
+    display: block; }
+  body.dark .login:hover img:last-child {
+    display: none; }
+  body.dark .logoinstagram img:last-child {
+    display: block; }
+  body.dark .logoinstagram:hover img:first-child {
+    display: block; }
+  body.dark .logoinstagram:hover img:last-child {
+    display: none; }
+  body.dark h1 {
+    color: white; }
+  body.dark h2 {
+    color: white; }
+  body.dark h3 {
+    color: white; }
+  body.dark h4 {
+    color: white; }
+  body.dark p {
+    color: white; }
+  body.dark a {
+    color: white; }
+  body.dark .logos {
+    filter: drop-shadow(5px 5px 5px #dadada); }
+  body.dark #logobenoni {
+    filter: drop-shadow(5px 5px 5px #dadada); }
+  body.dark .imgcuad {
+    filter: drop-shadow(5px 5px 5px #dadada); }
+  body.dark .imgcuad2 {
+    filter: drop-shadow(5px 5px 5px #dadada); }
+  body.dark .imgcuad3 {
+    filter: drop-shadow(5px 5px 5px #dadada); }
+  body.dark .imgcuadgr {
+    filter: drop-shadow(5px 5px 5px #dadada); }
+  body.dark .imgrect {
+    filter: drop-shadow(5px 5px 5px #dadada); }
+  body.dark .video {
+    filter: drop-shadow(5px 5px 5px #dadada); }
+  body.dark .videoyt {
+    filter: drop-shadow(5px 5px 5px #dadada); }
+  body.dark .boxnosotros {
+    background-color: black;
+    border-color: #bebebe;
+    filter: drop-shadow(5px 5px 5px #dadada); }
+  body.dark table {
+    color: whitesmoke; }
+  body.dark .tabla {
+    background-color: black;
+    border-color: #bebebe;
+    filter: drop-shadow(5px 5px 5px #dadada); }
+  body.dark .docente {
+    background-color: #222121; }
+  body.dark .martes {
+    background-color: #222121; }
+  body.dark .jueves {
+    background-color: #222121; }
+  body.dark .sabado {
+    background-color: #222121; }
+  body.dark .boxprofes {
+    background-color: black;
+    border-color: #bebebe;
+    filter: drop-shadow(5px 5px 5px #dadada); }
+  body.dark .boxremeras {
+    background-color: black;
+    border-color: #bebebe;
+    filter: drop-shadow(5px 5px 5px #dadada); }
+  body.dark .botoncompra {
+    filter: drop-shadow(5px 5px 5px #dadada); }
+  body.dark .finalizarcompra {
+    filter: drop-shadow(5px 5px 5px #dadada); }
+  body.dark label {
+    color: whitesmoke; }
+  body.dark .boxcontacto {
+    background-color: black;
+    border-color: #bebebe; }
+  body.dark .boxregistro {
+    background-color: black;
+    border-color: black; }
+  body.dark .boxlogin {
+    background-color: black;
+    border-color: black; }
+
+/* FIN DARKMODE */

@@ -14,13 +14,16 @@ $color-tabla: rgb(220, 220, 220);
 $color-btn: rgba(224, 56, 63, 1);
 $color-btn-finish: green;
 
-/* darkmode
+/* darkmode */
 
 $shadow-dm: drop-shadow(5px 5px 5px #222);
-$color-body-background-dm: rgb(0, 0, 0);
+$color-body-background-dm: rgb(32, 32, 32);
 $color-rest-background-dm: rgb(0, 0, 0);
-$color-nav-background-dm: black;
+$color-nav-background-dm: whitesmoke;
 $color-body-text-dm: rgb(255, 255, 255);
 $color-contrast-text: rgb(0, 0, 0);
+$shadow-dm: drop-shadow(5px 5px 5px rgb(218, 218, 218));
 
-fin */
+/* otro */
+
+$delay: 1.5s;

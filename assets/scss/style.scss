@@ -33,7 +33,7 @@
 /* INICIO ESTILIZADO PRINCIPAL */
 
 body {
-  
+  transition: $delay;
   background-color: map-get($map: $colores, $key: color-body-background);
   min-height: 100vh;
   background-image: url(../img/humo.png);
@@ -1860,7 +1860,7 @@ label {
 
 /*--------------------------*/
 
-/* INICIO DARKMODE 
+/* INICIO DARKMODE */
 
 .darkmode-toggle {
   background-color: transparent;
@@ -1873,12 +1873,202 @@ label {
     &:hover {
       background-color: $color-nav-background;
       border-radius: 0.5em;
-      color: $color-contrast-text;
+      color: whitesmoke;
       transition: all 0.15s;
       transform: scale(1.2);
-    }
     }
   }
 }
 
-FIN DARKMODE */
+body.dark {
+  background-color: map-get($map: $colores-dark, $key: color-body-background-dm);
+  transition: $delay;
+/* INICIO ESTILIZADO PRINCIPAL */
+  .darkmode-toggle {
+    color: whitesmoke;
+    .swapper:hover{
+      background-color: $color-nav-background-dm;
+      color: rgb(0, 0, 0);
+    }
+  }
+
+  .header {
+    background-color: map-get($map: $colores-dark, $key: color-rest-background-dm);
+  }
+
+  .footer {
+    background-color: map-get($map: $colores-dark, $key: color-rest-background-dm);
+  }
+/* FIN ESTILIZADO PRINCIPAL */
+/* INICIO HEADER */
+  nav ul li a:hover{
+    background-color: map-get($map: $colores-dark, $key: color-nav-background-dm);
+    color: map-get($map: $colores-dark, $key: color-contrast-text-dm);      
+  }
+
+  .login {
+    img:last-child {
+        display: block;
+      }
+    &:hover img:first-child {
+        display: block;
+    }
+    &:hover img:last-child {
+        display: none;
+    }
+}
+
+.logoinstagram {
+  img:last-child {
+      display: block;
+  }
+  &:hover img:first-child {
+      display: block;
+  }
+  &:hover img:last-child {
+      display: none;
+  }
+}
+/* FIN HEADER */
+/* INICIO ESTILIZADO FUENTES */
+  h1 {
+    color: $color-body-text-dm;
+  }
+
+  h2{
+    color: $color-body-text-dm;
+  }
+
+  h3{
+    color: $color-body-text-dm;
+  }
+
+  h4{
+    color: $color-body-text-dm;
+  }
+
+  p{
+    color: $color-body-text-dm;
+  }
+  
+  a{
+    color: $color-body-text-dm;
+  }
+  /* FIN ESTILIZADO FUENTES */
+/* INICIO ESTILIZADO IMG / VIDEO */
+  .logos {
+    filter: $shadow-dm,
+  }
+
+  #logobenoni {
+    filter: $shadow-dm;
+  }
+
+  .imgcuad {
+    filter: $shadow-dm;
+  }
+  
+  .imgcuad2 {
+    filter: $shadow-dm;
+  }
+  
+  .imgcuad3 {
+    filter: $shadow-dm;
+  }
+  
+  .imgcuadgr {
+    filter: $shadow-dm;
+  }
+  
+  .imgrect {
+    filter: $shadow-dm;
+  }
+  
+  .video {
+    filter: $shadow-dm;
+  }
+
+  .videoyt {
+    filter: $shadow-dm;
+  }  
+/* FIN ESTILIZADO IMG / VIDEO */
+/* INICIO NOSOTROS */
+.boxnosotros {
+  background-color: map-get($map: $colores-dark, $key: color-rest-background-dm);
+  border-color: map-get($map: $colores-dark, $key: color-border-dm);
+  filter: $shadow-dm;
+}
+/* FIN NOSOTROS */
+/* INICIO HORARIOS */
+table {
+  color: map-get($map: $colores-dark, $key: color-body-text-dm);
+}
+
+.tabla {
+  background-color: map-get($map: $colores-dark, $key: color-rest-background-dm);
+  border-color: map-get($map: $colores-dark, $key: color-border-dm);
+  filter: $shadow-dm;
+}
+
+.docente {
+  background-color: map-get($map: $colores-dark, $key: color-tabla-dm);
+}
+
+.martes {
+  background-color: map-get($map: $colores-dark, $key: color-tabla-dm);
+}
+
+.jueves {
+  background-color: map-get($map: $colores-dark, $key: color-tabla-dm);
+}
+
+.sabado {
+  background-color: map-get($map: $colores-dark, $key: color-tabla-dm);
+}
+/* FIN HORARIOS */
+/* INICIO PROFESORES */
+.boxprofes {
+  background-color: map-get($map: $colores-dark, $key: color-rest-background-dm);
+  border-color: map-get($map: $colores-dark, $key: color-border-dm);
+  filter: $shadow-dm;
+}
+/* FIN PROFESORES */
+/* INICIO SHOP */
+.boxremeras {
+  background-color: map-get($map: $colores-dark, $key: color-rest-background-dm);
+  border-color: map-get($map: $colores-dark, $key: color-border-dm);
+  filter: $shadow-dm;
+}
+
+.botoncompra {
+  filter: $shadow-dm;
+}
+
+.finalizarcompra {
+  filter: $shadow-dm;
+}
+/* FIN SHOP */
+/* INICIO CONTACTO */
+label {
+  color: map-get($map: $colores-dark, $key: color-body-text-dm);
+}
+
+.boxcontacto {
+  background-color: map-get($map: $colores-dark, $key: color-rest-background-dm);
+  border-color: map-get($map: $colores-dark, $key: color-border-dm);
+}
+/* FIN CONTACTO */
+/* INICIO REGISTRO - LOGIN */
+.boxregistro {
+  background-color: map-get($map: $colores-dark, $key: color-rest-background-dm);
+  border-color: map-get($map: $colores-dark, $key: color-rest-background-dm);
+}
+
+.boxlogin {
+  background-color: map-get($map: $colores-dark, $key: color-rest-background-dm);
+  border-color: map-get($map: $colores-dark, $key: color-rest-background-dm);
+}
+/* FIN REGISTRO - LOGIN */
+}
+
+/* FIN DARKMODE */
