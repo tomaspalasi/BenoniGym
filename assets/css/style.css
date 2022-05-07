@@ -665,12 +665,16 @@ body.dark {
     color: black; }
   body.dark .login img:last-child {
     display: block; }
+  body.dark .login img:first-child {
+    display: none; }
   body.dark .login:hover img:first-child {
     display: block; }
   body.dark .login:hover img:last-child {
     display: none; }
   body.dark .logoinstagram img:last-child {
     display: block; }
+  body.dark .logoinstagram img:first-child {
+    display: none; }
   body.dark .logoinstagram:hover img:first-child {
     display: block; }
   body.dark .logoinstagram:hover img:last-child {
