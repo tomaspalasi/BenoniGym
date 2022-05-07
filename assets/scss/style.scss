@@ -206,6 +206,17 @@ a {
     }
 }
 
+.logotjp{
+  width: 4em;
+  height: 2em;
+}
+
+.logotjpbl{
+  width: 4em;
+  height: 2em;
+  display: none;
+}
+
 .imgcuad {
   width: 20em;
   height: 20em;
@@ -882,6 +893,14 @@ body.dark {
 
   #logobenoni {
     filter: $shadow-dm;
+  }
+
+  .logotjp {
+    display: none;
+  }
+
+  .logotjpbl{
+    display: block;
   }
 
   .imgcuad {

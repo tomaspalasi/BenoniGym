@@ -163,6 +163,15 @@ a {
   -webkit-transform: scale(1.15);
   transform: scale(1.15); }
 
+.logotjp {
+  width: 4em;
+  height: 2em; }
+
+.logotjpbl {
+  width: 4em;
+  height: 2em;
+  display: none; }
+
 .imgcuad {
   width: 20em;
   height: 20em;
@@ -599,15 +608,20 @@ label {
 .darkmode-toggle {
   background-color: transparent;
   border: none; }
+  .darkmode-toggle img:last-child {
+    display: none; }
+  .darkmode-toggle:hover img:last-child {
+    display: block; }
+  .darkmode-toggle:hover img:first-child {
+    display: none; }
   .darkmode-toggle .swapper {
     width: 2em;
     height: 2em; }
     .darkmode-toggle .swapper:hover {
       background-color: black;
       border-radius: 0.5em;
-      color: whitesmoke;
       transition: all 0.15s;
-      transform: scale(1.2); }
+      transform: scale(1.3); }
 
 body.dark {
   background-color: #202020;
@@ -632,11 +646,16 @@ body.dark {
   /* FIN CONTACTO */
   /* INICIO REGISTRO - LOGIN */
   /* FIN REGISTRO - LOGIN */ }
-  body.dark .darkmode-toggle {
-    color: whitesmoke; }
-    body.dark .darkmode-toggle .swapper:hover {
-      background-color: whitesmoke;
-      color: black; }
+  body.dark .darkmode-toggle img:last-child {
+    display: block;
+    margin-top: -1.8em; }
+  body.dark .darkmode-toggle:hover img:last-child {
+    display: none; }
+  body.dark .darkmode-toggle:hover img:first-child {
+    display: block; }
+  body.dark .darkmode-toggle .swapper:hover {
+    background-color: whitesmoke;
+    color: black; }
   body.dark .header {
     background-color: black; }
   body.dark .footer {
@@ -672,6 +691,10 @@ body.dark {
     filter: drop-shadow(5px 5px 5px #dadada); }
   body.dark #logobenoni {
     filter: drop-shadow(5px 5px 5px #dadada); }
+  body.dark .logotjp {
+    display: none; }
+  body.dark .logotjpbl {
+    display: block; }
   body.dark .imgcuad {
     filter: drop-shadow(5px 5px 5px #dadada); }
   body.dark .imgcuad2 {
@@ -850,8 +873,9 @@ body.dark {
 @media (max-width: 1024px) {
   /* ESCRITORIO CHICO */
   .darkmode-toggle .swapper {
-    width: 1.5em;
-    height: 1.5em; }
+    width: 1.4em;
+    height: 1.4em;
+    margin-top: .4em; }
   /* PARAMETROS GENERALES */
   .header {
     width: 100%;
