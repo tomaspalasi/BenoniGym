@@ -872,10 +872,12 @@ body.dark {
 
 @media (max-width: 1024px) {
   /* ESCRITORIO CHICO */
-  .darkmode-toggle .swapper {
-    width: 1.4em;
-    height: 1.4em;
-    margin-top: .4em; }
+  .darkmode-toggle {
+    margin-top: -.4em; }
+    .darkmode-toggle .swapper {
+      width: 2em;
+      height: 1.4em;
+      margin-top: .4em; }
   /* PARAMETROS GENERALES */
   .header {
     width: 100%;
@@ -982,8 +984,14 @@ body.dark {
 @media (max-width: 810px) {
   /* TABLET GRANDE*/
   .darkmode-toggle .swapper {
-    margin-top: -22em;
+    width: 2em;
+    height: 2em;
+    margin-top: -21.5em;
     margin-right: -65em; }
+  body.dark .swapper {
+    display: block;
+    margin-left: 39em;
+    margin-top: -11.5em; }
   body.dark .imgbtnmenu {
     display: none; }
   body.dark .imgbtnmenubl {
@@ -1200,8 +1208,12 @@ body.dark {
 @media (max-width: 540px) {
   /* TABLET CHICA */
   .darkmode-toggle .swapper {
-    margin-top: -18em;
+    margin-top: -17em;
     margin-right: -30em; }
+  body.dark .swapper {
+    display: block;
+    margin-left: 21.5em;
+    margin-top: -9.2em; }
   body.dark .imgbtnmenu {
     display: none; }
   body.dark .imgbtnmenubl {
@@ -1344,8 +1356,12 @@ body.dark {
 @media (max-width: 428px) {
   /* CELULAR GRANDE */
   .darkmode-toggle .swapper {
-    margin-top: -18em;
-    margin-right: -18em; }
+    margin-top: -17em;
+    margin-right: -17em; }
+  body.dark .swapper {
+    display: block;
+    margin-left: 15em;
+    margin-top: -9.2em; }
   /* PARAMETROS GENERALES */
   .footer {
     height: 5em; }
@@ -1411,8 +1427,12 @@ body.dark {
 @media (max-width: 390px) {
   /* PARAMETROS GENERALES */
   .darkmode-toggle .swapper {
-    margin-top: -18em;
-    margin-right: -13em; }
+    margin-top: -17em;
+    margin-right: -11em; }
+  body.dark .swapper {
+    display: block;
+    margin-left: 12em;
+    margin-top: -9.2em; }
   .footer {
     height: 5em;
     font-size: 0.8em; }

@@ -1211,8 +1211,10 @@ label {
   /* ESCRITORIO CHICO */
 
   .darkmode-toggle{
+    margin-top: -.4em;
+
     .swapper {
-      width: 1.4em;
+      width: 2em;
       height: 1.4em;
       margin-top: .4em;
     }
@@ -1400,15 +1402,24 @@ label {
 @media (max-width: 810px) {
   /* TABLET GRANDE*/
 
-  .darkmode-toggle {
+  .darkmode-toggle { 
     .swapper {
-      margin-top: -22em;
+      width: 2em;
+      height: 2em;
+      margin-top: -21.5em;
       margin-right: -65em;
     }
   }
 
   body.dark {
-    .imgbtnmenu {
+    
+    .swapper {
+      display: block;
+      margin-left: 39em;
+      margin-top: -11.5em;
+    }
+
+      .imgbtnmenu {
       display: none;
     }
 
@@ -1752,7 +1763,6 @@ label {
   .boxlogin {
     font-size: 1.3em;
   }
-
   /* FIN LOGIN */
 }
 
@@ -1761,12 +1771,18 @@ label {
 
   .darkmode-toggle {
     .swapper {
-      margin-top: -18em;
+      margin-top: -17em;
       margin-right: -30em;
     }
   }
 
   body.dark {
+    .swapper {
+      display: block;
+      margin-left: 21.5em;
+      margin-top: -9.2em;
+    }
+
     .imgbtnmenu {
       display: none;
     }
@@ -2005,8 +2021,16 @@ label {
   /* CELULAR GRANDE */
   .darkmode-toggle {
     .swapper {
-      margin-top: -18em;
-      margin-right: -18em;
+      margin-top: -17em;
+      margin-right: -17em;
+    }
+  }
+
+  body.dark {
+    .swapper {
+      display: block;
+      margin-left: 15em;
+      margin-top: -9.2em;
     }
   }
   /* PARAMETROS GENERALES */
@@ -2122,8 +2146,16 @@ label {
 
   .darkmode-toggle {
     .swapper {
-      margin-top: -18em;
-      margin-right: -13em;
+      margin-top: -17em;
+      margin-right: -11em;
+    }
+  }
+
+  body.dark {
+    .swapper {
+      display: block;
+      margin-left: 12em;
+      margin-top: -9.2em;
     }
   }
 
