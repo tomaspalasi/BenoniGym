@@ -648,7 +648,7 @@ body.dark {
   /* FIN REGISTRO - LOGIN */ }
   body.dark .darkmode-toggle img:last-child {
     display: block;
-    margin-top: -1.8em; }
+    margin-top: -80%; }
   body.dark .darkmode-toggle:hover img:last-child {
     display: none; }
   body.dark .darkmode-toggle:hover img:first-child {
@@ -759,6 +759,9 @@ body.dark {
 /* INICIO MEDIA */
 @media (max-width: 1440px) {
   /* ESCRITORIO GRANDE */
+  .darkmode-toggle .swapper {
+    display: block;
+    margin-top: -10%; }
   /* PARAMETROS GENERALES */
   .header {
     width: 100%;
@@ -879,9 +882,9 @@ body.dark {
   .darkmode-toggle {
     margin-top: -.4em; }
     .darkmode-toggle .swapper {
-      width: 2em;
-      height: 1.4em;
-      margin-top: .4em; }
+      width: 1.5em;
+      height: 1.5em;
+      margin-top: 10%; }
   /* PARAMETROS GENERALES */
   .header {
     width: 100%;
@@ -990,12 +993,13 @@ body.dark {
   .darkmode-toggle .swapper {
     width: 2em;
     height: 2em;
-    margin-top: -21.5em;
-    margin-right: -65em; }
+    margin-top: -75%;
+    margin-left: 234%; }
   body.dark .swapper {
     display: block;
-    margin-left: 39em;
-    margin-top: -11.5em; }
+    margin-left: 234%; }
+  body.dark .darkmode-toggle img:last-child {
+    margin-top: -13%; }
   body.dark .imgbtnmenu {
     display: none; }
   body.dark .imgbtnmenubl {
@@ -1052,6 +1056,14 @@ body.dark {
     display: none; }
   /* FIN ESTILIZADO NAV */
   /* INICIO ESTILIZADO IMG / VIDEO */
+  .logotjp {
+    width: 3em;
+    height: 1.5em;
+    margin-top: 10%; }
+  .logotjpbl {
+    width: 3em;
+    height: 1.5em;
+    margin-top: 10%; }
   #logobenoni {
     width: 15em;
     height: 15em; }
@@ -1212,12 +1224,11 @@ body.dark {
 @media (max-width: 540px) {
   /* TABLET CHICA */
   .darkmode-toggle .swapper {
-    margin-top: -17em;
-    margin-right: -30em; }
+    margin-top: -60%;
+    margin-left: 144%; }
   body.dark .swapper {
     display: block;
-    margin-left: 21.5em;
-    margin-top: -9.2em; }
+    margin-left: 144%; }
   body.dark .imgbtnmenu {
     display: none; }
   body.dark .imgbtnmenubl {
@@ -1238,7 +1249,7 @@ body.dark {
     display: inline-block;
     text-align: center;
     padding: 1em;
-    height: 4em;
+    height: 6em;
     font-size: 1em; }
   /* FIN PARAMETROS GENERALES */
   /* INICIO ESTILIZADO NAV */
@@ -1246,6 +1257,18 @@ body.dark {
     font-size: 2.3em; }
   /* FIN ESTILIZADO NAV */
   /* INICIO ESTILIZADO IMG / VIDEO */
+  .logotjp {
+    width: 4em;
+    height: 2em;
+    margin-top: -.5%;
+    margin-left: 45%;
+    margin-right: 45%; }
+  .logotjpbl {
+    width: 4em;
+    height: 2em;
+    margin-top: -.5%;
+    margin-left: 45%;
+    margin-right: 45%; }
   #logobenoni {
     width: 12em;
     height: 12em; }
@@ -1260,8 +1283,8 @@ body.dark {
     width: 11em;
     height: 11em; }
   .imgrect {
-    width: 45em;
-    height: 12em; }
+    width: 40em;
+    height: 10em; }
   .video {
     width: 100%;
     height: auto; }
@@ -1360,15 +1383,14 @@ body.dark {
 @media (max-width: 428px) {
   /* CELULAR GRANDE */
   .darkmode-toggle .swapper {
-    margin-top: -17em;
-    margin-right: -17em; }
+    margin-top: -60%;
+    margin-left: 100%; }
   body.dark .swapper {
     display: block;
-    margin-left: 15em;
-    margin-top: -9.2em; }
+    margin-left: 100%; }
   /* PARAMETROS GENERALES */
   .footer {
-    height: 5em; }
+    height: 6em; }
   /* FIN PARAMETROS GENERALES */
   /* INICIO ESTILIZADO NAV */
   .dropdown-menu {
@@ -1376,8 +1398,8 @@ body.dark {
   /* FIN ESTILIZADO NAV */
   /* INICIO ESTILIZADO IMG / VIDEO */
   .imgrect {
-    width: 35em;
-    height: 9em; }
+    width: 32em;
+    height: 8em; }
   /* FIN ESTILIZADO IMG / VIDEO */
   /* INICIO HOME*/
   .titulo {
@@ -1431,19 +1453,18 @@ body.dark {
 @media (max-width: 390px) {
   /* PARAMETROS GENERALES */
   .darkmode-toggle .swapper {
-    margin-top: -17em;
-    margin-right: -11em; }
+    margin-top: -60%;
+    margin-left: 85%; }
   body.dark .swapper {
     display: block;
-    margin-left: 12em;
-    margin-top: -9.2em; }
+    margin-left: 85%; }
   .footer {
-    height: 5em;
+    height: 6em;
     font-size: 0.8em; }
   /* FIN PARAMETROS GENERALES */
   /* INICIO ESTILIZADO IMG / VIDEO */
   .imgrect {
-    width: 30em;
+    width: 28em;
     height: 7em; }
   /* FIN ESTILIZADO IMG / VIDEO */
   /* INICIO NOSOTROS*/
