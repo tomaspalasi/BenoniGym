@@ -1,4 +1,5 @@
-document.querySelector('.darkmode-toggle').addEventListener
-('click', () => {
-    document.body.classList.toggle('dark')
-})
+const btnSwitch = document.querySelector('.darkmode-toggle');
+
+btnSwitch.addEventListener('click', () => {
+document.body.classList.toggle('dark')
+});
