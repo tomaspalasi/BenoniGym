@@ -646,9 +646,10 @@ body.dark {
   /* FIN CONTACTO */
   /* INICIO REGISTRO - LOGIN */
   /* FIN REGISTRO - LOGIN */ }
+  body.dark .darkmode-toggle img:first-child {
+    display: none; }
   body.dark .darkmode-toggle img:last-child {
-    display: block;
-    margin-top: -80%; }
+    display: block; }
   body.dark .darkmode-toggle:hover img:last-child {
     display: none; }
   body.dark .darkmode-toggle:hover img:first-child {
@@ -760,8 +761,7 @@ body.dark {
 @media (max-width: 1440px) {
   /* ESCRITORIO GRANDE */
   .darkmode-toggle .swapper {
-    display: block;
-    margin-top: -10%; }
+    display: block; }
   /* PARAMETROS GENERALES */
   .header {
     width: 100%;
@@ -879,12 +879,9 @@ body.dark {
 
 @media (max-width: 1024px) {
   /* ESCRITORIO CHICO */
-  .darkmode-toggle {
-    margin-top: -.4em; }
-    .darkmode-toggle .swapper {
-      width: 1.5em;
-      height: 1.5em;
-      margin-top: 10%; }
+  .darkmode-toggle .swapper {
+    width: 1.5em;
+    height: 1.5em; }
   /* PARAMETROS GENERALES */
   .header {
     width: 100%;
@@ -990,16 +987,19 @@ body.dark {
 
 @media (max-width: 810px) {
   /* TABLET GRANDE*/
-  .darkmode-toggle .swapper {
-    width: 2em;
-    height: 2em;
-    margin-top: -75%;
-    margin-left: 234%; }
-  body.dark .swapper {
-    display: block;
-    margin-left: 234%; }
-  body.dark .darkmode-toggle img:last-child {
-    margin-top: -13%; }
+  .darkmode-toggle {
+    grid-area: darkmode;
+    display: flex;
+    justify-content: end; }
+    .darkmode-toggle .swapper {
+      width: 2em;
+      height: 2em; }
+  body.dark .darkmode-toggle {
+    grid-area: darkmode;
+    display: flex;
+    justify-content: end; }
+    body.dark .darkmode-toggle img:last-child {
+      display: block; }
   body.dark .imgbtnmenu {
     display: none; }
   body.dark .imgbtnmenubl {
@@ -1016,13 +1016,12 @@ body.dark {
   body.dark .header {
     border-bottom: solid whitesmoke; }
   /* PARAMETROS GENERALES */
-  body {
-    display: grid; }
   .header {
     width: 100%;
     height: 3.8em;
     display: grid;
-    grid-template-columns: 15em auto 6em;
+    grid-template-areas: "logo darkmode menu";
+    grid-template-rows: 1%;
     border-bottom: solid #747474; }
   .footer {
     height: 2.5em;
@@ -1030,10 +1029,10 @@ body.dark {
   /* FIN PARAMETROS GENERALES */
   /* INICIO ESTILIZADO NAV */
   .dropdown {
-    display: block;
+    display: flex;
+    justify-content: end;
     cursor: pointer;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-area: menu;
     margin-top: -0.3em; }
   #dropdownMenuButton1 {
     color: transparent;
@@ -1223,12 +1222,14 @@ body.dark {
 
 @media (max-width: 540px) {
   /* TABLET CHICA */
-  .darkmode-toggle .swapper {
-    margin-top: -60%;
-    margin-left: 144%; }
-  body.dark .swapper {
-    display: block;
-    margin-left: 144%; }
+  .darkmode-toggle {
+    grid-area: darkmode;
+    display: flex;
+    justify-content: end; }
+  body.dark .darkmode-toggle {
+    grid-area: darkmode;
+    display: flex;
+    justify-content: end; }
   body.dark .imgbtnmenu {
     display: none; }
   body.dark .imgbtnmenubl {
@@ -1382,12 +1383,14 @@ body.dark {
 
 @media (max-width: 428px) {
   /* CELULAR GRANDE */
-  .darkmode-toggle .swapper {
-    margin-top: -60%;
-    margin-left: 100%; }
-  body.dark .swapper {
-    display: block;
-    margin-left: 100%; }
+  .darkmode-toggle {
+    grid-area: darkmode;
+    display: flex;
+    justify-content: end; }
+  body.dark .darkmode-toggle {
+    grid-area: darkmode;
+    display: flex;
+    justify-content: end; }
   /* PARAMETROS GENERALES */
   .footer {
     height: 6em; }
@@ -1452,12 +1455,14 @@ body.dark {
 
 @media (max-width: 390px) {
   /* PARAMETROS GENERALES */
-  .darkmode-toggle .swapper {
-    margin-top: -60%;
-    margin-left: 85%; }
-  body.dark .swapper {
-    display: block;
-    margin-left: 85%; }
+  .darkmode-toggle {
+    grid-area: darkmode;
+    display: flex;
+    justify-content: end; }
+  body.dark .darkmode-toggle {
+    grid-area: darkmode;
+    display: flex;
+    justify-content: end; }
   .footer {
     height: 6em;
     font-size: 0.8em; }

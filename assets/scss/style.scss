@@ -804,9 +804,12 @@ body.dark {
 /* INICIO ESTILIZADO PRINCIPAL */
   .darkmode-toggle {
 
+    img:first-child {
+      display: none;
+    }
+
     img:last-child {
       display: block;
-      margin-top: -80%;
     }
     
     &:hover img:last-child {
@@ -1025,7 +1028,6 @@ label {
 
     .swapper {
       display: block;
-      margin-top: -10%;
     }
   }
 
@@ -1225,12 +1227,9 @@ label {
   /* ESCRITORIO CHICO */
 
   .darkmode-toggle{
-    margin-top: -.4em;
-
     .swapper {
       width: 1.5em;
       height: 1.5em;
-      margin-top: 10%;
     }
   }
 
@@ -1417,28 +1416,29 @@ label {
   /* TABLET GRANDE*/
 
   .darkmode-toggle { 
+    grid-area: darkmode;
+    display: flex;
+    justify-content: end;
+    
     .swapper {
       width: 2em;
       height: 2em;
-      margin-top: -75%;
-      margin-left: 234%;
     }
   }
 
   body.dark {
-    
-    .swapper {
-      display: block;
-      margin-left: 234%;
-    }
+        
+    .darkmode-toggle {  
+      grid-area: darkmode;
+      display: flex;
+      justify-content: end;
 
-    .darkmode-toggle { 
       img:last-child {
-        margin-top: -13%;
+        display: block;
       }
     } 
 
-      .imgbtnmenu {
+    .imgbtnmenu {
       display: none;
     }
 
@@ -1465,15 +1465,12 @@ label {
 
   /* PARAMETROS GENERALES */
 
-  body {
-    display: grid;
-  }
-
   .header {
     width: 100%;
     height: 3.8em;
     display: grid;
-    grid-template-columns: 15em auto 6em;
+    grid-template-areas: "logo darkmode menu";
+    grid-template-rows: 1%;
     border-bottom: solid rgb(116, 116, 116);
   }
 
@@ -1486,10 +1483,10 @@ label {
   /* INICIO ESTILIZADO NAV */
 
   .dropdown {
-    display: block;
+    display: flex;
+    justify-content: end;
     cursor: pointer;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-area: menu;
     margin-top: -0.3em;
   }
 
@@ -1801,16 +1798,16 @@ label {
   /* TABLET CHICA */
 
   .darkmode-toggle {
-    .swapper {
-      margin-top: -60%;
-      margin-left: 144%;
-    }
+    grid-area: darkmode;
+    display: flex;
+    justify-content: end;
   }
 
   body.dark {
-    .swapper {
-      display: block;
-      margin-left: 144%;
+    .darkmode-toggle {
+      grid-area: darkmode;
+      display: flex;
+      justify-content: end;
     }
 
     .imgbtnmenu {
@@ -2065,18 +2062,20 @@ label {
 
 @media (max-width: 428px) {
   /* CELULAR GRANDE */
+
   .darkmode-toggle {
-    .swapper {
-      margin-top: -60%;
-      margin-left: 100%;
-    }
+      grid-area: darkmode;
+      display: flex;
+      justify-content: end;
   }
+  
 
   body.dark {
-    .swapper {
-      display: block;
-      margin-left: 100%;
-    }
+    .darkmode-toggle {
+    grid-area: darkmode;
+    display: flex;
+    justify-content: end;
+  }
   }
   /* PARAMETROS GENERALES */
 
@@ -2190,17 +2189,17 @@ label {
   /* PARAMETROS GENERALES */
 
   .darkmode-toggle {
-    .swapper {
-      margin-top: -60%;
-      margin-left: 85%;
-    }
+    grid-area: darkmode;
+    display: flex;
+    justify-content: end;
   }
 
   body.dark {
-    .swapper {
-      display: block;
-      margin-left: 85%;
-    }
+    .darkmode-toggle {
+    grid-area: darkmode;
+    display: flex;
+    justify-content: end;
+  }
   }
 
   .footer {
