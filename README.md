@@ -23,3 +23,5 @@ Se aplicaron reglas de SEO, para mejorar el posicionamiento del sitio web en los
 
 ## Servidor
 Se utilizó el hosting gratuito Netlify para alojar satisfactoriamente el sitio web.
+
+https://benoniteamgym.netlify.app/
