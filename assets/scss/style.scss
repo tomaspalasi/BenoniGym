@@ -53,12 +53,38 @@ body {
 .footer {
   background-color: map-get($map: $colores, $key: color-rest-background);
   font-family: "ReadexPro-Light";
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 6em;
   width: 100%;
-  height: 2.5em;
+  height: auto;
   font-size: 1.5em;
+
+  .tjplogo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* FIN ESTILIZADO PRINCIPAL */
@@ -207,13 +233,13 @@ a {
 }
 
 .logotjp{
-  width: 4em;
-  height: 2em;
+  width: 8em;
+  height: 4em;
 }
 
 .logotjpbl{
-  width: 4em;
-  height: 2em;
+  width: 8em;
+  height: 4em;
   display: none;
 }
 
@@ -659,11 +685,65 @@ table {
 }
 
 .boxcontacto {
+  display: grid;
+  grid-template-columns: 50% 50%;
   padding: 2em;
   line-height: 2em;
   background-color: map-get($map: $colores, $key: color-rest-background);
   border-style: solid;
   border-color: map-get($map: $colores, $key: color-border);
+
+  input {
+    width: 60%;
+  }
+
+  .nombre{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .apellido {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .telefono {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .email {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    input {
+      width: 47.5%;
+    }
+  }
+
+  .cuadro {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: inline-flex;
+  }
+
+  textarea {
+    width: 70%;
+  }
+
+  #terminos {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    input {
+      width: 5%;
+    }
+  }
+
+  .btncontact {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 .btncontact {
@@ -684,7 +764,7 @@ table {
 
   &:hover {
     transition: all .3s;
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: map-get($map: $colores, $key: color-contrast-text);
   }
 }
@@ -701,13 +781,9 @@ table {
 
   &:hover {
     transition: all .3s;
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: map-get($map: $colores, $key: color-contrast-text);
   }
-}
-
-.terminos {
-  display: inline;
 }
 
 /* FIN CONTACTO */
@@ -729,6 +805,8 @@ table {
 }
 
 .boxregistro {
+  display: grid;
+  grid-template-columns: 50% 50%;
   padding: 1em;
   line-height: 2.5em;
   background-color: map-get($map: $colores, $key: color-rest-background);
@@ -736,7 +814,76 @@ table {
   border-color: map-get($map: $colores, $key: color-border);
 }
 
+input {
+  width: auto;
+}
+
+h4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.nombre{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.apellido {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.telefono {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.date {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.email {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.country {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.password1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.password2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#terminos {
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  input {
+    width: 5%;
+  }
+}
+
+.btncontact {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .boxlogin {
+  display: grid;
+  grid-template-columns: 50% 50%;
   padding: 1em;
   line-height: 2.5em;
   background-color: map-get($map: $colores, $key: color-rest-background);
@@ -1039,7 +1186,7 @@ label {
   }
 
   .footer {
-    height: 2em;
+    height: auto;
     font-size: 1.3em;
   }
   /* FIN PARAMETROS GENERALES */
@@ -1240,7 +1387,7 @@ label {
   }
 
   .footer {
-    height: 1.8em;
+    height: auto;
     font-size: 1em;
   }
   /* FIN PARAMETROS GENERALES */
@@ -1475,7 +1622,7 @@ label {
   }
 
   .footer {
-    height: 2.5em;
+    height: auto;
     font-size: 1em;
   }
   /* FIN PARAMETROS GENERALES */
@@ -1519,15 +1666,13 @@ label {
   /* INICIO ESTILIZADO IMG / VIDEO */
 
   .logotjp{
-    width: 3em;
-    height: 1.5em;
-    margin-top: 10%;
+    width: 6em;
+    height: 3em;
   }
   
   .logotjpbl{
-    width: 3em;
-    height: 1.5em;
-    margin-top: 10%;
+    width: 6em;
+    height: 3em;
   }
 
   #logobenoni {
@@ -1625,7 +1770,7 @@ label {
     margin-top: 2em;
     display: grid;
     grid-template-columns: repeat(3, 17em);
-    grid-template-rows: 0.5fr 0.8fr 0.5fr;
+    grid-template-rows: auto auto auto;
   }
 
   .tituloprofes {
@@ -1664,6 +1809,8 @@ label {
   }
 
   .boxprofes {
+    height: 35em;
+
     h2 {
         font-size: 1.5em;
         line-height: 1em;
@@ -1763,7 +1910,7 @@ label {
   }
 
   .boxcontacto {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 
   .btncontact {
@@ -1778,18 +1925,26 @@ label {
   }
 
   .boxregistro {
-    font-size: 1.3em;
+    font-size: 1em;
+    
+    input {
+      width: 40%;
+    }
   }
 
   /* INICIO REGISTRO */
   /* INICIO LOGIN */
 
   .logueate {
-    margin-top: 4em;
+    margin-top: 6em;
   }
 
   .boxlogin {
-    font-size: 1.3em;
+    font-size: 1em;
+
+    input {
+      width: 40%;
+    }
   }
   /* FIN LOGIN */
 }
@@ -1838,11 +1993,25 @@ label {
   /* PARAMETROS GENERALES */
 
   .footer {
-    display: inline-block;
-    text-align: center;
-    padding: 1em;
-    height: 6em;
-    font-size: 1em;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+
+    .tjplogo {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      align-items: flex-end;
+    }
+
+    .nav1{
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+
+    .nav2{
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
   }
   /* FIN PARAMETROS GENERALES */
 
@@ -1856,19 +2025,13 @@ label {
   /* INICIO ESTILIZADO IMG / VIDEO */
 
   .logotjp{
-    width: 4em;
-    height: 2em;
-    margin-top: -.5%;
-    margin-left: 45%;
-    margin-right: 45%;
+    width: 6em;
+    height: 3em;
   }
   
   .logotjpbl{
-    width: 4em;
-    height: 2em;
-    margin-top: -.5%;
-    margin-left: 45%;
-    margin-right: 45%;
+    width: 6em;
+    height: 3em;
   }
 
   #logobenoni {
@@ -2036,7 +2199,15 @@ label {
   }
 
   .boxcontacto {
-    font-size: 1em;
+    font-size: .8em;
+    input {
+      width: 40%;
+    }
+    .email {
+      input {
+        width: 40%;
+      }
+    }
   }
 
   /* FIN CONTACTO */
@@ -2047,14 +2218,20 @@ label {
   }
 
   .boxregistro {
-    font-size: 1em;
+    font-size: .7em;
+    input {
+      width: 41%;
+    }
   }
 
   /* INICIO REGISTRO */
   /* INICIO LOGIN */
 
   .boxlogin {
-    font-size: 1em;
+    font-size: .8em;
+    input {
+      width: 40%;
+    }
   }
 
   /* FIN LOGIN */
@@ -2080,7 +2257,7 @@ label {
   /* PARAMETROS GENERALES */
 
   .footer {
-    height: 6em;
+    height: auto;
   }
   /* FIN PARAMETROS GENERALES */
 
@@ -2157,7 +2334,17 @@ label {
   }
 
   .boxcontacto {
-    font-size: 0.8em;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+
+    input{
+      width: 45%;
+    }
+
+    .btncontact{
+      font-size: .8em
+    }
   }
 
   #terminos {
@@ -2172,14 +2359,34 @@ label {
   }
 
   .boxregistro {
-    font-size: 0.8em;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+
+    input{
+      width: 40%;
+    }
+
+    .btncontact{
+      font-size: .7em
+    }
   }
 
   /* INICIO REGISTRO */
   /* INICIO LOGIN */
 
   .boxlogin {
-    font-size: 0.9em;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+
+    input{
+      width: 45%;
+    }
+    
+    .btncontact{
+      font-size: .8em
+    }
   }
 
   /* FIN LOGIN */
@@ -2203,7 +2410,7 @@ label {
   }
 
   .footer {
-    height: 6em;
+    height: auto;
     font-size: 0.8em;
   }
   /* FIN PARAMETROS GENERALES */
@@ -2294,7 +2501,7 @@ label {
   /* INICIO LOGIN */
 
   .logueate {
-    margin-top: auto;
+    margin-top: 6em;
   }
 
   .boxlogin {

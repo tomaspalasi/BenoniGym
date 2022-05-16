@@ -44,12 +44,32 @@ body {
 .footer {
   background-color: whitesmoke;
   font-family: "ReadexPro-Light";
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 6em;
   width: 100%;
-  height: 2.5em;
+  height: auto;
   font-size: 1.5em; }
+  .footer .tjplogo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .footer .nav1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .footer .nav2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
 
 /* FIN ESTILIZADO PRINCIPAL */
 /* INICIO HEADER */
@@ -164,12 +184,12 @@ a {
   transform: scale(1.15); }
 
 .logotjp {
-  width: 4em;
-  height: 2em; }
+  width: 8em;
+  height: 4em; }
 
 .logotjpbl {
-  width: 4em;
-  height: 2em;
+  width: 8em;
+  height: 4em;
   display: none; }
 
 .imgcuad {
@@ -518,11 +538,43 @@ table {
   margin: 1em; }
 
 .boxcontacto {
+  display: grid;
+  grid-template-columns: 50% 50%;
   padding: 2em;
   line-height: 2em;
   background-color: whitesmoke;
   border-style: solid;
   border-color: #707070; }
+  .boxcontacto input {
+    width: 60%; }
+  .boxcontacto .nombre {
+    grid-column-start: 1;
+    grid-column-end: 2; }
+  .boxcontacto .apellido {
+    grid-column-start: 2;
+    grid-column-end: 3; }
+  .boxcontacto .telefono {
+    grid-column-start: 1;
+    grid-column-end: 2; }
+  .boxcontacto .email {
+    grid-column-start: 2;
+    grid-column-end: 3; }
+    .boxcontacto .email input {
+      width: 47.5%; }
+  .boxcontacto .cuadro {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: inline-flex; }
+  .boxcontacto textarea {
+    width: 70%; }
+  .boxcontacto #terminos {
+    grid-column-start: 1;
+    grid-column-end: 3; }
+    .boxcontacto #terminos input {
+      width: 5%; }
+  .boxcontacto .btncontact {
+    grid-column-start: 1;
+    grid-column-end: 3; }
 
 .btncontact {
   display: flex;
@@ -540,7 +592,7 @@ table {
   margin-right: 4em; }
   .btnreset:hover {
     transition: all .3s;
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: white; }
 
 .btnsend {
@@ -554,11 +606,8 @@ table {
   justify-content: center; }
   .btnsend:hover {
     transition: all .3s;
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: white; }
-
-.terminos {
-  display: inline; }
 
 /* FIN CONTACTO */
 /*--------------------------*/
@@ -573,13 +622,70 @@ table {
   margin: 1%; }
 
 .boxregistro {
+  display: grid;
+  grid-template-columns: 50% 50%;
   padding: 1em;
   line-height: 2.5em;
   background-color: whitesmoke;
   border-style: solid;
   border-color: #707070; }
 
+input {
+  width: auto; }
+
+h4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center; }
+
+.nombre {
+  grid-column-start: 1;
+  grid-column-end: 2; }
+
+.apellido {
+  grid-column-start: 2;
+  grid-column-end: 3; }
+
+.telefono {
+  grid-column-start: 1;
+  grid-column-end: 2; }
+
+.date {
+  grid-column-start: 2;
+  grid-column-end: 3; }
+
+.email {
+  grid-column-start: 1;
+  grid-column-end: 2; }
+
+.country {
+  grid-column-start: 2;
+  grid-column-end: 3; }
+
+.password1 {
+  grid-column-start: 1;
+  grid-column-end: 2; }
+
+.password2 {
+  grid-column-start: 2;
+  grid-column-end: 3; }
+
+#terminos {
+  grid-column-start: 1;
+  grid-column-end: 3; }
+  #terminos input {
+    width: 5%; }
+
+.btncontact {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: space-evenly; }
+
 .boxlogin {
+  display: grid;
+  grid-template-columns: 50% 50%;
   padding: 1em;
   line-height: 2.5em;
   background-color: whitesmoke;
@@ -768,7 +874,7 @@ body.dark {
     height: 3.5em;
     padding: 0.8em; }
   .footer {
-    height: 2em;
+    height: auto;
     font-size: 1.3em; }
   /* FIN PARAMETROS GENERALES */
   /* INICIO ESTILIZADO FUENTES */
@@ -887,7 +993,7 @@ body.dark {
     width: 100%;
     height: 3em; }
   .footer {
-    height: 1.8em;
+    height: auto;
     font-size: 1em; }
   /* FIN PARAMETROS GENERALES */
   /* INICIO ESTILIZADO FUENTES */
@@ -1024,7 +1130,7 @@ body.dark {
     grid-template-rows: 1%;
     border-bottom: solid #747474; }
   .footer {
-    height: 2.5em;
+    height: auto;
     font-size: 1em; }
   /* FIN PARAMETROS GENERALES */
   /* INICIO ESTILIZADO NAV */
@@ -1056,13 +1162,11 @@ body.dark {
   /* FIN ESTILIZADO NAV */
   /* INICIO ESTILIZADO IMG / VIDEO */
   .logotjp {
-    width: 3em;
-    height: 1.5em;
-    margin-top: 10%; }
+    width: 6em;
+    height: 3em; }
   .logotjpbl {
-    width: 3em;
-    height: 1.5em;
-    margin-top: 10%; }
+    width: 6em;
+    height: 3em; }
   #logobenoni {
     width: 15em;
     height: 15em; }
@@ -1120,7 +1224,7 @@ body.dark {
     margin-top: 2em;
     display: grid;
     grid-template-columns: repeat(3, 17em);
-    grid-template-rows: 0.5fr 0.8fr 0.5fr; }
+    grid-template-rows: auto auto auto; }
   .tituloprofes {
     grid-row-start: 1;
     grid-row-end: 2;
@@ -1146,13 +1250,15 @@ body.dark {
     grid-row-end: 4;
     grid-column-start: 1;
     grid-column-end: 4; }
-  .boxprofes h2 {
-    font-size: 1.5em;
-    line-height: 1em;
-    text-align: center; }
-  .boxprofes p {
-    line-height: 1.5em;
-    text-align: center; }
+  .boxprofes {
+    height: 35em; }
+    .boxprofes h2 {
+      font-size: 1.5em;
+      line-height: 1em;
+      text-align: center; }
+    .boxprofes p {
+      line-height: 1.5em;
+      text-align: center; }
   .imagenes1 {
     display: none; }
   .imagenes2 {
@@ -1203,7 +1309,7 @@ body.dark {
   .subtituloconsulta {
     line-height: 1.8em; }
   .boxcontacto {
-    font-size: 1.3em; }
+    font-size: 1em; }
   .btncontact {
     justify-content: center; }
   /* FIN CONTACTO */
@@ -1211,13 +1317,17 @@ body.dark {
   .registro {
     margin-top: 4em; }
   .boxregistro {
-    font-size: 1.3em; }
+    font-size: 1em; }
+    .boxregistro input {
+      width: 40%; }
   /* INICIO REGISTRO */
   /* INICIO LOGIN */
   .logueate {
-    margin-top: 4em; }
+    margin-top: 6em; }
   .boxlogin {
-    font-size: 1.3em; }
+    font-size: 1em; }
+    .boxlogin input {
+      width: 40%; }
   /* FIN LOGIN */ }
 
 @media (max-width: 540px) {
@@ -1247,11 +1357,19 @@ body.dark {
     border-bottom: solid whitesmoke; }
   /* PARAMETROS GENERALES */
   .footer {
-    display: inline-block;
-    text-align: center;
-    padding: 1em;
-    height: 6em;
-    font-size: 1em; }
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto; }
+    .footer .tjplogo {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      align-items: flex-end; }
+    .footer .nav1 {
+      grid-column-start: 2;
+      grid-column-end: 3; }
+    .footer .nav2 {
+      grid-column-start: 2;
+      grid-column-end: 3; }
   /* FIN PARAMETROS GENERALES */
   /* INICIO ESTILIZADO NAV */
   .dropdown-menu {
@@ -1259,17 +1377,11 @@ body.dark {
   /* FIN ESTILIZADO NAV */
   /* INICIO ESTILIZADO IMG / VIDEO */
   .logotjp {
-    width: 4em;
-    height: 2em;
-    margin-top: -.5%;
-    margin-left: 45%;
-    margin-right: 45%; }
+    width: 6em;
+    height: 3em; }
   .logotjpbl {
-    width: 4em;
-    height: 2em;
-    margin-top: -.5%;
-    margin-left: 45%;
-    margin-right: 45%; }
+    width: 6em;
+    height: 3em; }
   #logobenoni {
     width: 12em;
     height: 12em; }
@@ -1368,17 +1480,25 @@ body.dark {
   .contacto {
     margin-top: 6em; }
   .boxcontacto {
-    font-size: 1em; }
+    font-size: .8em; }
+    .boxcontacto input {
+      width: 40%; }
+    .boxcontacto .email input {
+      width: 40%; }
   /* FIN CONTACTO */
   /* INICIO REGISTRO */
   .registro {
     margin-top: 6em; }
   .boxregistro {
-    font-size: 1em; }
+    font-size: .7em; }
+    .boxregistro input {
+      width: 41%; }
   /* INICIO REGISTRO */
   /* INICIO LOGIN */
   .boxlogin {
-    font-size: 1em; }
+    font-size: .8em; }
+    .boxlogin input {
+      width: 40%; }
   /* FIN LOGIN */ }
 
 @media (max-width: 428px) {
@@ -1393,7 +1513,7 @@ body.dark {
     justify-content: end; }
   /* PARAMETROS GENERALES */
   .footer {
-    height: 6em; }
+    height: auto; }
   /* FIN PARAMETROS GENERALES */
   /* INICIO ESTILIZADO NAV */
   .dropdown-menu {
@@ -1438,7 +1558,13 @@ body.dark {
   .contacto {
     margin-top: 5em; }
   .boxcontacto {
-    font-size: 0.8em; }
+    font-size: 1em;
+    display: flex;
+    flex-direction: column; }
+    .boxcontacto input {
+      width: 45%; }
+    .boxcontacto .btncontact {
+      font-size: .8em; }
   #terminos {
     text-align: center; }
   /* FIN CONTACTO */
@@ -1446,11 +1572,23 @@ body.dark {
   .registro {
     margin-top: 5em; }
   .boxregistro {
-    font-size: 0.8em; }
+    font-size: 1em;
+    display: flex;
+    flex-direction: column; }
+    .boxregistro input {
+      width: 40%; }
+    .boxregistro .btncontact {
+      font-size: .7em; }
   /* INICIO REGISTRO */
   /* INICIO LOGIN */
   .boxlogin {
-    font-size: 0.9em; }
+    font-size: 1em;
+    display: flex;
+    flex-direction: column; }
+    .boxlogin input {
+      width: 45%; }
+    .boxlogin .btncontact {
+      font-size: .8em; }
   /* FIN LOGIN */ }
 
 @media (max-width: 390px) {
@@ -1464,7 +1602,7 @@ body.dark {
     display: flex;
     justify-content: end; }
   .footer {
-    height: 6em;
+    height: auto;
     font-size: 0.8em; }
   /* FIN PARAMETROS GENERALES */
   /* INICIO ESTILIZADO IMG / VIDEO */
@@ -1518,7 +1656,7 @@ body.dark {
   /* FIN REGISTRO */
   /* INICIO LOGIN */
   .logueate {
-    margin-top: auto; }
+    margin-top: 6em; }
   .boxlogin {
     font-size: 0.7em; }
   /* FIN LOGIN */ }
