@@ -16,9 +16,9 @@ while(repetir){
 
 //Uso de FUNCION CONSTRUCTORA / DECLARACION DE CLAE para seleccion de prenda en SHOP
 class Producto {
-    constructor(nombre, cantidad, precio) {
+    constructor(nombre, cant, precio) {
         this.nombre = nombre;
-        this.cantidad = cantidad;
+        this.cant = cant;
         this.precio = precio;
         this.iva = 1.21
         }
@@ -28,50 +28,61 @@ class Producto {
         }
 }
 
-const producto1 = new Producto("BENONI", 20, 2500)
-const producto2 = new Producto("BIELAS", 20, 2500)
-const producto3 = new Producto("DAVAI", 20, 2500)
-const producto4 = new Producto("DAVAI!!", 20, 2500)
-const producto5 = new Producto("MERENGUITOS", 20, 2500)
+const producto1 = new Producto("BENONI", 25, 2500)
+const producto2 = new Producto("BIELAS", 28, 2400)
+const producto3 = new Producto("DAVAI", 30, 2800)
+const producto4 = new Producto("DAVAI!!", 10, 3000)
+const producto5 = new Producto("MERENGUITOS", 35, 2000)
 
 
 let repetir1 = true
+let prenda = 0
+let stock = 0
 
 while (repetir1) {
-    let remera = parseInt(prompt("¿Que remera vas a llevar? \n 1: BENONI \n 2: BIELAS \n 3: DAVAI \n 4: DAVAI!! \n 5: MERENGUITOS"))
+    let remera = prompt("¿Que remera vas a llevar? \n 1: BENONI \n 2: BIELAS \n 3: DAVAI \n 4: DAVAI!! \n 5: MERENGUITOS").toUpperCase();
     switch (remera) {
-        case 1:
-            alert ("Seleccionaste BENONI")
+        case "BENONI":
+            alert ("Seleccionaste" + remera)
+            prenda = producto1.precioConIva()
+            stock=producto1.cant
             repetir1 = false;
             break;
-        case 2:
-            alert ("Seleccionaste BIELAS")
+        case "BIELAS":
+            alert ("Seleccionaste" + remera)
+            prenda = producto2.precioConIva()
+            stock=producto2.cant
             repetir1 = false;
             break; 
-        case 3:
-            alert ("Seleccionaste DAVAI")
+        case "DAVAI":
+            alert ("Seleccionaste" + remera)
+            prenda = producto3.precioConIva()
+            stock=producto3.cant
             repetir1 = false;
             break; 
-        case 4:
-            alert ("Seleccionaste DAVAI!!")
+        case "DAVAI!!":
+            alert ("Seleccionaste" + remera)
+            prenda = producto4.precioConIva()
+            stock=producto4.cant
             repetir1 = false;
             break; 
-        case 5:
-            calert ("Seleccionaste MERENGUITOS")
+        case "MERENGUITOS":
+            alert ("Seleccionaste" + remera)
+            prenda = producto5.precioConIva()
+            stock=producto5.cant
             repetir1 = false;
             break;      
         default:
             alert ("Debés seleccionar una remera")
             repetir1 = true;   
-    } 
+    }
 }
-  
 
 let repetir2 = true
 
 while(repetir2){
     let cuotas = parseInt (prompt("¿En cuantas cuotas querés realizar el pago?"))
-    let resultado = 2500 * 1.21 / cuotas;
+    let resultado = prenda / cuotas;
     if (cuotas >12){
         alert ("Solo realizamos hasta 12 cuotas");
     } else {
@@ -125,9 +136,8 @@ let repetir4 = true
 
 while(repetir4){
     let cantidad = parseInt (prompt("¿Cuantas remeras querés comprar?"))
-    let stock = 20
     let resultado = stock - cantidad;
-    if (cantidad >20){
+    if (cantidad > stock){
         alert ("No tenemos esa cantidad");
     } else {
         repetir4 = false
