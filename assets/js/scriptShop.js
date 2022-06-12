@@ -79,7 +79,7 @@ while (repetir1) {
     }
 }
 
-//Uso de ARRAYS / FUNCIONES SUPERIORES para buscar de Productos
+//Uso de ARRAYS / FUNCIONES SUPERIORES para buscar o filtrar de Productos
 
 function buscarProducto() {
     let busqueda =  prompt ("¿Querés buscar un producto con su nombre?").toUpperCase()
@@ -110,6 +110,16 @@ function buscarProducto() {
     }
 }
 
+function filtrarProducto (){
+    let filtro = prompt ("¿Qué remera buscás?").toUpperCase()
+            debugger
+            let resultadoFiltro = shop.filter((producto)=> producto.nombre.includes(filtro))
+                if (resultadoFiltro !== undefined){
+                    alert ("Tenemos en stock los siguientes productos:")
+                    console.clear()
+                    console.table(resultadoFiltro)
+                }
+}
 
 //Uso de SWITCH para seleccion de color en SHOP
 
