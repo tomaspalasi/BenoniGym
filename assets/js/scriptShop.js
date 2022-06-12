@@ -86,10 +86,10 @@ function buscarProducto() {
         if (busqueda === "SI") {
             let busquedaNombre = prompt ("¿Qué remera buscás?").toUpperCase()
             debugger
-            let resultadoBusqueda = shop.find((producto)=> producto.nombre == busquedaNombre)
+            let resultadoBusqueda = shop.find((producto)=> producto.nombre.includes(busquedaNombre))
                 console.clear()
                 if (resultadoBusqueda){
-                    alert ("Tenemos en stock la remera " + busquedaNombre)
+                    alert ("Tenemos en stock la remera:")
                     console.table(resultadoBusqueda)
                 } else {
                     alert ("No tenemos lo que buscás")
