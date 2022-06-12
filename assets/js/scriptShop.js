@@ -81,19 +81,6 @@ while (repetir1) {
 
 //Uso de ARRAYS / FUNCIONES SUPERIORES para buscar de Productos
 
-// function buscarProducto() {
-//     let busqueda = prompt ("¿Buscás alguna remera en particular?").toUpperCase()
-//     debugger
-//     let resultadoBusqueda = shop.find((producto)=> producto.nombre == busqueda)
-//         console.clear()
-//         if (resultadoBusqueda){
-//             alert ("Tenemos en stock la remera " + busqueda)
-//             console.table(resultadoBusqueda)
-//         } else {
-//             alert ("No tenemos lo que buscás")
-//         }
-// }
-
 function buscarProducto() {
     let busqueda =  prompt ("¿Querés buscar un producto con su nombre?").toUpperCase()
         if (busqueda === "SI") {
@@ -107,7 +94,7 @@ function buscarProducto() {
                 } else {
                     alert ("No tenemos lo que buscás")
                 }
-        } else {
+        } else if (busqueda === "NO"){
             let busquedaId = parseInt(prompt ("Ingresá el ID que buscás: "))
             debugger
             let resultadoBusquedaId = shop.find((producto)=> producto.id == busquedaId)
@@ -118,75 +105,73 @@ function buscarProducto() {
                 } else {
                     alert ("No tenemos el ID que ingresaste")
                 }
-        }
+        } else {
+            alert (busqueda + " No es un parámetro de búsqueda")
+    }
 }
 
-let repetir2 = true
-
-while(repetir2){
-    debugger
-    let cuotas = parseInt (prompt("¿En cuantas cuotas querés realizar el pago?"))
-    let resultado = prenda / cuotas;
-    if (cuotas >12){
-        alert ("Solo realizamos hasta 12 cuotas");
-    } else {
-        repetir2 = false
-        alert ("El precio final de cada cuota es de: "+resultado.toFixed(2));
-    }
-}   
 
 //Uso de SWITCH para seleccion de color en SHOP
 
-let repetir3 = true
+let repetir2 = true
 
-while (repetir3){
+while (repetir2){
     let color = prompt("Elegí un color de remera:").toLowerCase();
     switch (color) {
         case "blanco":
             console.log("Hay stock en", color)
             alert ("Tenemos stock en "+color)
-            repetir3 = false;
+            repetir2 = false;
             break;
         case "negro":
             console.log("Hay Stock en", color)
             alert ("Tenemos stock en "+color)
-            repetir3 = false;
+            repetir2 = false;
             break;
         case "gris":
             console.warn("Ultimas prendas en", color)
             alert ("¡Apurate! Ultimas remeras en "+color)
-            repetir3 = false;
+            repetir2 = false;
             break;
         case "verde":
             console.log("No hay stock en", color ,"seleccioná un color nuevamente")
             alert ("Nos quedamos sin stock en "+color +" seleccioná un color nuevamente")
-            repetir3 = true;
+            repetir2 = true;
             break;
         case "azul":
             console.log("No hay stock en", color ,"seleccioná un color nuevamente")
             alert ("Nos quedamos sin stock en "+color +" seleccioná un color nuevamente")
-            repetir3 = true;
+            repetir2 = true;
             break;        
         default:
             console.error("No realizamos remeras en", color, "por favor, seleccioná un color nuevamente")
             alert ("No realizamos prendas en "+color +" por favor, seleccioná un color nuevamente")
-            repetir3 = true;
+            repetir2 = true;
     }   
 }
 
-//Uso de OPERACIONES MATEMATICAS para contar la cantidad de prendas disponibles
+//Uso de OPERACIONES MATEMATICAS para contar la cantidad de prendas disponibles y calcular el precio en cuotas
 
-let repetir4 = true
+let cantidad = 0
+let repetir3 = true
 
-while(repetir4){
+while(repetir3){
     let cantidad = parseInt (prompt("¿Cuantas remeras querés comprar?"))
+    debugger
     let resultado = stock - cantidad;
-    if (cantidad > stock){
-        alert ("No tenemos esa cantidad");
-    } else {
-        repetir4 = false
-        alert (`Actualmente quedan en stock: ${resultado}`);
-    }
+        if (cantidad > stock){
+            alert ("No tenemos esa cantidad");
+         } else {
+            repetir3 = false
+            alert (`Actualmente quedan en stock: ${resultado}`);
+        }
+    let cuotas = parseInt (prompt("¿En cuantas cuotas querés realizar el pago?"))
+    let cantidadRemeras = cantidad * prenda
+    let resultado2 = cantidadRemeras / cuotas;
+        if (cuotas >12){
+            alert ("Solo realizamos hasta 12 cuotas");
+        } else {
+            repetir3 = false
+            alert ("El precio final de cada cuota es de: "+resultado2.toFixed(2));
+        }
 }
-
-
