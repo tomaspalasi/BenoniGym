@@ -16,7 +16,8 @@ while(repetir){
 
 //Uso de FUNCION CONSTRUCTORA / DECLARACION DE CLAE para seleccion de prenda en SHOP
 class Producto {
-    constructor(nombre, cant, precio) {
+    constructor(id, nombre, cant, precio) {
+        this.id = id
         this.nombre = nombre;
         this.cant = cant;
         this.precio = precio;
@@ -28,11 +29,11 @@ class Producto {
         }
 }
 
-const producto1 = new Producto("BENONI", 25, 2500)
-const producto2 = new Producto("BIELAS", 28, 2400)
-const producto3 = new Producto("DAVAI", 30, 2800)
-const producto4 = new Producto("DAVAI!!", 10, 3000)
-const producto5 = new Producto("MERENGUITOS", 35, 2000)
+const producto1 = new Producto(1234, "BENONI", 25, 2500)
+const producto2 = new Producto(2345, "BIELAS", 28, 2400)
+const producto3 = new Producto(3456,"DAVAI", 30, 2800)
+const producto4 = new Producto(4567, "DAVAI!!", 10, 3000)
+const producto5 = new Producto(5678, "MERENGUITOS", 35, 2000)
 const shop = [producto1, producto2, producto3, producto4, producto5]
 
 let repetir1 = true
@@ -76,6 +77,48 @@ while (repetir1) {
             alert ("Debés seleccionar una remera")
             repetir1 = true;   
     }
+}
+
+//Uso de ARRAYS / FUNCIONES SUPERIORES para buscar de Productos
+
+// function buscarProducto() {
+//     let busqueda = prompt ("¿Buscás alguna remera en particular?").toUpperCase()
+//     debugger
+//     let resultadoBusqueda = shop.find((producto)=> producto.nombre == busqueda)
+//         console.clear()
+//         if (resultadoBusqueda){
+//             alert ("Tenemos en stock la remera " + busqueda)
+//             console.table(resultadoBusqueda)
+//         } else {
+//             alert ("No tenemos lo que buscás")
+//         }
+// }
+
+function buscarProducto() {
+    let busqueda =  prompt ("¿Querés buscar un producto con su nombre?").toUpperCase()
+        if (busqueda === "SI") {
+            let busquedaNombre = prompt ("¿Qué remera buscás?").toUpperCase()
+            debugger
+            let resultadoBusqueda = shop.find((producto)=> producto.nombre == busquedaNombre)
+                console.clear()
+                if (resultadoBusqueda){
+                    alert ("Tenemos en stock la remera " + busquedaNombre)
+                    console.table(resultadoBusqueda)
+                } else {
+                    alert ("No tenemos lo que buscás")
+                }
+        } else {
+            let busquedaId = parseInt(prompt ("Ingresá el ID que buscás: "))
+            debugger
+            let resultadoBusquedaId = shop.find((producto)=> producto.id == busquedaId)
+                console.clear()
+                if (resultadoBusquedaId){
+                    alert ("Tenemos en stock la remera con ID" + busquedaId)
+                    console.table(resultadoBusquedaId)
+                } else {
+                    alert ("No tenemos el ID que ingresaste")
+                }
+        }
 }
 
 let repetir2 = true
@@ -146,12 +189,4 @@ while(repetir4){
     }
 }
 
-//Uso de ARRAYS / FUNCIONES SUPERIORES para buscar de Productos
 
-function buscarProducto() {
-    let busqueda = prompt ("¿Buscás alguna remera en particular?").toUpperCase()
-    debugger
-    let resultadoBusqueda = shop.find((producto)=> producto.nombre == busqueda)
-        console.clear()
-        console.table(resultadoBusqueda)
-}
