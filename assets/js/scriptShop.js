@@ -175,13 +175,14 @@ while(repetir3){
             repetir3 = false
             alert (`Actualmente quedan en stock: ${resultado}`);
         }
-    let cuotas = parseInt (prompt("¿En cuantas cuotas querés realizar el pago?"))
     let cantidadRemeras = cantidad * prenda
+        alert ("Total de la compra: " + cantidadRemeras)
+    let cuotas = parseInt (prompt("¿En cuantas cuotas querés realizar el pago?"))
     let resultado2 = cantidadRemeras / cuotas;
         if (cuotas >12){
             alert ("Solo realizamos hasta 12 cuotas");
         } else {
             repetir3 = false
-            alert ("El precio final de cada cuota es de: "+resultado2.toFixed(2));
+            alert ("El precio final de cada cuota es de: "+ resultado2.toFixed(1));
         }
 }
