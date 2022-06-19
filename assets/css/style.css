@@ -336,7 +336,7 @@ table {
 
 .boxprofes {
   display: grid;
-  grid-template-areas: "titulo" "texto" "imagen";
+  grid-template-areas: "titulo" "texto" "imagen";
   padding: 1.5em;
   background-color: whitesmoke;
   border-style: solid;
@@ -523,6 +523,18 @@ table {
   justify-content: space-evenly; }
 
 /* FIN SHOP */
+/*--------------------------*/
+/* INICIO CARRITO */
+.carrito {
+  margin: 1%; }
+
+.subtituloCarrito {
+  text-align: center; }
+
+ul {
+  list-style: none; }
+
+/* FIN CARRITO */
 /*--------------------------*/
 /* INICIO CONTACTO */
 .contacto {
@@ -968,6 +980,8 @@ body.dark {
     font-size: 1.2em;
     margin-top: 1em; }
   /* FIN SHOP */
+  /* INICIO CARRITO */
+  /* FIN CARRITO */
   /* INICIO CONTACTO */
   .subtituloconsulta {
     padding-bottom: 1em;
@@ -1304,6 +1318,10 @@ body.dark {
     font-size: 1.1em;
     margin-top: 1em; }
   /* FIN SHOP */
+  /* INICIO CARRITO */
+  .carrito {
+    margin-top: 4em; }
+  /* FIN CARRITO */
   /* INICIO CONTACTO */
   .contacto {
     margin-top: 4em; }
@@ -1446,7 +1464,7 @@ body.dark {
     margin-top: 3em;
     display: grid;
     grid-template-columns: 33em;
-    grid-template-areas: "titulo" "tarjeta1" "tarjeta2" "tarjeta3" "logo"; }
+    grid-template-areas: "titulo" "tarjeta1" "tarjeta2" "tarjeta3" "logo"; }
   .tituloprofes {
     grid-area: titulo;
     text-align: center; }
@@ -1555,6 +1573,10 @@ body.dark {
     padding: 0.8em;
     font-size: 1em; }
   /* FIN SHOP */
+  /* INICIO CARRITO */
+  .carrito {
+    margin-top: 5em; }
+  /* FIN CARRITO */
   /* INICIO CONTACTO */
   .contacto {
     margin-top: 5em; }

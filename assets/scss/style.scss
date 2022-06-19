@@ -667,6 +667,24 @@ table {
 
 /*--------------------------*/
 
+/* INICIO CARRITO */
+
+.carrito {
+  margin: 1%;
+}
+
+.subtituloCarrito {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+/* FIN CARRITO */
+
+/*--------------------------*/
+
 /* INICIO CONTACTO */
 
 .contacto {
@@ -1344,6 +1362,11 @@ label {
   }
 
   /* FIN SHOP */
+  /* INICIO CARRITO */
+
+
+
+  /* FIN CARRITO */
   /* INICIO CONTACTO */
 
   .subtituloconsulta {
@@ -1900,6 +1923,13 @@ label {
   }
 
   /* FIN SHOP */
+  /* INICIO CARRITO */
+
+  .carrito {
+    margin-top: 4em;
+  }
+
+  /* FIN CARRITO */
   /* INICIO CONTACTO */
 
   .contacto {
@@ -2328,6 +2358,13 @@ label {
   }
 
   /* FIN SHOP */
+    /* INICIO CARRITO */
+
+    .carrito {
+      margin-top: 5em;
+    }
+  
+    /* FIN CARRITO */
   /* INICIO CONTACTO */
 
   .contacto {

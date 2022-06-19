@@ -186,3 +186,12 @@ while(repetir3){
             alert ("El precio final de cada cuota es de: "+ resultado2.toFixed(1));
         }
 }
+
+// CARRITO DE COMPRAS
+const carrito = []
+
+function agregarPrendas () {
+    for (const producto of shop) {
+        
+    }
+}
