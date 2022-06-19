@@ -534,6 +534,14 @@ table {
 ul {
   list-style: none; }
 
+#carritoCompras {
+  display: flex;
+  justify-content: center;
+  border-style: none; }
+
+.carritoItems {
+  background-color: gainsboro; }
+
 /* FIN CARRITO */
 /*--------------------------*/
 /* INICIO CONTACTO */
