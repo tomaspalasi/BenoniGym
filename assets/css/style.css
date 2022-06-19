@@ -321,7 +321,8 @@ table {
   padding: 1em;
   background-color: whitesmoke;
   text-align: center;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   border-style: solid;
   border-color: #707070;
   border-width: 0.5em;
