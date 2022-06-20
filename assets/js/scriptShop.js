@@ -213,5 +213,5 @@ function agregarRemeras() {
     id.innerHTML = idRemera
     nombre.innerHTML =  remeraSelect
     cant.innerHTML = cantidad
-    precio.innerHTML = precioFinal
+    precio.innerHTML = "$"+ precioFinal
 }
