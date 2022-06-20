@@ -531,9 +531,6 @@ table {
 .subtituloCarrito {
   text-align: center; }
 
-ul {
-  list-style: none; }
-
 #carritoCompras {
   display: flex;
   justify-content: center;
@@ -541,6 +538,10 @@ ul {
 
 .carritoItems {
   background-color: gainsboro; }
+
+th {
+  padding-left: 1em;
+  padding-right: 1em; }
 
 /* FIN CARRITO */
 /*--------------------------*/

@@ -1,19 +1,3 @@
-
-//Uso de IF / ELSE / WHILE para ingreso de usuario
-
-let repetir = true
-
-while(repetir){
-    debugger
-        let nombre = prompt("Ingrese su nombre")
-        if (nombre == ""){
-            alert ("Tenés que ingresar un nombre");
-        } else {
-            repetir = false
-            alert ("Bienvenido " + nombre);
-        }
-    }
-
 //Uso de FUNCION CONSTRUCTORA / DECLARACION DE CLAE para seleccion de prenda en SHOP
 class Producto {
     constructor(id, nombre, cant, precio) {
@@ -36,39 +20,67 @@ const producto4 = new Producto(4567, "DAVAI!!", 10, 3000)
 const producto5 = new Producto(5678, "MERENGUITOS", 35, 2000)
 const shop = [producto1, producto2, producto3, producto4, producto5]
 
+//Uso de IF / ELSE / WHILE para ingreso de usuario
+
+let repetir = true
+
+while(repetir){
+    debugger
+        let nombre = prompt("Ingrese su nombre")
+        if (nombre == ""){
+            alert ("Tenés que ingresar un nombre");
+        } else {
+            repetir = false
+            alert ("Bienvenido " + nombre);
+        }
+    }
+//Uso de WHILE para ingreso de prendas
+
 let repetir1 = true
 let prenda = 0
 let stock = 0
+let remeraSelect = ""
+let idRemera = 0
 
 while (repetir1) {
     let remera = prompt("¿Que remera vas a llevar? \n 1: BENONI \n 2: BIELAS \n 3: DAVAI \n 4: DAVAI!! \n 5: MERENGUITOS").toUpperCase();
     switch (remera) {
         case "BENONI":
             alert ("Seleccionaste " + remera)
+            idRemera = producto1.id
+            remeraSelect = producto1.nombre
             prenda = producto1.precioConIva()
             stock=producto1.cant
             repetir1 = false;
             break;
         case "BIELAS":
             alert ("Seleccionaste " + remera)
+            idRemera = producto2.id
+            remeraSelect = producto2.nombre
             prenda = producto2.precioConIva()
             stock=producto2.cant
             repetir1 = false;
             break; 
         case "DAVAI":
             alert ("Seleccionaste " + remera)
+            idRemera = producto3.id
+            remeraSelect = producto3.nombre
             prenda = producto3.precioConIva()
             stock=producto3.cant
             repetir1 = false;
             break; 
         case "DAVAI!!":
             alert ("Seleccionaste " + remera)
+            idRemera = producto4.id
+            remeraSelect = producto4.nombre
             prenda = producto4.precioConIva()
             stock=producto4.cant
             repetir1 = false;
             break; 
         case "MERENGUITOS":
             alert ("Seleccionaste " + remera)
+            idRemera = producto5.id
+            remeraSelect = producto5.nombre
             prenda = producto5.precioConIva()
             stock=producto5.cant
             repetir1 = false;
@@ -162,11 +174,11 @@ while (repetir2){
 
 //Uso de OPERACIONES MATEMATICAS para contar la cantidad de prendas disponibles y calcular el precio en cuotas
 
-let cantidad = 0
+
 let repetir3 = true
 
+let cantidad = parseInt (prompt("¿Cuantas remeras querés comprar?"))
 while(repetir3){
-    let cantidad = parseInt (prompt("¿Cuantas remeras querés comprar?"))
     debugger
     let resultado = stock - cantidad;
         if (cantidad > stock){
@@ -188,10 +200,18 @@ while(repetir3){
 }
 
 // CARRITO DE COMPRAS
-const carrito = []
 
-function agregarPrendas () {
-    for (const producto of shop) {
-        
-    }
+let precioFinal = cantidad * prenda
+
+function agregarRemeras() {
+    const tablaProductos = document.getElementById ("carritoCompras").insertRow(-1);
+    let id = tablaProductos.insertCell(0)
+    let nombre = tablaProductos.insertCell(1)
+    let cant = tablaProductos.insertCell(2)
+    let precio = tablaProductos.insertCell(3)
+
+    id.innerHTML = idRemera
+    nombre.innerHTML =  remeraSelect
+    cant.innerHTML = cantidad
+    precio.innerHTML = precioFinal
 }
