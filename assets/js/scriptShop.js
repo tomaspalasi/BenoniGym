@@ -1,4 +1,4 @@
-//Uso de FUNCION CONSTRUCTORA / DECLARACION DE CLAE para seleccion de prenda en SHOP
+//Uso de FUNCION CONSTRUCTORA / DECLARACION DE CLASE para seleccion de prenda en SHOP
 class Producto {
     constructor(id, nombre, cant, precio) {
         this.id = id
@@ -25,7 +25,6 @@ const shop = [producto1, producto2, producto3, producto4, producto5]
 let repetir = true
 
 while(repetir){
-    debugger
         let nombre = prompt("Ingrese su nombre")
         if (nombre == ""){
             alert ("Tenés que ingresar un nombre");
@@ -176,27 +175,32 @@ while (repetir2){
 
 
 let repetir3 = true
+let repetir4 = true
 
-let cantidad = parseInt (prompt("¿Cuantas remeras querés comprar?"))
+let cantidad = 0
 while(repetir3){
-    debugger
+    cantidad = parseInt (prompt("¿Cuantas remeras querés comprar?"))
     let resultado = stock - cantidad;
         if (cantidad > stock){
             alert ("No tenemos esa cantidad");
-         } else {
+            continue;
+        } else {
             repetir3 = false
             alert (`Actualmente quedan en stock: ${resultado}`);
         }
     let cantidadRemeras = cantidad * prenda
         alert ("Total de la compra: $" + cantidadRemeras)
-    let cuotas = parseInt (prompt("¿En cuantas cuotas querés realizar el pago?"))
-    let resultado2 = cantidadRemeras / cuotas;
-        if (cuotas >12){
+    while (repetir4){
+        let cuotas = parseInt (prompt("¿En cuantas cuotas querés realizar el pago?"))
+        let resultado2 = cantidadRemeras / cuotas;
+        if (cuotas > 12){
             alert ("Solo realizamos hasta 12 cuotas");
+            continue;
         } else {
-            repetir3 = false
             alert ("El precio final de cada cuota es de: $"+ resultado2.toFixed(1));
+            repetir4 = false
         }
+    }
 }
 
 // CARRITO DE COMPRAS
@@ -215,3 +219,27 @@ function agregarRemeras() {
     cant.innerHTML = cantidad
     precio.innerHTML = "$"+ precioFinal
 }
+
+// SIMULACION DE COMPRA Y CARGA AL CARRITO
+
+const btnCompra = document.querySelectorAll(".botoncompra")
+
+let comprado = ""
+
+function addEventListenerList(list) {
+    for (var i = 0, len = list.length; i < len; i++){
+        list[i].addEventListener("click", (e) =>{
+                let comprado = e.target.id
+                let select = document.getElementsByClassName(comprado)
+                remera = select["Modelo"].innerText.split(" ")[1]
+                cant = select["Cantidad"].value
+                size = select["talles"].value
+                price = select["precio"].innerText.split("$")[1]
+                finalPrice = price * cant
+                alert ("Se agregó a tu carrito: Producto: " + remera + " - Cantidad " + cant + " - Talle " + size + " - Precio unitario: $" + price + " - Precio final: $" + finalPrice)
+                console.log("Producto: " + remera,"- Cantidad " + cant,"- Talle " + size,"- Precio unitario: $ " + price,"- Precio final: $ " + finalPrice)
+            })
+    }
+}
+
+addEventListenerList(btnCompra)
