@@ -539,6 +539,14 @@ table {
 .carritoItems {
   background-color: gainsboro; }
 
+#precioTotal {
+  display: flex;
+  justify-content: center;
+  border-style: none; }
+
+.totalPrice {
+  background-color: gainsboro; }
+
 th {
   padding-left: 1em;
   padding-right: 1em; }
@@ -851,7 +859,7 @@ body.dark {
     border-color: #bebebe;
     filter: drop-shadow(5px 5px 5px #dadada); }
   body.dark table {
-    color: whitesmoke; }
+    color: black; }
   body.dark .tabla {
     background-color: black;
     border-color: #bebebe;

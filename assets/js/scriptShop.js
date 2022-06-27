@@ -61,6 +61,20 @@ function agregarRemeras(list) {
 }
 agregarRemeras(localStorage.getItem("carrito"))
 
+// function finalPrice (list){
+//     // list = list.slice(2,-2).split("],[")
+//     for (var i = 0, len = list.length; i < len; i++){
+//         if (list){
+//             const finalPrice = document.getElementById ("finalPrice").insertRow(-1)
+//             let precioTotal = finalPrice.insertCell (0)
+        
+//             precioTotal.innerHTML = "$"+ carrito [i][0]
+//         }
+//     }
+// }
+
+// finalPrice()
+
 //Clear carrito y checkout
 
 const finalizarCompra = document.querySelector("#checkOut");

@@ -687,6 +687,16 @@ table {
   background-color: map-get($map: $colores, $key: color-tabla);
 }
 
+#precioTotal {
+  display: flex;
+  justify-content: center;
+  border-style: none;
+}
+
+.totalPrice {
+  background-color: map-get($map: $colores, $key: color-tabla);
+}
+
 th {
   padding-left: 1em;
   padding-right: 1em;
@@ -1131,7 +1141,7 @@ body.dark {
 /* FIN NOSOTROS */
 /* INICIO HORARIOS */
 table {
-  color: map-get($map: $colores-dark, $key: color-body-text-dm);
+  color: map-get($map: $colores-dark, $key: color-contrast-text-dm);
 }
 
 .tabla {
