@@ -3,13 +3,6 @@
 const btnSwitch = document.querySelector(".darkmode-toggle");
 
 btnSwitch.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-});
-
-//LOCAL STORAGE
-
-btnSwitch.onclick = checkDarkMode;
-
-function checkDarkMode(){
-
-}
+  document.body.classList.toggle("dark")
+  localStorage.setItem("dMode", "true")
+})
