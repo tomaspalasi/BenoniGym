@@ -545,7 +545,11 @@ table {
   border-style: none; }
 
 .totalPrice {
-  background-color: gainsboro; }
+  background-color: gainsboro;
+  border: solid .1em; }
+  .totalPrice td {
+    border: none;
+    background-color: gainsboro; }
 
 th {
   padding-left: 1em;
@@ -556,6 +560,12 @@ td {
   background-color: #e5e5e5; }
 
 /* FIN CARRITO */
+/*--------------------------*/
+/* INICIO CARRITO EMPTY */
+.carritoVacio {
+  cursor: pointer; }
+
+/* FIN CARRITO EMPTY */
 /*--------------------------*/
 /* INICIO CONTACTO */
 .contacto {

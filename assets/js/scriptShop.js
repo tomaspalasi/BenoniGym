@@ -6,7 +6,7 @@ let carrito = []
 let comprado = ""
 
 function agregarCarrito(list) {
-    existente = false
+
     for (var i = 0, len = list.length; i < len; i++){
         list[i].addEventListener("click", (e) =>{
                 comprado = e.target.id
@@ -15,7 +15,7 @@ function agregarCarrito(list) {
                 size = select["talles"].value
                 cant = select["Cantidad"].value
                 price = select["precio"].innerText.split("$")[1]
-                finalPrice = price * cant
+                let finalPrice = price * cant
                 alert ("Se agregó a tu carrito: Producto: " + remera + " - Cantidad " + cant + " - Talle " + size + " - Precio unitario: $" + price + " - Precio final: $" + finalPrice)
                 console.log("Producto: " + remera,"- Cantidad " + cant,"- Talle " + size,"- Precio unitario: $ " + price,"- Precio final: $ " + finalPrice)
                 carrito.push ([remera, cant, size, price, finalPrice])
@@ -24,7 +24,41 @@ function agregarCarrito(list) {
     }
 }
 
+if (window.location.href.endsWith("shop.html")) {
+    if (localStorage.getItem("carrito")){
+        carrito = JSON.parse(localStorage.getItem("carrito"))
+    }
+}
+
 agregarCarrito(btnCompra)
+
+// REVISAR LOCAL STORAGE
+const ordenarCarrito = (list) => {
+    console.log(typeof(list))
+    list = JSON.parse(list)
+    // console.log(list)
+    // COMPARAR CADA COMPRA
+    for (i = 0; i < list.length; i++) {
+        let modelo = list[i][0]
+        let cantidad = parseInt(list[i][1])
+        let tamaño = list[i][2]
+        for (j = i+1, len2 = list.length; j < len2; j++){
+            if (modelo == list[j][0] && tamaño == list[j][2]) {
+                cantidad += parseInt(list[j][1])
+                list.splice(j,1)
+                j -= 1
+                len2 -= 1
+            } 
+        }
+        list[i][4] = (cantidad * parseInt(list[i][3]))
+        list[i][1] = cantidad
+    }
+    localStorage.setItem("carrito", JSON.stringify(list))
+}
+
+if (window.location.href.endsWith("carrito.html") && localStorage.getItem("carrito")){
+    ordenarCarrito (localStorage.getItem("carrito"))
+}
 
 //AGREGADO AL CARRITO
 
@@ -37,11 +71,13 @@ const cargarCarrito = () => {
     }
 }
 
-cargarCarrito ()
-
+if (window.location.href.endsWith("carrito.html")){
+    cargarCarrito ()
+}
 
 function agregarRemeras(list) {
-    list = list.slice(2,-2).split("],[")
+    list = JSON.parse(list)
+    // console.log(carrito)
     for (var i = 0, len = list.length; i < len; i++){
         if (list){
             const tablaProductos = document.getElementById ("carritoCompras").insertRow(-1);
@@ -59,26 +95,30 @@ function agregarRemeras(list) {
         }
     }
 }
-agregarRemeras(localStorage.getItem("carrito"))
 
-// function finalPrice (list){
-//     // list = list.slice(2,-2).split("],[")
-//     for (var i = 0, len = list.length; i < len; i++){
-//         if (list){
-//             const finalPrice = document.getElementById ("finalPrice").insertRow(-1)
-//             let precioTotal = finalPrice.insertCell (0)
-        
-//             precioTotal.innerHTML = "$"+ carrito [i][0]
-//         }
-//     }
-// }
+if (localStorage.getItem("carrito") && window.location.href.endsWith("carrito.html")){
+    agregarRemeras(localStorage.getItem("carrito"))
+}
 
-// finalPrice()
+function finalPrice (list){
+    let final = 0
+    for (var i = 0, len = list.length; i < len; i++){
+        final += list[i][4]
+    }
+    const finalPrice = document.querySelector(".totalPrice")
+    finalPrice.insertCell(1).innerHTML = "$" + final
+}
 
-//Clear carrito y checkout
+if (localStorage.getItem("carrito") && window.location.href.endsWith("carrito.html")){
+    finalPrice(carrito)
+}
+
+//CLEAR CARRITO Y CHECKOUT
 
 const finalizarCompra = document.querySelector("#checkOut");
 
-finalizarCompra.addEventListener("click", () => {
-    localStorage.clear("carrito")
-});
+if (localStorage.getItem("carrito") && window.location.href.endsWith("carrito.html")) {
+    finalizarCompra.addEventListener("click", () => {
+        localStorage.clear("carrito")
+    });
+}

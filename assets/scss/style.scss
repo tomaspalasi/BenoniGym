@@ -695,6 +695,11 @@ table {
 
 .totalPrice {
   background-color: map-get($map: $colores, $key: color-tabla);
+  border: solid .1em;
+  td {
+    border: none;
+    background-color: map-get($map: $colores, $key: color-tabla)
+  }
 }
 
 th {
@@ -708,6 +713,14 @@ td {
 }
 
 /* FIN CARRITO */
+
+/*--------------------------*/
+
+/* INICIO CARRITO EMPTY */
+.carritoVacio {
+  cursor: pointer;
+}
+/* FIN CARRITO EMPTY */
 
 /*--------------------------*/
 
