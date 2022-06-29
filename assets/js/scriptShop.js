@@ -34,7 +34,6 @@ agregarCarrito(btnCompra)
 
 // REVISAR LOCAL STORAGE
 const ordenarCarrito = (list) => {
-    console.log(typeof(list))
     list = JSON.parse(list)
     // console.log(list)
     // COMPARAR CADA COMPRA
