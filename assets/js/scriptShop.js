@@ -120,3 +120,17 @@ if (localStorage.getItem("carrito") && window.location.href.endsWith("carrito.ht
         localStorage.clear("carrito")
     });
 }
+
+//CARRITO EMPTY IMG
+
+const carritoEmptyImg = document.querySelector(".carritoVacioImg")
+
+carritoEmptyImg.addEventListener("click", () => {
+    location.href= "shop.html"
+      })
+
+const carritoEmptyBlImg = document.querySelector(".carritoVacioBlImg")
+
+carritoEmptyBlImg.addEventListener("click", () => {
+    location.href= "shop.html"
+      })
