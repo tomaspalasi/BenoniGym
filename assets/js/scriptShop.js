@@ -70,9 +70,8 @@ const cargarCarrito = () => {
     }
 }
 
-if (window.location.href.endsWith("carrito.html")){
+window.location.href.endsWith("carrito.html")&&
     cargarCarrito ()
-}
 
 function agregarRemeras(list) {
     list = JSON.parse(list)

@@ -9,9 +9,8 @@ btnSwitch.addEventListener("click", () => {
         localStorage.setItem("dMode", "False")
 })
 
-if (localStorage.getItem("dMode") == "True"){
+localStorage.getItem("dMode") == "True" &&
   document.body.classList.toggle("dark")
-}
 
 //CARRITO DESDE INDEX
 
