@@ -111,15 +111,29 @@ if (localStorage.getItem("carrito") && window.location.href.endsWith("carrito.ht
     finalPrice(carrito)
 }
 
+// ALERTAS
+
+const alertFinCompra = () => {
+    Swal.fire({
+        title: '¡Muchas Gracias!',
+        text: 'Pronto te estará llegando un mail con los datos de envio.',
+        icon: 'success',
+        confirmButtonColor: "#e0383f"})
+}
+
 //CLEAR CARRITO Y CHECKOUT
 
 const finalizarCompra = document.querySelector("#checkOut");
 
-if (localStorage.getItem("carrito") && window.location.href.endsWith("carrito.html")) {
-    finalizarCompra.addEventListener("click", () => {
-        localStorage.clear("carrito")
-    });
+if (localStorage.getItem("carrito") && window.location.href.endsWith("carrito.html")){
+    finalizarCompra.addEventListener("click", () => {    
+            localStorage.clear("carrito")
+            location.href= "shop.html"
+    })
 }
+
+
+
 
 //CARRITO EMPTY IMG
 

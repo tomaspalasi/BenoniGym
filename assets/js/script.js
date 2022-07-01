@@ -61,3 +61,4 @@ carroVacio.addEventListener("click", () => {
       location.href= indice + "carritoEmpty.html":
         location.href= indice + "carrito.html"
     })
+
