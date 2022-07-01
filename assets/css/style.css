@@ -696,7 +696,7 @@ td {
   margin: 1%; }
 
 .login {
-  margin: 1%; }
+  margin: none; }
 
 .boxregistro {
   display: grid;
