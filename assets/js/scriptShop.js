@@ -16,7 +16,17 @@ function agregarCarrito(list) {
                 cant = select["Cantidad"].value
                 price = select["precio"].innerText.split("$")[1]
                 let finalPrice = price * cant
-                alert ("Se agregó a tu carrito: Producto: " + remera + " - Cantidad " + cant + " - Talle " + size + " - Precio unitario: $" + price + " - Precio final: $" + finalPrice)
+                Swal.fire ({
+                    title: "¡Producto agregado al carrito!",
+                    position: "top-end",
+                    toast: true,
+                    showConfirmButton: false,
+                    timer: 3000,
+                    timerProgressBar: true,
+                    color: "black",
+                    background: "rgb(190, 190, 190)",
+                })
+                // alert ("Se agregó a tu carrito: Producto: " + remera + " - Cantidad " + cant + " - Talle " + size + " - Precio unitario: $" + price + " - Precio final: $" + finalPrice)
                 console.log("Producto: " + remera,"- Cantidad " + cant,"- Talle " + size,"- Precio unitario: $ " + price,"- Precio final: $ " + finalPrice)
                 carrito.push ([remera, cant, size, price, finalPrice])
                 localStorage.setItem("carrito", JSON.stringify(carrito))
@@ -33,6 +43,7 @@ if (window.location.href.endsWith("shop.html")) {
 agregarCarrito(btnCompra)
 
 // REVISAR LOCAL STORAGE
+
 const ordenarCarrito = (list) => {
     list = JSON.parse(list)
     // console.log(list)
@@ -75,7 +86,6 @@ window.location.href.endsWith("carrito.html")&&
 
 function agregarRemeras(list) {
     list = JSON.parse(list)
-    // console.log(carrito)
     for (var i = 0, len = list.length; i < len; i++){
         if (list){
             const tablaProductos = document.getElementById ("carritoCompras").insertRow(-1);
@@ -111,40 +121,43 @@ if (localStorage.getItem("carrito") && window.location.href.endsWith("carrito.ht
     finalPrice(carrito)
 }
 
-// ALERTAS
-
-const alertFinCompra = () => {
-    Swal.fire({
-        title: '¡Muchas Gracias!',
-        text: 'Pronto te estará llegando un mail con los datos de envio.',
-        icon: 'success',
-        confirmButtonColor: "#e0383f"})
-}
-
 //CLEAR CARRITO Y CHECKOUT
 
 const finalizarCompra = document.querySelector("#checkOut");
 
 if (localStorage.getItem("carrito") && window.location.href.endsWith("carrito.html")){
-    finalizarCompra.addEventListener("click", () => {    
-            localStorage.clear("carrito")
-            location.href= "shop.html"
-    })
-}
-
-
-
+    finalizarCompra.addEventListener("click", () => {
+        Swal.fire({
+            title: '¡Muchas Gracias!',
+            text: 'Pronto te estará llegando un mail con los datos de envio.',
+            icon: 'success',
+            confirmButtonColor: "#e0383f",
+            }).then ((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire (
+                        localStorage.clear("carrito"),
+                        location.href= "shop.html"
+                    )
+                }
+            })
+            
+        })
+} 
 
 //CARRITO EMPTY IMG
 
-const carritoEmptyImg = document.querySelector(".carritoVacioImg")
+if (window.location.href.endsWith("carritoEmpty.html")){
+    
+    const carritoEmptyImg = document.querySelector(".carritoVacioImg")
+    
+    carritoEmptyImg.addEventListener("click", () => {
+        location.href= "shop.html"
+          })
+    
+    const carritoEmptyBlImg = document.querySelector(".carritoVacioBlImg")
+    
+    carritoEmptyBlImg.addEventListener("click", () => {
+        location.href= "shop.html"
+          })
+}
 
-carritoEmptyImg.addEventListener("click", () => {
-    location.href= "shop.html"
-      })
-
-const carritoEmptyBlImg = document.querySelector(".carritoVacioBlImg")
-
-carritoEmptyBlImg.addEventListener("click", () => {
-    location.href= "shop.html"
-      })

@@ -49,8 +49,6 @@ for (let element of shopCart) {
   )
 }
 
-
-
 //CARRITO EMPTY MENU RESPO
 
 const carroVacio = document.querySelector("#carroVacio");
@@ -61,4 +59,3 @@ carroVacio.addEventListener("click", () => {
       location.href= indice + "carritoEmpty.html":
         location.href= indice + "carrito.html"
     })
-
