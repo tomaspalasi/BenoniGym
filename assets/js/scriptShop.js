@@ -26,17 +26,17 @@ function agregarCarrito(list) {
                     color: "black",
                     background: "rgb(190, 190, 190)",
                 })
-                // alert ("Se agregó a tu carrito: Producto: " + remera + " - Cantidad " + cant + " - Talle " + size + " - Precio unitario: $" + price + " - Precio final: $" + finalPrice)
                 console.log("Producto: " + remera,"- Cantidad " + cant,"- Talle " + size,"- Precio unitario: $ " + price,"- Precio final: $ " + finalPrice)
                 carrito.push ([remera, cant, size, price, finalPrice])
-                localStorage.setItem("carrito", JSON.stringify(carrito))
+                // localStorage.setItem("carrito", JSON.stringify(carrito))
+                sessionStorage.setItem("carrito", JSON.stringify(carrito))
             })
     }
 }
 
 if (window.location.href.endsWith("shop.html")) {
-    if (localStorage.getItem("carrito")){
-        carrito = JSON.parse(localStorage.getItem("carrito"))
+    if (sessionStorage.getItem("carrito")){
+        carrito = JSON.parse(sessionStorage.getItem("carrito"))
     }
 }
 
@@ -63,18 +63,18 @@ const ordenarCarrito = (list) => {
         list[i][4] = (cantidad * parseInt(list[i][3]))
         list[i][1] = cantidad
     }
-    localStorage.setItem("carrito", JSON.stringify(list))
+    sessionStorage.setItem("carrito", JSON.stringify(list))
 }
 
-if (window.location.href.endsWith("carrito.html") && localStorage.getItem("carrito")){
-    ordenarCarrito (localStorage.getItem("carrito"))
+if (window.location.href.endsWith("carrito.html") && sessionStorage.getItem("carrito")){
+    ordenarCarrito (sessionStorage.getItem("carrito"))
 }
 
 //AGREGADO AL CARRITO
 
 const cargarCarrito = () => {
-    if (localStorage.getItem("carrito")) {
-        let carro = JSON.parse(localStorage.getItem("carrito"))
+    if (sessionStorage.getItem("carrito")) {
+        let carro = JSON.parse(sessionStorage.getItem("carrito"))
             for (elemento of carro) {
                 carrito.push(elemento)
             }
@@ -104,8 +104,8 @@ function agregarRemeras(list) {
     }
 }
 
-if (localStorage.getItem("carrito") && window.location.href.endsWith("carrito.html")){
-    agregarRemeras(localStorage.getItem("carrito"))
+if (sessionStorage.getItem("carrito") && window.location.href.endsWith("carrito.html")){
+    agregarRemeras(sessionStorage.getItem("carrito"))
 }
 
 function finalPrice (list){
@@ -117,7 +117,7 @@ function finalPrice (list){
     finalPrice.insertCell(1).innerHTML = "$" + final
 }
 
-if (localStorage.getItem("carrito") && window.location.href.endsWith("carrito.html")){
+if (sessionStorage.getItem("carrito") && window.location.href.endsWith("carrito.html")){
     finalPrice(carrito)
 }
 
@@ -125,7 +125,7 @@ if (localStorage.getItem("carrito") && window.location.href.endsWith("carrito.ht
 
 const finalizarCompra = document.querySelector("#checkOut");
 
-if (localStorage.getItem("carrito") && window.location.href.endsWith("carrito.html")){
+if (sessionStorage.getItem("carrito") && window.location.href.endsWith("carrito.html")){
     finalizarCompra.addEventListener("click", () => {
         Swal.fire({
             title: '¡Muchas Gracias!',
@@ -135,7 +135,7 @@ if (localStorage.getItem("carrito") && window.location.href.endsWith("carrito.ht
             }).then ((result) => {
                 if (result.isConfirmed) {
                     Swal.fire (
-                        localStorage.clear("carrito"),
+                        sessionStorage.clear("carrito"),
                         location.href= "shop.html"
                     )
                 }

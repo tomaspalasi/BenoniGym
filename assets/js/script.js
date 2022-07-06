@@ -24,11 +24,11 @@ window.location.href.endsWith("index.html")?
 
 const continuarCarrito = document.querySelector(".finalizarcompra");
 
-var carritoCheck = JSON.parse(localStorage.getItem("carrito"))
+var carritoCheck = JSON.parse(sessionStorage.getItem("carrito"))
 
 if (window.location.href.endsWith("shop.html")){
   continuarCarrito.addEventListener("click", () => {
-    var carritoCheck = JSON.parse(localStorage.getItem("carrito"))
+    var carritoCheck = JSON.parse(sessionStorage.getItem("carrito"))
       carritoCheck == null ?
         location.href="carritoEmpty.html":
           location.href="carrito.html"
@@ -41,7 +41,7 @@ const shopCart = document.querySelectorAll(".carritoVacio");
 
 for (let element of shopCart) {
   element.addEventListener("click", () => {
-    var carritoCheck = JSON.parse(localStorage.getItem("carrito"))
+    var carritoCheck = JSON.parse(sessionStorage.getItem("carrito"))
       carritoCheck == null ?
         location.href= indice + "carritoEmpty.html":
           location.href= indice + "carrito.html"
@@ -54,7 +54,7 @@ for (let element of shopCart) {
 const carroVacio = document.querySelector("#carroVacio");
 
 carroVacio.addEventListener("click", () => {
-  var carritoCheck = JSON.parse(localStorage.getItem("carrito"))
+  var carritoCheck = JSON.parse(sessionStorage.getItem("carrito"))
     carritoCheck == null?
       location.href= indice + "carritoEmpty.html":
         location.href= indice + "carrito.html"
