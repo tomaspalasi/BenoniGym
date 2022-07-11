@@ -1458,7 +1458,7 @@ label {
   /* FIN SHOP */
   /* INICIO CARRITO */
 
-
+  
 
   /* FIN CARRITO */
   /* INICIO CONTACTO */
@@ -2023,6 +2023,14 @@ label {
     margin-top: 4em;
   }
 
+  #carritoCompras {
+    font-size: 1em;
+  }
+  
+  #precioTotal {
+    font-size: 1em;
+  }
+
   /* FIN CARRITO */
   /* INICIO CONTACTO */
 
@@ -2317,6 +2325,17 @@ label {
   }
 
   /* FIN SHOP */
+  /* INICIO CARRITO */
+
+  #carritoCompras {
+    font-size: .8em;
+  }
+
+  #precioTotal {
+    font-size: 1em;
+  }
+
+  /* FIN CARRITO */
   /* INICIO CONTACTO */
 
   .contacto {
@@ -2452,13 +2471,21 @@ label {
   }
 
   /* FIN SHOP */
-    /* INICIO CARRITO */
+  /* INICIO CARRITO */
 
-    .carrito {
-      margin-top: 5em;
-    }
+  .carrito {
+    margin-top: 5em;
+  }
   
-    /* FIN CARRITO */
+  #carritoCompras {
+    font-size: .6em;
+  }
+
+  #precioTotal {
+    font-size: .8em;
+  }
+  
+  /* FIN CARRITO */
   /* INICIO CONTACTO */
 
   .contacto {
@@ -2612,6 +2639,17 @@ label {
   }
 
   /* FIN SHOP */
+  /* INICIO CARRITO */
+  
+  #carritoCompras {
+    font-size: .6em;
+  }
+
+  #precioTotal {
+    font-size: .8em;
+  }
+
+  /* FIN CARRITO */
   /* INICIO CONTACTO */
 
   .contacto {
