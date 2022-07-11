@@ -23,8 +23,8 @@ function agregarCarrito(list) {
                     showConfirmButton: false,
                     timer: 3000,
                     timerProgressBar: true,
-                    color: "black",
-                    background: "rgb(190, 190, 190)",
+                    color: "whitesmoke",
+                    background: "rgb(32, 32, 32)",
                 })
                 console.log("Producto: " + remera,"- Cantidad " + cant,"- Talle " + size,"- Precio unitario: $ " + price,"- Precio final: $ " + finalPrice)
                 carrito.push ([remera, cant, size, price, finalPrice])
@@ -131,8 +131,11 @@ if (sessionStorage.getItem("carrito") && window.location.href.endsWith("carrito.
             title: '¡Muchas Gracias!',
             text: 'Pronto te estará llegando un mail con los datos de envio.',
             icon: 'success',
+            color: "whitesmoke",
+            background: "rgb(32, 32, 32)",
             confirmButtonColor: "#e0383f",
-            }).then ((result) => {
+            })
+            .then ((result) => {
                 if (result.isConfirmed) {
                     Swal.fire (
                         sessionStorage.clear("carrito"),
