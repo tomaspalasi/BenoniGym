@@ -6,7 +6,6 @@ let carrito = []
 let comprado = ""
 
 function agregarCarrito(list) {
-
     for (var i = 0, len = list.length; i < len; i++){
         list[i].addEventListener("click", (e) =>{
                 comprado = e.target.id
@@ -46,7 +45,6 @@ agregarCarrito(btnCompra)
 
 const ordenarCarrito = (list) => {
     list = JSON.parse(list)
-    // console.log(list)
     // COMPARAR CADA COMPRA
     for (i = 0; i < list.length; i++) {
         let modelo = list[i][0]

@@ -66,7 +66,7 @@
     <main class="main">
         <section class="registro">
             <h1>REGISTRATE</h1>
-            <form class="boxregistro">
+            <form id="formularioReg" class="boxregistro">
                 <h4>Registrate a BENONI, completando los siguientes datos:</h4>
                 <div class="nombre">
                     <label for="name">Nombre:</label>
@@ -82,7 +82,7 @@
                 </div>
                 <div class="date">
                     <label for="date">Fecha de Nacimiento:</label>
-                    <input type="date" id="date" />
+                    <input type="date" id="date" required/>
                 </div>
                 <div class="email">
                     <label for="email">Correo electrónico:</label>
@@ -100,10 +100,10 @@
                     <label for="password2">Repita la contraseña:</label>
                     <input type="password" id="password2" spellcheck="false" required/>
                 </div>
-                <div id="terminos">
+                <!-- <div id="terminos">
                     <label class="terminos">Al clickear aquí, aceptás todos nuestros términos y condiciones</label>
                     <input type="checkbox" name="acepto" value="1" />
-                </div>
+                </div> -->
                 <div class="btncontact">
                     <input type="reset" value="Comenzá desde cero" class="btnreset" />
                     <input type="submit" value="Registrate" class="btnsend" />
