@@ -135,7 +135,7 @@ if (formLog){
     })
 }
 
-// Pagina Logueo Correcto y muestra datos
+// PAGINA LOGEO CORRECTO Y MUESTRA DATOS
 
 const nombreCuenta = document.getElementById("nombreCuenta")
 const fechaCuenta = document.getElementById("fechaNacCuenta")
@@ -159,7 +159,7 @@ if(window.location.href.endsWith("loginAut.html")){
     buscarDatos ()
 }
 
-// Pagina LOGIN AUT & LOGIN
+// PAGINA LOGIN AUT & LOGIN
 
 const logueo = document.querySelectorAll(".login")
 
@@ -174,26 +174,44 @@ for (let element of logueo) {
     })
 }
 
+// CONTRASEÑA OLVIDADA
+
+const resetPass = document.getElementById("resetPass");
+
+if(window.location.href.endsWith("login.html")){
+resetPass.addEventListener("click", () =>{
+        Swal.fire ({
+            title: "¿Olvidaste tu contraseña?",
+            text: 'No te preocupes, te estaremos enviando un email para volver a configurar tu contraseña',
+            icon: 'question',
+            color: "whitesmoke",
+            background: "rgb(32, 32, 32)",
+            confirmButtonColor: "#e0383f",
+        })
+})
+}
+
 //LOG OUT
 
-const logOut = document.getElementById("logOut")
 
-logOut.addEventListener("click", () =>{
-    Swal.fire ({
-        title: "¡Hasta la próxima!",
-        text: 'Volvé cuando quieras',
-        icon: 'info',
-        color: "whitesmoke",
-        background: "rgb(32, 32, 32)",
-        position: "center",
-        toast: true,
-        timerProgressBar: true,
-
-        showConfirmButton: false,
-        timer: 3000,
+const logOut = document.getElementById("logOut");
+if(window.location.href.endsWith("loginAut.html")){
+    logOut.addEventListener("click", () =>{
+        Swal.fire ({
+            title: "¡Hasta la próxima!",
+            text: 'Volvé cuando quieras',
+            icon: 'info',
+            color: "whitesmoke",
+            background: "rgb(32, 32, 32)",
+            position: "center",
+            toast: true,
+            timerProgressBar: true,
+            showConfirmButton: false,
+            timer: 3000,
+        })
+        sessionStorage.clear()
+                setTimeout(function(){
+                    location.href= "login.html";
+                },3500)
     })
-    sessionStorage.clear()
-            setTimeout(function(){
-                location.href= "login.html";
-            },3500)
-})
+}
