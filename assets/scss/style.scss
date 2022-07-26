@@ -904,6 +904,7 @@ td {
 
 .login {
   margin: none;
+  cursor: pointer;
 }
 
 .boxregistro {
@@ -1019,6 +1020,29 @@ label {
 }
 
 /* FIN REGISTRO - LOGIN */
+
+/*--------------------------*/
+
+/* INICIO LOGIN AUT*/
+#nombreCuenta {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+// #fechaNacCuenta {
+  
+// }
+// #telefonoCuenta{
+  
+// }
+// #emailCuenta{
+  
+// }
+// #paisCuenta{
+  
+// }
+
+/* FIN LOGIN AUT*/
 
 /*--------------------------*/
 

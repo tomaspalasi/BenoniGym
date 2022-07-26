@@ -696,7 +696,8 @@ td {
   margin: 1%; }
 
 .login {
-  margin: none; }
+  margin: none;
+  cursor: pointer; }
 
 .boxregistro {
   display: grid;
@@ -791,6 +792,13 @@ label {
   margin: 1em; }
 
 /* FIN REGISTRO - LOGIN */
+/*--------------------------*/
+/* INICIO LOGIN AUT*/
+#nombreCuenta {
+  text-align: center;
+  text-transform: uppercase; }
+
+/* FIN LOGIN AUT*/
 /*--------------------------*/
 /* INICIO DARKMODE */
 .darkmode-toggle {

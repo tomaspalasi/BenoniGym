@@ -98,6 +98,8 @@ const emailLog = document.getElementById("emailLog")
 const passLog = document.getElementById("passwordLog")
 const arrayDatos = JSON.parse(localStorage.getItem("dataReg"))
 
+const dataLog = [] 
+
 if (formLog){
     formLog.addEventListener("submit", e=> {
         e.preventDefault();
@@ -113,9 +115,11 @@ if (formLog){
                     showConfirmButton: false,
                     timer: 2500,
                 })
-                setTimeout(function(){
-                    location.href= "loginAut.html";
-                },1000)
+                    dataLog.push([arrayDatos[i][0] , arrayDatos[i][1] , arrayDatos[i][2] , arrayDatos[i][3] , arrayDatos[i][4] , arrayDatos[i][5] , arrayDatos[i][6]])
+                    sessionStorage.setItem("dataLog", JSON.stringify(dataLog))
+                        setTimeout(function(){
+                            location.href= "loginAut.html";
+                        },1000)
                 break
             } else {
                     Swal.fire ({
@@ -128,7 +132,6 @@ if (formLog){
                 })
             }
         }
-        
     })
 }
 
@@ -140,15 +143,33 @@ const telefonoCuenta = document.getElementById("telefonoCuenta")
 const emailCuenta = document.getElementById("emailCuenta")
 const paisCuenta = document.getElementById("paisCuenta")
 
-function buscarDatos (){
-    debugger
-    for (i=0; i < arrayDatos.length; i++){
-        var nombreCuenta = arrayDatos [i][0] +" "+ arrayDatos [i][1];
-        var fechaCuenta = arrayDatos [i][3];
-        var telefonoCuenta = arrayDatos [i][2];
-        var emailCuenta = arrayDatos [i][4];
-        var paisCuenta = arrayDatos [i][5];
+const logData = JSON.parse(sessionStorage.getItem("dataLog"))
+
+if(window.location.href.endsWith("loginAut.html")){
+    function buscarDatos (){
+        for (i=0; i < logData.length; i++){
+            nombreCuenta.innerHTML = logData [i][0] +" "+ logData [i][1];
+            fechaCuenta.innerHTML = "FECHA DE NACIMIENTO: "+logData [i][3];
+            telefonoCuenta.innerHTML = "TELÉFONO DE CONTACTO: "+logData [i][2];
+            emailCuenta.innerHTML = "EMAIL REGISTRADO: "+logData [i][4];
+            paisCuenta.innerHTML = "PAÍS DE RESIDENCIA: "+logData [i][5];
+        }
+        // return (nombreCuenta + fechaCuenta + telefonoCuenta + emailCuenta + paisCuenta)
     }
-    return (nombreCuenta + fechaCuenta + telefonoCuenta + emailCuenta + paisCuenta)
-    nombreCuenta.innerHTML
+    buscarDatos ()
+}
+
+// Pagina LOGIN AUT & LOGIN
+
+const logueo = document.querySelectorAll(".login")
+
+for (let element of logueo) {
+    element.addEventListener("click", () => {
+            var logueoCheck = JSON.parse(sessionStorage.getItem("dataLog"))
+            if (logueoCheck != null){
+                location.href= indice + "loginAut.html"
+            } else {
+                location.href= indice + "login.html"
+            }       
+    })
 }
