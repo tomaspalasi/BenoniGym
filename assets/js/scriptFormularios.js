@@ -100,9 +100,10 @@ const arrayDatos = JSON.parse(localStorage.getItem("dataReg"))
 
 const dataLog = [] 
 
-if (formLog){
-    formLog.addEventListener("submit", e=> {
-        e.preventDefault();
+if (window.location.href.endsWith("login.html")){
+formLog.addEventListener("submit", e=>{
+    e.preventDefault();
+    if (localStorage.length != 0){      
         for (i=0; i < arrayDatos.length; i++ ){
             if (emailLog.value === arrayDatos[i][4] && passLog.value === arrayDatos[i][6]){
                 Swal.fire ({
@@ -131,6 +132,16 @@ if (formLog){
                     confirmButtonColor: "#e0383f",
                 })
             }
+        }
+        } else {
+            Swal.fire ({
+                title: "Usuario no reconocido",
+                text: 'El usuario ingresado no se encuentra registrado, por favor, volvé a intentarlo',
+                icon: 'warning',
+                color: "whitesmoke",
+                background: "rgb(32, 32, 32)",
+                confirmButtonColor: "#e0383f",
+            })
         }
     })
 }
