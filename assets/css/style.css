@@ -623,7 +623,7 @@ td {
   border-style: solid;
   border-color: #707070; }
   .boxcontacto input {
-    width: 60%; }
+    width: 65%; }
   .boxcontacto .nombre {
     grid-column-start: 1;
     grid-column-end: 2; }
@@ -701,8 +701,6 @@ td {
   cursor: pointer; }
 
 .boxregistro {
-  display: grid;
-  grid-template-columns: 50% 50%;
   padding: 1em;
   line-height: 2.5em;
   background-color: whitesmoke;
@@ -710,13 +708,22 @@ td {
   border-color: #707070; }
 
 input {
-  width: 50%;
+  width: 95%;
   border: none;
   border-bottom-style: ridge;
   background-color: whitesmoke; }
 
+#date {
+  padding-left: 1.5%; }
+
 .btncontact {
   filter: drop-shadow(5px 5px 5px #222); }
+
+.btnreset {
+  width: 50%; }
+
+.btnsend {
+  width: 50%; }
 
 h4 {
   grid-column-start: 1;

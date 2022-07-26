@@ -796,7 +796,7 @@ td {
   border-color: map-get($map: $colores, $key: color-border);
 
   input {
-    width: 60%;
+    width: 65%;
   }
 
   .nombre{
@@ -909,8 +909,6 @@ td {
 }
 
 .boxregistro {
-  display: grid;
-  grid-template-columns: 50% 50%;
   padding: 1em;
   line-height: 2.5em;
   background-color: map-get($map: $colores, $key: color-rest-background);
@@ -919,14 +917,26 @@ td {
 }
 
 input {
-  width: 50%;
+  width: 95%;
   border: none;
   border-bottom-style: ridge;
   background-color: whitesmoke;
 }
 
+#date{
+  padding-left: 1.5%;
+}
+
 .btncontact{
     filter: $shadow;
+}
+
+.btnreset{
+  width: 50%;
+}
+
+.btnsend{
+  width: 50%;
 }
 
 h4 {
