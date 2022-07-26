@@ -173,3 +173,27 @@ for (let element of logueo) {
             }       
     })
 }
+
+//LOG OUT
+
+const logOut = document.getElementById("logOut")
+
+logOut.addEventListener("click", () =>{
+    Swal.fire ({
+        title: "¡Hasta la próxima!",
+        text: 'Volvé cuando quieras',
+        icon: 'info',
+        color: "whitesmoke",
+        background: "rgb(32, 32, 32)",
+        position: "center",
+        toast: true,
+        timerProgressBar: true,
+
+        showConfirmButton: false,
+        timer: 3000,
+    })
+    sessionStorage.clear()
+            setTimeout(function(){
+                location.href= "login.html";
+            },3500)
+})

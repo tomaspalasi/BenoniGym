@@ -1024,6 +1024,30 @@ label {
 /*--------------------------*/
 
 /* INICIO LOGIN AUT*/
+
+.outLog {
+  display: flex;
+  margin: 0%;
+  justify-content: right;
+}
+
+#logOut{
+  background-color: map-get($map: $colores, $key: color-btn);
+  color: map-get($map: $colores, $key: color-contrast-text);
+  padding: .5em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  font-size: 1.5em;
+  filter: $shadow;
+ 
+  
+  &:hover {
+    transition: all .3s;
+    transform: scale(1.05);
+    color: map-get($map: $colores, $key: color-contrast-text);
+  }
+}
+
 #nombreCuenta {
   text-align: center;
   text-transform: uppercase;
@@ -1306,6 +1330,12 @@ label {
   background-color: map-get($map: $colores-dark, $key: color-rest-background-dm);
   border-color: map-get($map: $colores-dark, $key: color-rest-background-dm);
 }
+
+.inputsDm {
+  background: black;
+  color: white;
+}
+
 /* FIN REGISTRO - LOGIN */
 }
 /* FIN DARKMODE */
