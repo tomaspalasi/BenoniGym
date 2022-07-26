@@ -643,7 +643,8 @@ td {
     grid-column-end: 3;
     display: inline-flex; }
   .boxcontacto textarea {
-    width: 70%; }
+    width: 70%;
+    background-color: whitesmoke; }
   .boxcontacto #terminos {
     grid-column-start: 1;
     grid-column-end: 3; }
@@ -711,7 +712,8 @@ td {
 input {
   width: 50%;
   border: none;
-  border-bottom-style: ridge; }
+  border-bottom-style: ridge;
+  background-color: whitesmoke; }
 
 .btncontact {
   filter: drop-shadow(5px 5px 5px #222); }
