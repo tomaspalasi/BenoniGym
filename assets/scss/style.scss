@@ -917,7 +917,13 @@ td {
 }
 
 input {
-  width: auto;
+  width: 50%;
+  border: none;
+  border-bottom-style: ridge;
+}
+
+.btncontact{
+    filter: $shadow;
 }
 
 h4 {

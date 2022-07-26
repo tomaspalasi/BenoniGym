@@ -708,7 +708,12 @@ td {
   border-color: #707070; }
 
 input {
-  width: auto; }
+  width: 50%;
+  border: none;
+  border-bottom-style: ridge; }
+
+.btncontact {
+  filter: drop-shadow(5px 5px 5px #222); }
 
 h4 {
   grid-column-start: 1;
