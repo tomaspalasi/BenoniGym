@@ -2,7 +2,7 @@
 Sitio web creado para un equipo de entrenadores físicos. En el mismo, se puede encontrar información, novedades, apartados de registro, consulta y compras.
 
 ## Lenguajes
-Para la confección de este proyecto se utilizó HTML para el maquetado del sitio, CSS y SASS para el estilizado y por último, se agregó un poco de NodeJS y JavaScript para la creación de scripts como el "Modo Oscuro".
+Para la confección de este proyecto se utilizó HTML para el maquetado del sitio, CSS y SASS para el estilizado y por último, se agregó Java Script para crear el "modo oscuro", el apartado de shop, contacto, registro y login, además de NodeJS.
 También se utilizó la librería de Bootstrap, cuya aplicación fue necesaria a la hora de realizar el diseño responsive del sitio web.
 
 ## Dispositivos
